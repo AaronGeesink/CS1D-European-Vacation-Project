@@ -12,3 +12,13 @@ FoodSelectWindow::~FoodSelectWindow()
 {
 	delete ui;
 }
+
+void FoodSelectWindow::on_moveToCitySelect_clicked()
+{
+	emit moveToCitySelectClicked();
+}
+
+void FoodSelectWindow::on_moveToResults_clicked()
+{
+	emit moveToResultsClicked();
+}

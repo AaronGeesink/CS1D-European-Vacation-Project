@@ -15,6 +15,15 @@ public:
 	explicit LoginWindow(QWidget *parent = nullptr);
 	~LoginWindow();
 
+signals:
+	void moveToMainClicked();
+	void moveToEditClicked();
+
+private slots:
+	void on_moveToMain_clicked();
+
+	void on_moveToEdit_clicked();
+
 private:
 	Ui::LoginWindow *ui;
 };

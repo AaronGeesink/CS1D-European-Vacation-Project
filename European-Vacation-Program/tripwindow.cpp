@@ -17,3 +17,18 @@ void TripWindow::on_moveToMain_clicked()
 {
 	emit moveToMainClicked();
 }
+
+void TripWindow::on_moveTo11Cities_clicked()
+{
+	emit moveTo11CitiesClicked();
+}
+
+void TripWindow::on_moveToLondon_clicked()
+{
+	emit moveToLondonClicked();
+}
+
+void TripWindow::on_moveToCustom_clicked()
+{
+	emit moveToCustomClicked();
+}

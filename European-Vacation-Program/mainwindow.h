@@ -30,7 +30,14 @@ private slots:
 	void on_moveToView_clicked();
 
 	void on_moveToTrip_clicked();
+	void moveToTrip();
+	void moveTo11Cities();
+	void moveToLondon();
+	void moveToCustom();
+	// TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
+	// can do this either by using an tripID integer in one function of my using 3 seperate functions
 	void moveToCitySelect();
+
 	void moveToFoodSelect();
 	void moveToResults();
 

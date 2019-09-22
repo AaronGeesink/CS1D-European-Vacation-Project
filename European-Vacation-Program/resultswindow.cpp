@@ -12,3 +12,13 @@ ResultsWindow::~ResultsWindow()
 {
 	delete ui;
 }
+
+void ResultsWindow::on_moveToTrip_clicked()
+{
+	emit moveToTripClicked();
+}
+
+void ResultsWindow::on_moveToMain_clicked()
+{
+	emit moveToMainClicked();
+}

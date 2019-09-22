@@ -12,3 +12,13 @@ CitySelectWindow::~CitySelectWindow()
 {
 	delete ui;
 }
+
+void CitySelectWindow::on_moveToTrip_clicked()
+{
+	emit moveToTripClicked();
+}
+
+void CitySelectWindow::on_moveToFoodSelect_clicked()
+{
+	emit moveToFoodSelectClicked();
+}

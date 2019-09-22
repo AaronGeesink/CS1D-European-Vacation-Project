@@ -15,6 +15,15 @@ public:
 	explicit CitySelectWindow(QWidget *parent = nullptr);
 	~CitySelectWindow();
 
+signals:
+	void moveToTripClicked();
+	void moveToFoodSelectClicked();
+
+private slots:
+	void on_moveToTrip_clicked();
+
+	void on_moveToFoodSelect_clicked();
+
 private:
 	Ui::CitySelectWindow *ui;
 };

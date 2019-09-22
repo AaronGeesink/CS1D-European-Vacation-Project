@@ -17,6 +17,25 @@ MainWindow::MainWindow(QWidget *parent)
 
 	connect(&viewWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
 	connect(&tripWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
+
+	connect(&tripWind, SIGNAL(moveTo11CitiesClicked()), this, SLOT(moveTo11Cities()));
+	connect(&tripWind, SIGNAL(moveToLondonClicked()), this, SLOT(moveToLondon()));
+	connect(&tripWind, SIGNAL(moveToCustomClicked()), this, SLOT(moveToCustom()));
+
+	connect(&citySelectWind, SIGNAL(moveToFoodSelectClicked()), this, SLOT(moveToFoodSelect()));
+	connect(&citySelectWind, SIGNAL(moveToTripClicked()), this, SLOT(moveToTrip()));
+
+	connect(&foodSelectWind, SIGNAL(moveToResultsClicked()), this, SLOT(moveToResults()));
+	connect(&foodSelectWind, SIGNAL(moveToCitySelectClicked()), this, SLOT(moveToCitySelect()));
+
+	connect(&resultsWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
+	connect(&resultsWind, SIGNAL(moveToTripClicked()), this, SLOT(moveToTrip()));
+
+	connect(&loginWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
+	connect(&loginWind, SIGNAL(moveToEditClicked()), this, SLOT(moveToEdit()));
+
+	connect(&editWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
+
 }
 
 MainWindow::~MainWindow()
@@ -48,6 +67,32 @@ void MainWindow::on_moveToTrip_clicked()
 	ui->stackedWidget->setCurrentIndex(2);
 }
 
+void MainWindow::moveToTrip()
+{
+	//Stacked Widget index 2: Plan a Trip Menu
+	ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::moveTo11Cities()
+{
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(3);
+}
+
+void MainWindow::moveToLondon()
+{
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(3);
+}
+
+void MainWindow::moveToCustom()
+{
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(3);
+}
+
+// TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
+// can do this either by using an tripID integer in one function of my using 3 seperate functions
 void MainWindow::moveToCitySelect()
 {
 	//Stacked Widget index 3: City Select Menu

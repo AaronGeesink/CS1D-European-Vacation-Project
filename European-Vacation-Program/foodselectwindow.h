@@ -15,6 +15,15 @@ public:
 	explicit FoodSelectWindow(QWidget *parent = nullptr);
 	~FoodSelectWindow();
 
+signals:
+	void moveToCitySelectClicked();
+	void moveToResultsClicked();
+
+private slots:
+	void on_moveToCitySelect_clicked();
+
+	void on_moveToResults_clicked();
+
 private:
 	Ui::FoodSelectWindow *ui;
 };

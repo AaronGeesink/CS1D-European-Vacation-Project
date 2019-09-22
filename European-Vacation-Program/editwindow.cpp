@@ -12,3 +12,8 @@ EditWindow::~EditWindow()
 {
 	delete ui;
 }
+
+void EditWindow::on_moveToMain_clicked()
+{
+	emit moveToMainClicked();
+}

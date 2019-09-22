@@ -15,6 +15,15 @@ public:
 	explicit ResultsWindow(QWidget *parent = nullptr);
 	~ResultsWindow();
 
+signals:
+	void moveToTripClicked();
+	void moveToMainClicked();
+
+private slots:
+	void on_moveToTrip_clicked();
+
+	void on_moveToMain_clicked();
+
 private:
 	Ui::ResultsWindow *ui;
 };
