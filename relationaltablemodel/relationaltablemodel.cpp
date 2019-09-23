@@ -170,8 +170,8 @@ void createRelationalTables()
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    if (!createConnection())
-        return EXIT_FAILURE;
+	//if (!createConnection())
+	   // return EXIT_FAILURE;
 
     createRelationalTables();
 
