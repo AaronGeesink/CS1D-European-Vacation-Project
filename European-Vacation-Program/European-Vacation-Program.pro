@@ -1,4 +1,5 @@
 QT       += core gui
+QT += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     cityselectwindow.h \
+    dbinit.h \
     editwindow.h \
     foodselectwindow.h \
     loginwindow.h \

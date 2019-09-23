@@ -2,6 +2,7 @@
 #define VIEWWINDOW_H
 
 #include <QWidget>
+#include <QtSql>
 
 namespace Ui {
 class ViewWindow;
@@ -23,6 +24,8 @@ private slots:
 
 private:
 	Ui::ViewWindow *ui;
+	void showError(const QSqlError &err);
+	QSqlRelationalTableModel *model;
 };
 
 #endif // VIEWWINDOW_H
