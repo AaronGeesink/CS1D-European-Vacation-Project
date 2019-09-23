@@ -1,4 +1,5 @@
-HEADERS       = ../connection.h
+HEADERS       = ../connection.h \
+	connection.h
 SOURCES       = relationaltablemodel.cpp
 QT           += sql widgets
 requires(qtConfig(tableview))
