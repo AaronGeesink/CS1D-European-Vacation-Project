@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
+#include "database.h"
 
 namespace Ui {
 class ViewWindow;
@@ -25,6 +26,10 @@ private slots:
 	void on_moveToMain_clicked();
 
 	void on_loadCities_clicked();
+
+	void on_loadFood_clicked();
+
+	void on_loadDistances_clicked();
 
 private:
 	Ui::ViewWindow *ui;
