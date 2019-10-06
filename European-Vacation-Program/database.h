@@ -2,6 +2,8 @@
 #define DATABASE_H
 
 #include <QtSql>
+#include <QFile>
+#include <QDir>
 
 // Not in use
 void closeConnection();
