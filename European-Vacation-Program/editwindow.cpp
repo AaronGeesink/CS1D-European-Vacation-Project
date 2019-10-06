@@ -17,3 +17,8 @@ void EditWindow::on_moveToMain_clicked()
 {
 	emit moveToMainClicked();
 }
+
+void EditWindow::on_saveButton_clicked()
+{
+	checkConnection();
+}

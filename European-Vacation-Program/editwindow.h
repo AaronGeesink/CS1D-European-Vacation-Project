@@ -2,6 +2,7 @@
 #define EDITWINDOW_H
 
 #include <QWidget>
+#include "database.h"
 
 namespace Ui {
 class EditWindow;
@@ -20,6 +21,8 @@ signals:
 
 private slots:
 	void on_moveToMain_clicked();
+
+	void on_saveButton_clicked();
 
 private:
 	Ui::EditWindow *ui;
