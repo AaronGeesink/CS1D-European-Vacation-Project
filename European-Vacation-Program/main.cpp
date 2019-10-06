@@ -1,7 +1,8 @@
 #include "mainwindow.h"
+#include "database.h"
 
 #include <QApplication>
-#include <QSql>
+#include <QtSql>
 
 int main(int argc, char *argv[])
 {
@@ -10,6 +11,8 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
+	createDatabase();
+	checkConnection();
 
     return a.exec();
 }

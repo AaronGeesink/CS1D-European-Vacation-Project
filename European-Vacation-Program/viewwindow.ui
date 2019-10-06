@@ -26,6 +26,55 @@
     <string>Main Menu</string>
    </property>
   </widget>
+  <widget class="QTableView" name="databaseView">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>11</y>
+     <width>381</width>
+     <height>371</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadCities">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Cities</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadFood">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Food</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadDistances">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Distances</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

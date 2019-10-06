@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QtSql>
+#include <QtDebug>
+#include <QFileInfo>
 
 namespace Ui {
 class ViewWindow;
@@ -22,10 +24,10 @@ signals:
 private slots:
 	void on_moveToMain_clicked();
 
+	void on_loadCities_clicked();
+
 private:
 	Ui::ViewWindow *ui;
-	void showError(const QSqlError &err);
-	QSqlRelationalTableModel *model;
 };
 
 #endif // VIEWWINDOW_H
