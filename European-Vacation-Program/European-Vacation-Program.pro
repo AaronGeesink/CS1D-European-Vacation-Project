@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,8 +16,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    city.cpp \
     cityselectwindow.cpp \
+    database.cpp \
     editwindow.cpp \
+    food.cpp \
     foodselectwindow.cpp \
     loginwindow.cpp \
     main.cpp \
@@ -27,8 +30,11 @@ SOURCES += \
     viewwindow.cpp
 
 HEADERS += \
+    city.h \
     cityselectwindow.h \
+    database.h \
     editwindow.h \
+    food.h \
     foodselectwindow.h \
     loginwindow.h \
     mainwindow.h \
@@ -50,3 +56,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+	resources/database.db
+
+RESOURCES +=

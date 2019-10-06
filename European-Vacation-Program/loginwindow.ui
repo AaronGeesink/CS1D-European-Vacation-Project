@@ -26,7 +26,7 @@
     <string>Main Menu</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="usernameInput">
+  <widget class="QLineEdit" name="usernameLineEdit">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -36,7 +36,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="passwordInput">
+  <widget class="QLineEdit" name="passwordLineEdit">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -45,8 +45,11 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
-  <widget class="QLabel" name="usernameText">
+  <widget class="QLabel" name="usernameLabel">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -59,7 +62,7 @@
     <string>Username:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="passwordText">
+  <widget class="QLabel" name="passwordLabel">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -72,19 +75,52 @@
     <string>Password:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="moveToEdit">
+  <widget class="QLabel" name="statusLabel">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>210</y>
-     <width>80</width>
-     <height>21</height>
+     <x>70</x>
+     <y>310</y>
+     <width>341</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>[+]Status</string>
    </property>
   </widget>
+  <widget class="QGroupBox" name="loginGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>311</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Sign In</string>
+   </property>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>170</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>loginGroupBox</zorder>
+  <zorder>moveToMain</zorder>
+  <zorder>usernameLineEdit</zorder>
+  <zorder>passwordLineEdit</zorder>
+  <zorder>usernameLabel</zorder>
+  <zorder>passwordLabel</zorder>
+  <zorder>statusLabel</zorder>
  </widget>
  <resources/>
  <connections/>

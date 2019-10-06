@@ -2,6 +2,8 @@
 #define LOGINWINDOW_H
 
 #include <QWidget>
+#include <QtSql>
+#include "database.h"
 
 namespace Ui {
 class LoginWindow;
@@ -21,8 +23,7 @@ signals:
 
 private slots:
 	void on_moveToMain_clicked();
-
-	void on_moveToEdit_clicked();
+	void on_loginButton_clicked();
 
 private:
 	Ui::LoginWindow *ui;
