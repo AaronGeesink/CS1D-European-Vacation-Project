@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     city.cpp \
     cityselectwindow.cpp \
+    database.cpp \
     editwindow.cpp \
     food.cpp \
     foodselectwindow.cpp \

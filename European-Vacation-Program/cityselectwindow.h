@@ -2,7 +2,7 @@
 #define CITYSELECTWINDOW_H
 
 #include <QWidget>
-#include "dbQuery.h"
+#include "database.h"
 #include <QLabel>
 #include <QString>
 #include <QRadioButton>
