@@ -18,7 +18,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     city.cpp \
     cityselectwindow.cpp \
-    dbQuery.cpp \
     editwindow.cpp \
     food.cpp \
     foodselectwindow.cpp \
@@ -32,7 +31,6 @@ SOURCES += \
 HEADERS += \
     city.h \
     cityselectwindow.h \
-    dbQuery.h \
     database.h \
     editwindow.h \
     food.h \
