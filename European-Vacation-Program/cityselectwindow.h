@@ -2,13 +2,12 @@
 #define CITYSELECTWINDOW_H
 
 #include <QWidget>
-#include <string>
 #include "dbQuery.h"
 #include <QLabel>
 #include <QString>
 #include <QRadioButton>
 #include <QCheckBox>
-#include<QDebug>
+#include <QDebug>
 
 namespace Ui {
 class CitySelectWindow;
