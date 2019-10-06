@@ -77,18 +77,21 @@ void MainWindow::moveTo11Cities()
 {
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
+	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToLondon()
 {
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
+	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToCustom()
 {
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
+	citySelectWind.setCitySelection();
 }
 
 // TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
@@ -97,6 +100,7 @@ void MainWindow::moveToCitySelect()
 {
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
+	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToFoodSelect()

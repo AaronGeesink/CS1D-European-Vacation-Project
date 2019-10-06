@@ -16,8 +16,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    city.cpp \
     cityselectwindow.cpp \
+    dbQuery.cpp \
     editwindow.cpp \
+    food.cpp \
     foodselectwindow.cpp \
     loginwindow.cpp \
     main.cpp \
@@ -27,8 +30,11 @@ SOURCES += \
     viewwindow.cpp
 
 HEADERS += \
+    city.h \
     cityselectwindow.h \
+    dbQuery.h \
     editwindow.h \
+    food.h \
     foodselectwindow.h \
     loginwindow.h \
     mainwindow.h \
