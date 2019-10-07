@@ -6,6 +6,7 @@ EditWindow::EditWindow(QWidget *parent) :
 	ui(new Ui::EditWindow)
 {
 	ui->setupUi(this);
+	currentTable = "city";
 }
 
 EditWindow::~EditWindow()
@@ -20,9 +21,11 @@ void EditWindow::on_moveToMain_clicked()
 
 void EditWindow::on_loadCities_clicked()
 {
+	currentTable = "city";
+
 	model = new QSqlTableModel(this);
 	model->setTable("city");
-	//model->setEditStrategy(QSqlTableModel::OnManualSubmit);
+	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
 	model->select();
 
 	model->setHeaderData(0, Qt::Horizontal, tr("City Name"));
@@ -32,6 +35,8 @@ void EditWindow::on_loadCities_clicked()
 
 void EditWindow::on_loadFood_clicked()
 {
+	currentTable = "food";
+
 	model = new QSqlTableModel(this);
 	model->setTable("food");
 	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
@@ -45,6 +50,8 @@ void EditWindow::on_loadFood_clicked()
 
 void EditWindow::on_loadDistances_clicked()
 {
+	currentTable = "distance";
+
 	model = new QSqlTableModel(this);
 	model->setTable("distance");
 	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
@@ -71,4 +78,24 @@ void EditWindow::on_submitButton_clicked()
 void EditWindow::on_revertButton_clicked()
 {
 	model->QSqlTableModel::revertAll();
+}
+
+// This one needs some work
+void EditWindow::on_addButton_clicked()
+{
+	if(checkConnection())
+	{
+		/*
+		QSqlQuery query(QSqlDatabase::database());
+		query.prepare("INSERT INTO (:table) DEFAULT VALUES ");
+		query.bindValue(":table", currentTable);
+
+		if(!query.exec())
+		{
+			qDebug("Failed to add new record");
+		}
+		*/
+	}
+
+	ui->databaseView->setModel(model);
 }
