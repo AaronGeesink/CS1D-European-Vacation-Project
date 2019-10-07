@@ -35,7 +35,6 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(&loginWind, SIGNAL(moveToEditClicked()), this, SLOT(moveToEdit()));
 
 	connect(&editWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
-
 }
 
 MainWindow::~MainWindow()
@@ -75,42 +74,51 @@ void MainWindow::moveToTrip()
 
 void MainWindow::moveTo11Cities()
 {
+	citySelectWind.setCitySelection();
+
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
-	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToLondon()
 {
+	citySelectWind.setCitySelection();
+
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
-	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToCustom()
 {
+	citySelectWind.setCitySelection();
+
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
-	citySelectWind.setCitySelection();
 }
 
 // TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
 // can do this either by using an tripID integer in one function of my using 3 seperate functions
 void MainWindow::moveToCitySelect()
 {
+	citySelectWind.setCitySelection();
+
 	//Stacked Widget index 3: City Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
-	citySelectWind.setCitySelection();
 }
 
 void MainWindow::moveToFoodSelect()
 {
+	loadedCities = citySelectWind.getLoadedCities();
+	foodSelectWind.setFoodSelection(loadedCities);
+
 	//Stacked Widget index 4: Food Select Menu
 	ui->stackedWidget->setCurrentIndex(4);
 }
 
 void MainWindow::moveToResults()
 {
+	loadedCities = foodSelectWind.getLoadedCities();
+	resultsWind.setResults(loadedCities);
 	//Stacked Widget index 5: Trip Result Menu
 	ui->stackedWidget->setCurrentIndex(5);
 }

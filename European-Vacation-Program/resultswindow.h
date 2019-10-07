@@ -2,6 +2,10 @@
 #define RESULTSWINDOW_H
 
 #include <QWidget>
+#include <vector>
+#include <queue>
+#include <QLabel>
+#include "City.h"
 
 namespace Ui {
 class ResultsWindow;
@@ -14,6 +18,8 @@ class ResultsWindow : public QWidget
 public:
 	explicit ResultsWindow(QWidget *parent = nullptr);
 	~ResultsWindow();
+
+	void setResults(std::vector<City> loadedCities);
 
 signals:
 	void moveToTripClicked();

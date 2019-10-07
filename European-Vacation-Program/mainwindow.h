@@ -9,6 +9,7 @@
 #include <cityselectwindow.h>
 #include <foodselectwindow.h>
 #include <resultswindow.h>
+#include "city.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -57,5 +58,7 @@ private:
 	CitySelectWindow citySelectWind;
 	FoodSelectWindow foodSelectWind;
 	ResultsWindow resultsWind;
+
+	std::vector<City> loadedCities;
 };
 #endif // MAINWINDOW_H

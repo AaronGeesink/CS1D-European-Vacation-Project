@@ -8,6 +8,7 @@
 #include <QRadioButton>
 #include <QCheckBox>
 #include <QDebug>
+#include "city.h"
 
 namespace Ui {
 class CitySelectWindow;
@@ -20,7 +21,9 @@ class CitySelectWindow : public QWidget
 public:
 	explicit CitySelectWindow(QWidget *parent = nullptr);
 	~CitySelectWindow();
+
 	void setCitySelection();
+	std::vector<City> getLoadedCities();
 
 signals:
 	void moveToTripClicked();
@@ -33,8 +36,9 @@ private slots:
 private:
 	Ui::CitySelectWindow *ui;
 	std::vector<QString> cityNames;
+	std::vector<City> loadedCities;
 
-	void selectCities();
+	void loadSelectedCities();
 };
 
 #endif // CITYSELECTWINDOW_H

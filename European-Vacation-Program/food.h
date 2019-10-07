@@ -1,21 +1,22 @@
 #ifndef FOOD_H
 #define FOOD_H
 
-#include <string>
+#include <QString>
 
 class Food
 {
 public:
 	Food();
-	Food(std::string name, float price, int quantity = 0);
+	Food(QString name, double price, int quantity = 0);
 
 	void setQuantity(int quantity);
-	float getPrice();
-	float calculateTotal();
+	double getPrice();
+	QString getName();
+	double calculateTotal();
 
 private:
-	std::string name;
-	float price;
+	QString name;
+	double price;
 	int quantity;
 };
 
