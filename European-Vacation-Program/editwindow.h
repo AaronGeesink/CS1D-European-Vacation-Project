@@ -38,7 +38,7 @@ private:
 	Ui::EditWindow *ui;
 	QSqlTableModel * model;
 	QSqlQueryModel * queryModel;
-	QString currentTable;
+	int currentTable = 1;
 };
 
 #endif // EDITWINDOW_H
