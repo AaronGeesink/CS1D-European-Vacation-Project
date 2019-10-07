@@ -33,6 +33,7 @@ private slots:
 
 private:
 	Ui::ViewWindow *ui;
+	QSqlQueryModel * model;
 };
 
 #endif // VIEWWINDOW_H

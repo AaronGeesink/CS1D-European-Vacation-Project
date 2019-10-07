@@ -3,6 +3,8 @@
 
 #include <QtSql>
 #include "City.h"
+#include <QFile>
+#include <QDir>
 
 // Not in use
 void closeConnection();

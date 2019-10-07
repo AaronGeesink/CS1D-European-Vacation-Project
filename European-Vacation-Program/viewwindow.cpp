@@ -20,7 +20,7 @@ void ViewWindow::on_moveToMain_clicked()
 
 void ViewWindow::on_loadCities_clicked()
 {
-	QSqlQueryModel * model = new QSqlQueryModel;
+	model = new QSqlQueryModel;
 
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
@@ -32,7 +32,7 @@ void ViewWindow::on_loadCities_clicked()
 
 void ViewWindow::on_loadFood_clicked()
 {
-	QSqlQueryModel * model = new QSqlQueryModel;
+	model = new QSqlQueryModel;
 
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
@@ -44,7 +44,7 @@ void ViewWindow::on_loadFood_clicked()
 
 void ViewWindow::on_loadDistances_clicked()
 {
-	QSqlQueryModel * model = new QSqlQueryModel;
+	model = new QSqlQueryModel;
 
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());

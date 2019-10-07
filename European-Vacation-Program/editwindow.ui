@@ -26,40 +26,105 @@
     <string>Main Menu</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="saveButton">
+  <widget class="QPushButton" name="loadFood">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>280</y>
+     <x>35</x>
+     <y>119</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Save</string>
+    <string>View Food</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="loadDistances">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>160</y>
-     <width>47</width>
-     <height>13</height>
+     <x>35</x>
+     <y>169</y>
+     <width>91</width>
+     <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>City</string>
+    <string>View Distances</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QPushButton" name="addButton">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>150</y>
-     <width>113</width>
-     <height>20</height>
+     <x>10</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>Add New</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadCities">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>69</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Cities</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="databaseView">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>381</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="revertButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Revert</string>
    </property>
   </widget>
  </widget>

@@ -14,8 +14,8 @@ void createDatabase()
 	QSqlDatabase db;
 	db = QSqlDatabase::database();
 	// Load database from file
-	db.setDatabaseName("C:\\Users\\roverdog\\Desktop\\CS1D European Vacation Project\\European-Vacation-Program\\resources\\database.db");
-}
+	const QString DB_PATH = QDir::currentPath() + "/resources/database.db";
+	db.setDatabaseName(DB_PATH);}
 
 bool checkConnection()
 {
