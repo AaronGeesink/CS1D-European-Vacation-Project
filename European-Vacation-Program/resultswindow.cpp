@@ -26,7 +26,7 @@ void ResultsWindow::setResults(std::vector<City> loadedCities)
 	}
 
 
-	ui->resultsTable->setRowCount(loadedCities.size());
+	ui->resultsTable->setRowCount(loadedCities.size() - 1);
 	ui->resultsTable->setColumnCount(4);
 
 	ui->resultsTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Start"));
@@ -55,7 +55,7 @@ void ResultsWindow::setResults(std::vector<City> loadedCities)
 	int i = 0;
 	std::vector<QString> visited;
 
-	while (!cityPQ.empty())
+	while (!cityPQ.empty() && cityPQ.size() > 1)
 	{
 		City city = cityPQ.top();
 		qDebug() << city.getName();
