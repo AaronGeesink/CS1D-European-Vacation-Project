@@ -34,11 +34,13 @@ private slots:
 
 	void on_addButton_clicked();
 
+	void on_deleteButton_clicked();
+
 private:
 	Ui::EditWindow *ui;
 	QSqlTableModel * model;
 	QSqlQueryModel * queryModel;
-	QString currentTable;
+	int currentTable = 1;
 };
 
 #endif // EDITWINDOW_H

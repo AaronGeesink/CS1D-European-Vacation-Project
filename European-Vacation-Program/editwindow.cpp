@@ -6,7 +6,6 @@ EditWindow::EditWindow(QWidget *parent) :
 	ui(new Ui::EditWindow)
 {
 	ui->setupUi(this);
-	currentTable = "city";
 }
 
 EditWindow::~EditWindow()
@@ -21,8 +20,7 @@ void EditWindow::on_moveToMain_clicked()
 
 void EditWindow::on_loadCities_clicked()
 {
-	currentTable = "city";
-
+	currentTable = 1;
 	model = new QSqlTableModel(this);
 	model->setTable("city");
 	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
@@ -35,7 +33,7 @@ void EditWindow::on_loadCities_clicked()
 
 void EditWindow::on_loadFood_clicked()
 {
-	currentTable = "food";
+	currentTable = 2;
 
 	model = new QSqlTableModel(this);
 	model->setTable("food");
@@ -50,7 +48,7 @@ void EditWindow::on_loadFood_clicked()
 
 void EditWindow::on_loadDistances_clicked()
 {
-	currentTable = "distance";
+	currentTable = 3;
 
 	model = new QSqlTableModel(this);
 	model->setTable("distance");
@@ -85,17 +83,52 @@ void EditWindow::on_addButton_clicked()
 {
 	if(checkConnection())
 	{
-		/*
 		QSqlQuery query(QSqlDatabase::database());
-		query.prepare("INSERT INTO (:table) DEFAULT VALUES ");
-		query.bindValue(":table", currentTable);
+		if(currentTable == 1)
+		{
+			query.prepare("INSERT INTO city DEFAULT VALUES");
+		}
+		else if (currentTable == 2)
+		{
+			query.prepare("INSERT INTO food DEFAULT VALUES");
+		}
+		else if (currentTable == 3)
+		{
+			query.prepare("INSERT INTO distance DEFAULT VALUES");
+		}
 
 		if(!query.exec())
 		{
 			qDebug("Failed to add new record");
 		}
-		*/
+		model->select();
+		ui->databaseView->setModel(model);
 	}
+}
 
-	ui->databaseView->setModel(model);
+void EditWindow::on_deleteButton_clicked()
+{
+	if(checkConnection())
+	{
+		QSqlQuery query(QSqlDatabase::database());
+		if(currentTable == 1)
+		{
+			query.prepare("DELETE FROM city WHERE ROWID = (SELECT MAX(ROWID) FROM city)");
+		}
+		else if (currentTable == 2)
+		{
+			query.prepare("DELETE FROM food WHERE ROWID = (SELECT MAX(ROWID) FROM food)");
+		}
+		else if (currentTable == 3)
+		{
+			query.prepare("DELETE FROM distance WHERE ROWID = (SELECT MAX(ROWID) FROM distance)");
+		}
+
+		if(!query.exec())
+		{
+			qDebug("Failed to delete");
+		}
+		model->select();
+		ui->databaseView->setModel(model);
+	}
 }
