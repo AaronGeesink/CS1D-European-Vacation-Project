@@ -86,24 +86,49 @@ void EditWindow::on_addButton_clicked()
 		QSqlQuery query(QSqlDatabase::database());
 		if(currentTable == 1)
 		{
-
-			query.prepare("INSERT INTO city DEFAULT VALUES ");
-			//query.bindValue(":table", currentTable);
+			query.prepare("INSERT INTO city DEFAULT VALUES");
 		}
 		else if (currentTable == 2)
 		{
-			query.prepare("INSERT INTO food DEFAULT VALUES ");
+			query.prepare("INSERT INTO food DEFAULT VALUES");
 		}
 		else if (currentTable == 3)
 		{
-			query.prepare("INSERT INTO distance DEFAULT VALUES ");
+			query.prepare("INSERT INTO distance DEFAULT VALUES");
 		}
 
 		if(!query.exec())
 		{
 			qDebug("Failed to add new record");
 		}
+		model->select();
+		ui->databaseView->setModel(model);
 	}
-	model->select();
-	ui->databaseView->setModel(model);
+}
+
+void EditWindow::on_deleteButton_clicked()
+{
+	if(checkConnection())
+	{
+		QSqlQuery query(QSqlDatabase::database());
+		if(currentTable == 1)
+		{
+			query.prepare("DELETE FROM city WHERE ROWID = (SELECT MAX(ROWID) FROM city)");
+		}
+		else if (currentTable == 2)
+		{
+			query.prepare("DELETE FROM food WHERE ROWID = (SELECT MAX(ROWID) FROM food)");
+		}
+		else if (currentTable == 3)
+		{
+			query.prepare("DELETE FROM distance WHERE ROWID = (SELECT MAX(ROWID) FROM distance)");
+		}
+
+		if(!query.exec())
+		{
+			qDebug("Failed to delete");
+		}
+		model->select();
+		ui->databaseView->setModel(model);
+	}
 }
