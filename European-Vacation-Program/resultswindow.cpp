@@ -20,7 +20,7 @@ void ResultsWindow::setResults(std::vector<City> loadedCities)
 
 	for (int i = 0; i < loadedCities.size(); i++)
 	{
-		loadedCities[i].sortDistances();
+		//loadedCities[i].sortDistances();
 		cityPQ.push(loadedCities[i]);
 		qDebug() << loadedCities[i].getName();
 	}
@@ -37,27 +37,16 @@ void ResultsWindow::setResults(std::vector<City> loadedCities)
 	ui->resultsTable->setSelectionMode(QAbstractItemView::NoSelection);
 
 	QLabel *name;
-	/*for (int i = 0; i < loadedCities.size(); i++)
-	{
-		name = new QLabel();
-		name->setText(loadedCities[i].getName());
-		ui->resultsTable->setCellWidget(i, 0, name);
-
-		name = new QLabel();
-		name->setText(loadedCities[i].getFirstDistance().endCity);
-		ui->resultsTable->setCellWidget(i, 1, name);
-
-		name = new QLabel();
-		name->setText(QString::number(loadedCities[i].getFirstDistance().distance));
-		ui->resultsTable->setCellWidget(i, 2, name);
-	}*/
 
 	int i = 0;
 	std::vector<QString> visited;
+	City city = cityPQ.top();
+	QString current;
+
+	int totalDistance = 0;
 
 	while (!cityPQ.empty() && cityPQ.size() > 1)
 	{
-		City city = cityPQ.top();
 		qDebug() << city.getName();
 
 		for (int i = 0; i < visited.size(); i++)
@@ -70,20 +59,39 @@ void ResultsWindow::setResults(std::vector<City> loadedCities)
 		ui->resultsTable->setCellWidget(i, 0, name);
 
 		name = new QLabel();
-		name->setText(city.getFirstDistance().endCity);
+		name->setText(city.getShortestDistance().endCity);
 		ui->resultsTable->setCellWidget(i, 1, name);
 
 		name = new QLabel();
-		name->setText(QString::number(city.getFirstDistance().distance));
+		name->setText(QString::number(city.getShortestDistance().distance));
 		ui->resultsTable->setCellWidget(i, 2, name);
+		totalDistance = totalDistance + city.getShortestDistance().distance;
 
-		visited.push_back(city.getFirstDistance().endCity);
+		visited.push_back(city.getShortestDistance().endCity);
 		if (i == 0)
 			visited.push_back(city.getName());
 
 		cityPQ.pop();
+		city = getClosestCity(loadedCities, city.getShortestDistance().endCity);
 		i++;
 	}
+
+	name = new QLabel();
+	name->setText(QString::number(totalDistance));
+	ui->resultsTable->setCellWidget(0, 3, name);
+}
+
+City ResultsWindow::getClosestCity(std::vector<City> loadedCities, QString name)
+{
+	City city = loadedCities[0];
+	for (int i = 0; i < loadedCities.size(); i++)
+	{
+		if (loadedCities[i].getName() == name)
+		{
+			city = loadedCities[i];
+		}
+	}
+	return city;
 }
 
 void ResultsWindow::on_moveToTrip_clicked()

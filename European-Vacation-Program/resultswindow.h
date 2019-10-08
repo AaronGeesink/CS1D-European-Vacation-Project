@@ -21,6 +21,8 @@ public:
 
 	void setResults(std::vector<City> loadedCities);
 
+	City getClosestCity(std::vector<City> loadedCities, QString name);
+
 signals:
 	void moveToTripClicked();
 	void moveToMainClicked();

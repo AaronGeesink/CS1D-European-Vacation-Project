@@ -40,7 +40,7 @@ public:
 	std::vector<Food> getFoods();
 	void removeCityDistance(QString name);
 	void sortDistances();
-	CityDistance getFirstDistance() const;
+	CityDistance getShortestDistance() const;
 
 private:
 	QString name;
@@ -57,8 +57,8 @@ struct CompareCity
 	{
 		if (c1.getIsStart() != c2.getIsStart())
 			return c1.getIsStart() < c2.getIsStart();
-		if (c1.getFirstDistance() != c2.getFirstDistance())
-			return c1.getFirstDistance() < c2.getFirstDistance();
+		if (c1.getShortestDistance() != c2.getShortestDistance())
+			return c1.getShortestDistance() < c2.getShortestDistance();
 		return true;
 	}
 };

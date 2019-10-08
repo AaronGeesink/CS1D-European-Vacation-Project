@@ -35,9 +35,17 @@ void City::sortDistances()
 	//qDebug() << otherCities[0].endCity;
 }
 
-CityDistance City::getFirstDistance() const
+CityDistance City::getShortestDistance() const
 {
-	return otherCities[0];
+	CityDistance shortest = otherCities[0];
+	for (int i = 0; i < otherCities.size(); i++)
+	{
+		if (otherCities[i].distance < shortest.distance)
+		{
+			shortest = otherCities[i];
+		}
+	}
+	return shortest;
 }
 
 int City::getNumFoods()
