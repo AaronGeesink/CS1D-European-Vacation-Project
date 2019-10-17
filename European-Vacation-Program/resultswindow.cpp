@@ -13,7 +13,7 @@ ResultsWindow::~ResultsWindow()
 	delete ui;
 }
 
-void ResultsWindow::setResults(std::vector<City> loadedCities)
+void ResultsWindow::setResults(std::vector<City>& loadedCities)
 {
 
 	std::priority_queue<City, std::vector<City>, CompareCity> cityPQ;
