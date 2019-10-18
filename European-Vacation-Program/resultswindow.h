@@ -24,13 +24,13 @@ public:
 	City getClosestCity(std::vector<City> loadedCities, QString name);
 
 signals:
-	void moveToTripClicked();
 	void moveToMainClicked();
+	void moveToFoodSelectClicked();
 
 private slots:
-	void on_moveToTrip_clicked();
-
 	void on_moveToMain_clicked();
+
+	void on_moveToFoodSelect_clicked();
 
 private:
 	Ui::ResultsWindow *ui;

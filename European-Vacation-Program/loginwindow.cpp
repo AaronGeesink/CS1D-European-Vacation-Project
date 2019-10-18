@@ -13,11 +13,6 @@ LoginWindow::~LoginWindow()
 	delete ui;
 }
 
-void LoginWindow::on_moveToMain_clicked()
-{
-	emit moveToMainClicked();
-}
-
 void LoginWindow::on_loginButton_clicked()
 {
 	// Check username and passwords in SQL to verify a login

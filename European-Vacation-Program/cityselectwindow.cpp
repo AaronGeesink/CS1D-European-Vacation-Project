@@ -46,11 +46,6 @@ std::vector<City> CitySelectWindow::getLoadedCities()
 	return loadedCities;
 }
 
-void CitySelectWindow::on_moveToTrip_clicked()
-{
-	emit moveToTripClicked();
-}
-
 void CitySelectWindow::on_moveToFoodSelect_clicked()
 {
 	loadSelectedCities();

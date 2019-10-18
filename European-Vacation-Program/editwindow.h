@@ -16,11 +16,7 @@ public:
 	explicit EditWindow(QWidget *parent = nullptr);
 	~EditWindow();
 
-signals:
-	void moveToMainClicked();
-
 private slots:
-	void on_moveToMain_clicked();
 
 	void on_loadCities_clicked();
 

@@ -13,11 +13,6 @@ EditWindow::~EditWindow()
 	delete ui;
 }
 
-void EditWindow::on_moveToMain_clicked()
-{
-	emit moveToMainClicked();
-}
-
 void EditWindow::on_loadCities_clicked()
 {
 	currentTable = 1;

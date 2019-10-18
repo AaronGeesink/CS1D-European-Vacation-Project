@@ -8,19 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
 	ui->stackedWidget->insertWidget(1,&viewWind);
-	ui->stackedWidget->insertWidget(2,&tripWind);
-	ui->stackedWidget->insertWidget(3,&citySelectWind);
-	ui->stackedWidget->insertWidget(4,&foodSelectWind);
-	ui->stackedWidget->insertWidget(5,&resultsWind);
-	ui->stackedWidget->insertWidget(6,&loginWind);
-	ui->stackedWidget->insertWidget(7,&editWind);
-
-	connect(&viewWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
-	connect(&tripWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
-
-	connect(&tripWind, SIGNAL(moveTo11CitiesClicked()), this, SLOT(moveTo11Cities()));
-	connect(&tripWind, SIGNAL(moveToLondonClicked()), this, SLOT(moveToLondon()));
-	connect(&tripWind, SIGNAL(moveToCustomClicked()), this, SLOT(moveToCustom()));
+	ui->stackedWidget->insertWidget(2,&citySelectWind);
+	ui->stackedWidget->insertWidget(3,&foodSelectWind);
+	ui->stackedWidget->insertWidget(4,&resultsWind);
+	ui->stackedWidget->insertWidget(5,&loginWind);
+	ui->stackedWidget->insertWidget(6,&editWind);
 
 	connect(&citySelectWind, SIGNAL(moveToFoodSelectClicked()), this, SLOT(moveToFoodSelect()));
 	connect(&citySelectWind, SIGNAL(moveToTripClicked()), this, SLOT(moveToTrip()));
@@ -29,12 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(&foodSelectWind, SIGNAL(moveToCitySelectClicked()), this, SLOT(moveToCitySelect()));
 
 	connect(&resultsWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
-	connect(&resultsWind, SIGNAL(moveToTripClicked()), this, SLOT(moveToTrip()));
+	connect(&resultsWind, SIGNAL(moveToFoodSelectClicked()), this, SLOT(moveToFoodSelect()));
 
-	connect(&loginWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
 	connect(&loginWind, SIGNAL(moveToEditClicked()), this, SLOT(moveToEdit()));
-
-	connect(&editWind, SIGNAL(moveToMainClicked()), this, SLOT(moveToMain()));
 }
 
 MainWindow::~MainWindow()
@@ -46,6 +35,12 @@ MainWindow::~MainWindow()
 void MainWindow::on_exitButton_clicked()
 {
 	this->close();
+}
+
+void MainWindow::on_mainButton_clicked()
+{
+	//Stacked Widget index 0: Main Menu
+	ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::moveToMain()
@@ -60,42 +55,6 @@ void MainWindow::on_moveToView_clicked()
 	ui->stackedWidget->setCurrentIndex(1);
 }
 
-void MainWindow::on_moveToTrip_clicked()
-{
-	//Stacked Widget index 2: Plan a Trip Menu
-	ui->stackedWidget->setCurrentIndex(2);
-}
-
-void MainWindow::moveToTrip()
-{
-	//Stacked Widget index 2: Plan a Trip Menu
-	ui->stackedWidget->setCurrentIndex(2);
-}
-
-void MainWindow::moveTo11Cities()
-{
-	citySelectWind.setCitySelection();
-
-	//Stacked Widget index 3: City Select Menu
-	ui->stackedWidget->setCurrentIndex(3);
-}
-
-void MainWindow::moveToLondon()
-{
-	citySelectWind.setCitySelection();
-
-	//Stacked Widget index 3: City Select Menu
-	ui->stackedWidget->setCurrentIndex(3);
-}
-
-void MainWindow::moveToCustom()
-{
-	citySelectWind.setCitySelection();
-
-	//Stacked Widget index 3: City Select Menu
-	ui->stackedWidget->setCurrentIndex(3);
-}
-
 // TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
 // can do this either by using an tripID integer in one function of my using 3 seperate functions
 void MainWindow::moveToCitySelect()
@@ -103,7 +62,31 @@ void MainWindow::moveToCitySelect()
 	citySelectWind.setCitySelection();
 
 	//Stacked Widget index 3: City Select Menu
-	ui->stackedWidget->setCurrentIndex(3);
+	ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::on_moveTo11Cities_clicked()
+{
+	citySelectWind.setCitySelection();
+
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::on_moveToLondon_clicked()
+{
+	citySelectWind.setCitySelection();
+
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::on_moveToCustom_clicked()
+{
+	citySelectWind.setCitySelection();
+
+	//Stacked Widget index 3: City Select Menu
+	ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::moveToFoodSelect()
@@ -112,7 +95,7 @@ void MainWindow::moveToFoodSelect()
 	foodSelectWind.setFoodSelection(loadedCities);
 
 	//Stacked Widget index 4: Food Select Menu
-	ui->stackedWidget->setCurrentIndex(4);
+	ui->stackedWidget->setCurrentIndex(3);
 }
 
 void MainWindow::moveToResults()
@@ -120,17 +103,17 @@ void MainWindow::moveToResults()
 	loadedCities = foodSelectWind.getLoadedCities();
 	resultsWind.setResults(loadedCities);
 	//Stacked Widget index 5: Trip Result Menu
-	ui->stackedWidget->setCurrentIndex(5);
+	ui->stackedWidget->setCurrentIndex(4);
 }
 
 void MainWindow::on_moveToEdit_clicked()
 {
 	//Stacked Widget index 6: Login Menu
-	ui->stackedWidget->setCurrentIndex(6);
+	ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::moveToEdit()
 {
 	//Stacked Widget index 7: Edit Database Menu
-	ui->stackedWidget->setCurrentIndex(7);
+	ui->stackedWidget->setCurrentIndex(6);
 }

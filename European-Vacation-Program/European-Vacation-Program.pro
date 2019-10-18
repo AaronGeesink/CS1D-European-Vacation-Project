@@ -26,7 +26,6 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     resultswindow.cpp \
-    tripwindow.cpp \
     viewwindow.cpp
 
 HEADERS += \
@@ -39,7 +38,6 @@ HEADERS += \
     loginwindow.h \
     mainwindow.h \
     resultswindow.h \
-    tripwindow.h \
     viewwindow.h
 
 FORMS += \
@@ -49,7 +47,6 @@ FORMS += \
     loginwindow.ui \
     mainwindow.ui \
     resultswindow.ui \
-    tripwindow.ui \
     viewwindow.ui
 
 # Default rules for deployment.

@@ -18,11 +18,9 @@ public:
 	~LoginWindow();
 
 signals:
-	void moveToMainClicked();
 	void moveToEditClicked();
 
 private slots:
-	void on_moveToMain_clicked();
 	void on_loginButton_clicked();
 
 private:

@@ -6,26 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>1201</width>
+    <height>731</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="moveToMain">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>370</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Main Menu</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="usernameLineEdit">
    <property name="geometry">
     <rect>
@@ -115,7 +102,6 @@
    </widget>
   </widget>
   <zorder>loginGroupBox</zorder>
-  <zorder>moveToMain</zorder>
   <zorder>usernameLineEdit</zorder>
   <zorder>passwordLineEdit</zorder>
   <zorder>usernameLabel</zorder>

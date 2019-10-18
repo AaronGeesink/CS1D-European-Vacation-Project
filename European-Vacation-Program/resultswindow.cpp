@@ -93,13 +93,12 @@ City ResultsWindow::getClosestCity(std::vector<City> loadedCities, QString name)
 	}
 	return city;
 }
-
-void ResultsWindow::on_moveToTrip_clicked()
-{
-	emit moveToTripClicked();
-}
-
 void ResultsWindow::on_moveToMain_clicked()
 {
 	emit moveToMainClicked();
+}
+
+void ResultsWindow::on_moveToFoodSelect_clicked()
+{
+	emit moveToFoodSelectClicked();
 }

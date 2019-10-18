@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>1200</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>600</width>
-    <height>400</height>
+    <width>1200</width>
+    <height>800</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>600</width>
-    <height>400</height>
+    <width>1200</width>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -29,9 +29,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
-     <width>600</width>
-     <height>400</height>
+     <y>80</y>
+     <width>1201</width>
+     <height>721</height>
     </rect>
    </property>
    <widget class="QWidget" name="page">
@@ -67,49 +67,94 @@
       <string>View Cities and Food</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="moveToTrip">
+    <widget class="QPushButton" name="moveToLondon">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>640</x>
        <y>160</y>
        <width>151</width>
        <height>61</height>
       </rect>
      </property>
      <property name="text">
-      <string>Plan a Trip</string>
+      <string>Shortest Trip
+Starting From London</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="exitButton">
+    <widget class="QPushButton" name="moveToCustom">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>370</y>
-       <width>75</width>
-       <height>23</height>
+       <x>640</x>
+       <y>240</y>
+       <width>151</width>
+       <height>61</height>
       </rect>
      </property>
      <property name="text">
-      <string>Exit</string>
+      <string>Custom Trip</string>
      </property>
     </widget>
-    <widget class="QLabel" name="titleText">
+    <widget class="QPushButton" name="moveTo11Cities">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>30</y>
-       <width>211</width>
-       <height>41</height>
+       <x>640</x>
+       <y>80</y>
+       <width>151</width>
+       <height>61</height>
       </rect>
      </property>
      <property name="text">
-      <string>European Vacation Program</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <string>11 Cities
+Starting From Paris</string>
      </property>
     </widget>
    </widget>
+  </widget>
+  <widget class="QLabel" name="titleText">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>European Vacation Program</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>10</y>
+     <width>75</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mainButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Main
+Menu</string>
+   </property>
   </widget>
  </widget>
  <resources/>

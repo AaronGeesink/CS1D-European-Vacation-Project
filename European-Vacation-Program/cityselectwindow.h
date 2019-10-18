@@ -26,11 +26,9 @@ public:
 	std::vector<City> getLoadedCities();
 
 signals:
-	void moveToTripClicked();
 	void moveToFoodSelectClicked();
 
 private slots:
-	void on_moveToTrip_clicked();
 	void on_moveToFoodSelect_clicked();
 
 private:

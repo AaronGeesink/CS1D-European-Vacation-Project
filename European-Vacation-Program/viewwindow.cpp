@@ -13,11 +13,6 @@ ViewWindow::~ViewWindow()
 	delete ui;
 }
 
-void ViewWindow::on_moveToMain_clicked()
-{
-	emit moveToMainClicked();
-}
-
 void ViewWindow::on_loadCities_clicked()
 {
 	model = new QSqlQueryModel;

@@ -19,11 +19,7 @@ public:
 	explicit ViewWindow(QWidget *parent = nullptr);
 	~ViewWindow();
 
-signals:
-	void moveToMainClicked();
-
 private slots:
-	void on_moveToMain_clicked();
 
 	void on_loadCities_clicked();
 

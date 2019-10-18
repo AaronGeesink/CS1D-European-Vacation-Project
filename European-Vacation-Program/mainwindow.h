@@ -5,7 +5,6 @@
 #include <viewwindow.h>
 #include <loginwindow.h>
 #include <editwindow.h>
-#include <tripwindow.h>
 #include <cityselectwindow.h>
 #include <foodselectwindow.h>
 #include <resultswindow.h>
@@ -27,17 +26,16 @@ private slots:
 	void on_exitButton_clicked();
 
 	//move functions ordered by their StackedWidget index numbers
+	void on_mainButton_clicked();
 	void moveToMain();
 	void on_moveToView_clicked();
 
-	void on_moveToTrip_clicked();
-	void moveToTrip();
-	void moveTo11Cities();
-	void moveToLondon();
-	void moveToCustom();
 	// TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
 	// can do this either by using an tripID integer in one function of my using 3 seperate functions
 	void moveToCitySelect();
+	void on_moveTo11Cities_clicked();
+	void on_moveToLondon_clicked();
+	void on_moveToCustom_clicked();
 
 	void moveToFoodSelect();
 	void moveToResults();
@@ -54,7 +52,6 @@ private:
 	LoginWindow loginWind;
 	EditWindow editWind;
 
-	TripWindow tripWind;
 	CitySelectWindow citySelectWind;
 	FoodSelectWindow foodSelectWind;
 	ResultsWindow resultsWind;
