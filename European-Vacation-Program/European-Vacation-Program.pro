@@ -57,4 +57,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
 	resources/database.db
 
-RESOURCES +=
+RESOURCES += \
+    resources/europe.qrc
