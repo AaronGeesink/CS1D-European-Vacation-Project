@@ -15,17 +15,6 @@ ResultsWindow::~ResultsWindow()
 
 void ResultsWindow::setResults(std::vector<City>& loadedCities)
 {
-
-	std::priority_queue<City, std::vector<City>, CompareCity> cityPQ;
-
-	for (int i = 0; i < loadedCities.size(); i++)
-	{
-		//loadedCities[i].sortDistances();
-		cityPQ.push(loadedCities[i]);
-		qDebug() << loadedCities[i].getName();
-	}
-
-
 	ui->resultsTable->setRowCount(loadedCities.size() - 1);
 	ui->resultsTable->setColumnCount(4);
 
@@ -40,12 +29,12 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities)
 
 	int i = 0;
 	std::vector<QString> visited;
-	City city = cityPQ.top();
+	City city = getStartingCity(loadedCities);
 	QString current;
 
 	int totalDistance = 0;
 
-	while (!cityPQ.empty() && cityPQ.size() > 1)
+	for (int i = 0; i < loadedCities.size() - 1; i++)
 	{
 		qDebug() << city.getName();
 
@@ -71,9 +60,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities)
 		if (i == 0)
 			visited.push_back(city.getName());
 
-		cityPQ.pop();
 		city = getClosestCity(loadedCities, city.getShortestDistance().endCity);
-		i++;
 	}
 
 	name = new QLabel();
@@ -93,6 +80,19 @@ City ResultsWindow::getClosestCity(std::vector<City> loadedCities, QString name)
 	}
 	return city;
 }
+
+City ResultsWindow::getStartingCity(std::vector<City> loadedCities)
+{
+	for (int i = 0; i < loadedCities.size(); i++)
+	{
+		if (loadedCities[i].getIsStart() == true)
+		{
+			return loadedCities[i];
+		}
+	}
+	return loadedCities[0];
+}
+
 void ResultsWindow::on_moveToMain_clicked()
 {
 	emit moveToMainClicked();

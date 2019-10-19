@@ -22,6 +22,7 @@ public:
 	void setResults(std::vector<City>& loadedCities);
 
 	City getClosestCity(std::vector<City> loadedCities, QString name);
+	City getStartingCity(std::vector<City> loadedCities);
 
 signals:
 	void moveToMainClicked();
