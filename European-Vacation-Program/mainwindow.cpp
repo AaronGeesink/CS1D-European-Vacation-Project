@@ -91,8 +91,7 @@ void MainWindow::on_moveToCustom_clicked()
 
 void MainWindow::moveToFoodSelect()
 {
-	loadedCities = citySelectWind.getLoadedCities();
-	foodSelectWind.setFoodSelection(loadedCities);
+	foodSelectWind.setFoodSelection(citySelectWind.getLoadedCities());
 
 	//Stacked Widget index 4: Food Select Menu
 	ui->stackedWidget->setCurrentIndex(3);
@@ -100,8 +99,7 @@ void MainWindow::moveToFoodSelect()
 
 void MainWindow::moveToResults()
 {
-	loadedCities = foodSelectWind.getLoadedCities();
-	resultsWind.setResults(loadedCities);
+	resultsWind.setResults(foodSelectWind.getLoadedCities());
 	//Stacked Widget index 5: Trip Result Menu
 	ui->stackedWidget->setCurrentIndex(4);
 }

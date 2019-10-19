@@ -23,7 +23,7 @@ public:
 	~CitySelectWindow();
 
 	void setCitySelection();
-	std::vector<City> getLoadedCities();
+	std::vector<City>& getLoadedCities();
 
 signals:
 	void moveToFoodSelectClicked();

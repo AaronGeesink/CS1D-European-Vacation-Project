@@ -41,7 +41,7 @@ void CitySelectWindow::setCitySelection()
 	}
 }
 
-std::vector<City> CitySelectWindow::getLoadedCities()
+std::vector<City>& CitySelectWindow::getLoadedCities()
 {
 	return loadedCities;
 }

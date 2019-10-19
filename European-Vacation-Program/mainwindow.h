@@ -56,6 +56,6 @@ private:
 	FoodSelectWindow foodSelectWind;
 	ResultsWindow resultsWind;
 
-	std::vector<City> loadedCities;
+	//std::vector<City> loadedCities;
 };
 #endif // MAINWINDOW_H

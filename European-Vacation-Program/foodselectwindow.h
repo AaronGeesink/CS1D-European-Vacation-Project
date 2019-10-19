@@ -20,9 +20,9 @@ public:
 	explicit FoodSelectWindow(QWidget *parent = nullptr);
 	~FoodSelectWindow();
 
-	void setFoodSelection(std::vector<City> loadedCities);
+	void setFoodSelection(std::vector<City>& loadedCities);
 	void loadFoodQuantities();
-	std::vector<City> getLoadedCities();
+	std::vector<City>& getLoadedCities();
 
 signals:
 	void moveToCitySelectClicked();
@@ -35,7 +35,7 @@ private slots:
 
 private:
 	Ui::FoodSelectWindow *ui;
-	std::vector<City> loadedCities;
+	std::vector<City>* loadedCities;
 };
 
 #endif // FOODSELECTWINDOW_H

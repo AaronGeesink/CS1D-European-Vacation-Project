@@ -13,13 +13,13 @@ FoodSelectWindow::~FoodSelectWindow()
 	delete ui;
 }
 
-void FoodSelectWindow::setFoodSelection(std::vector<City> loadedCities)
+void FoodSelectWindow::setFoodSelection(std::vector<City> &loadedCities)
 {
-	this->loadedCities = loadedCities;
+	this->loadedCities = &loadedCities;
 
 	// Table Setup
 	int numFoods = 0;
-	for (int i = 0; i < loadedCities.size(); i++)
+	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{
 		numFoods = numFoods + loadedCities[i].getNumFoods();
 	}
@@ -35,25 +35,27 @@ void FoodSelectWindow::setFoodSelection(std::vector<City> loadedCities)
 	ui->foodTable->setSelectionMode(QAbstractItemView::NoSelection);
 
 	QLabel *label;
-
+	//std::vector<Food> foods;
 	int foodsLoaded = 0;
-	for (int i = 0; i < loadedCities.size(); i++)
+
+	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{
 		label = new QLabel();
 		label->setText(loadedCities[i].getName());
 		ui->foodTable->setCellWidget(foodsLoaded, 0, label);
 
-		std::vector<Food> foods = loadedCities[i].getFoods();
-		for (int j = 0; j < foods.size(); j++)
+		//foods.clear();
+		//foods = loadedCities[i].getFoods();
+		for (unsigned int j = 0; j < loadedCities[i].getFoods().size(); j++)
 		{
 			// set the name of the food
 			label = new QLabel();
-			label->setText(foods[j].getName());
+			label->setText(loadedCities[i].getFoods()[j].getName());
 			ui->foodTable->setCellWidget(foodsLoaded, 1, label);
 
 			// set the price of the food
 			label = new QLabel();
-			label->setText("$" + QString::number(foods[j].getPrice()));
+			label->setText("$" + QString::number(loadedCities[i].getFoods()[j].getPrice()));
 			ui->foodTable->setCellWidget(foodsLoaded, 2, label);
 
 			// add QLineEdit objects for quantity input
@@ -67,15 +69,15 @@ void FoodSelectWindow::setFoodSelection(std::vector<City> loadedCities)
 void FoodSelectWindow::loadFoodQuantities()
 {
 	int foodsLoaded = 0;
-	for (int i = 0; i < loadedCities.size(); i++)
+
+	for (auto it = loadedCities->begin(); it != loadedCities->end(); ++it)
 	{
-		std::vector<Food> foods = loadedCities[i].getFoods();
-		for (int j = 0; j < foods.size(); j++)
+		for (unsigned int j = 0; j < it->getFoods().size(); j++)
 		{
 			QSpinBox *spinBox = qobject_cast<QSpinBox *>(ui->foodTable->cellWidget(foodsLoaded, 3));
 			if (spinBox)
 			{
-				foods[i].setQuantity(spinBox->value());
+				it->getFoods()[j].setQuantity(spinBox->value());
 				//qDebug() << spinBox->value();
 			}
 			foodsLoaded++;
@@ -83,9 +85,9 @@ void FoodSelectWindow::loadFoodQuantities()
 	}
 }
 
-std::vector<City> FoodSelectWindow::getLoadedCities()
+std::vector<City>& FoodSelectWindow::getLoadedCities()
 {
-	return loadedCities;
+	return *loadedCities;
 }
 
 void FoodSelectWindow::on_moveToCitySelect_clicked()
