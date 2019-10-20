@@ -28,6 +28,7 @@ public:
 
 	int getPlanNumber();
 	void setPlanNumber(int number);
+	int getNumCities();
 
 signals:
 	void moveToFoodSelectClicked();
@@ -40,12 +41,13 @@ private:
 	std::vector<QString> cityNames;
 	std::vector<City> loadedCities;
 	int planNumber;
+	int numCities;
 
 	void setParisPlan();
 	void setLondonPlan();
 	void setCustomPlan();
 
-	void loadSelectedCities();
+	void loadSelectedCities(QString startingCity);
 	void loadParisPlan();
 	void loadLondonPlan();
 	void loadCustomPlan();

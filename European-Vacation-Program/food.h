@@ -14,6 +14,7 @@ public:
 	void setQuantity(int quantity);
 	double getPrice();
 	QString getName();
+	int getQuantity();
 	double calculateTotal();
 
 	Food& operator=(Food other);

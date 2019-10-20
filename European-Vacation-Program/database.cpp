@@ -39,10 +39,11 @@ bool checkConnection()
 std::vector<QString> queryCityNames()
 {
 	std::vector<QString> cityNames;
+	QString active("1");
 
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
-	query.prepare("SELECT * FROM city");
+	query.prepare("select * from city where active='"+active+"'");
 
 	if(!query.exec())
 	{
@@ -52,6 +53,7 @@ std::vector<QString> queryCityNames()
 	{
 		cityNames.push_back(query.value(0).toString());
 	}
+
 	return cityNames;
 }
 

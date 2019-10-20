@@ -17,15 +17,22 @@ void CitySelectWindow::setCitySelection()
 {
 	loadedCities.clear();
 	cityNames.clear();
-	cityNames = queryCityNames();
 	ui->cityTable->clear();
 
 	if (planNumber == 0)
+	{
 		setParisPlan();
+	}
 	else if (planNumber == 1)
+	{
+		cityNames = queryCityNames();
 		setLondonPlan();
+	}
 	else
+	{
+		cityNames = queryCityNames();
 		setCustomPlan();
+	}
 }
 
 std::vector<City>& CitySelectWindow::getLoadedCities()
@@ -43,6 +50,11 @@ void CitySelectWindow::setPlanNumber(int number)
 	planNumber = number;
 }
 
+int CitySelectWindow::getNumCities()
+{
+	return numCities;
+}
+
 void CitySelectWindow::on_moveToFoodSelect_clicked()
 {
 	if (planNumber == 0)
@@ -54,27 +66,8 @@ void CitySelectWindow::on_moveToFoodSelect_clicked()
 	emit moveToFoodSelectClicked();
 }
 
-void CitySelectWindow::loadSelectedCities()
+void CitySelectWindow::loadSelectedCities(QString startingCity)
 {
-	QString startingCity;
-
-	for (int i = cityNames.size(); i > 0; i--)
-	{
-		QCheckBox *checkbox = qobject_cast<QCheckBox *>(ui->cityTable->cellWidget(i-1, 1));
-		if (checkbox && !checkbox->isChecked())
-		{
-			//qDebug() << cityNames[i-1] << " erased";
-			cityNames.erase(cityNames.begin() + i - 1);
-		}
-
-		QRadioButton *radio = qobject_cast<QRadioButton *>(ui->cityTable->cellWidget(i-1, 2));
-		if (radio && radio->isChecked())
-		{
-			startingCity = cityNames[i - 1];
-		}
-	}
-
-	//qDebug() << "remaining cities:";
 	for (int start = 0; start < cityNames.size(); start++)
 	{
 		std::vector<CityDistance> cityDistances;
@@ -97,12 +90,18 @@ void CitySelectWindow::loadSelectedCities()
 		}
 
 		loadedCities.push_back(city);
-		//qDebug() << cityNames[start];
 	}
 }
 
 void CitySelectWindow::setParisPlan()
 {
+	QString parisCities[13] = { "Paris", "Amsterdam", "Berlin", "Brussels", "Budapest", "Hamburg", "Lisbon", "London", "Madrid", "Prague", "Rome", "Stockholm", "Vienna"};
+
+	for (int i = 0; i < (sizeof(parisCities)/sizeof(parisCities[0])); ++i)
+	{
+		cityNames.push_back(parisCities[i]);
+	}
+
 	ui->cityTable->setRowCount(cityNames.size());
 	ui->cityTable->setColumnCount(3);
 	ui->cityTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Cities to Visit"));
@@ -167,96 +166,29 @@ void CitySelectWindow::setCustomPlan()
 void CitySelectWindow::loadParisPlan()
 {
 	QString startingCity("Paris");
-	QString parisCities[13] = { "Paris", "Rome", "Madrid", "Amsterdam", "Brussels", "Budapest", "Hamburg", "London", "Lisbon", "Prague", "Stockholm", "Vienna"};
 
-	for (int i = cityNames.size(); i > 0; i--)
+	QRadioButton *button = qobject_cast<QRadioButton *>(ui->cityTable->cellWidget(0, 1));
+	if (button && button->isChecked())
 	{
-		QCheckBox *checkbox = qobject_cast<QCheckBox *>(ui->cityTable->cellWidget(i-1, 1));
-		if (checkbox && !checkbox->isChecked())
-		{
-			//qDebug() << cityNames[i-1] << " erased";
-			cityNames.erase(cityNames.begin() + i - 1);
-		}
-
-		QRadioButton *radio = qobject_cast<QRadioButton *>(ui->cityTable->cellWidget(i-1, 2));
-		if (radio && radio->isChecked())
-		{
-			startingCity = cityNames[i - 1];
-		}
+		cityNames.erase(cityNames.end() - 1);
+		cityNames.erase(cityNames.end() - 1);
 	}
 
-	//qDebug() << "remaining cities:";
-	for (int start = 0; start < cityNames.size(); start++)
-	{
-		std::vector<CityDistance> cityDistances;
-		std::vector<Food> foods;
-
-		for (int end = 0; end < cityNames.size(); end++)
-		{
-			if (start != end)
-			{
-				cityDistances.push_back(queryDistance(cityNames[start], cityNames[end]));
-				foods = queryFoods(cityNames[start]);
-			}
-		}
-
-		City city(cityNames[start], cityDistances, foods);
-		if (cityNames[start] == startingCity)
-		{
-			city.setIsStart(true);
-			qDebug() << "Start is: " << city.getName();
-		}
-
-		loadedCities.push_back(city);
-		//qDebug() << cityNames[start];
-	}
+	loadSelectedCities(startingCity);
+	numCities = loadedCities.size();
 }
 
 void CitySelectWindow::loadLondonPlan()
 {
-	QString startingCity;
+	QString startingCity("London");
 
-	for (int i = cityNames.size(); i > 0; i--)
+	QLineEdit *lineEdit = qobject_cast<QLineEdit *>(ui->cityTable->cellWidget(0, 1));
+	if (lineEdit)
 	{
-		QCheckBox *checkbox = qobject_cast<QCheckBox *>(ui->cityTable->cellWidget(i-1, 1));
-		if (checkbox && !checkbox->isChecked())
-		{
-			//qDebug() << cityNames[i-1] << " erased";
-			cityNames.erase(cityNames.begin() + i - 1);
-		}
-
-		QRadioButton *radio = qobject_cast<QRadioButton *>(ui->cityTable->cellWidget(i-1, 2));
-		if (radio && radio->isChecked())
-		{
-			startingCity = cityNames[i - 1];
-		}
+		numCities = lineEdit->text().toInt();
 	}
 
-	//qDebug() << "remaining cities:";
-	for (int start = 0; start < cityNames.size(); start++)
-	{
-		std::vector<CityDistance> cityDistances;
-		std::vector<Food> foods;
-
-		for (int end = 0; end < cityNames.size(); end++)
-		{
-			if (start != end)
-			{
-				cityDistances.push_back(queryDistance(cityNames[start], cityNames[end]));
-				foods = queryFoods(cityNames[start]);
-			}
-		}
-
-		City city(cityNames[start], cityDistances, foods);
-		if (cityNames[start] == startingCity)
-		{
-			city.setIsStart(true);
-			qDebug() << "Start is: " << city.getName();
-		}
-
-		loadedCities.push_back(city);
-		//qDebug() << cityNames[start];
-	}
+	loadSelectedCities(startingCity);
 }
 
 void CitySelectWindow::loadCustomPlan()
@@ -279,29 +211,6 @@ void CitySelectWindow::loadCustomPlan()
 		}
 	}
 
-	//qDebug() << "remaining cities:";
-	for (int start = 0; start < cityNames.size(); start++)
-	{
-		std::vector<CityDistance> cityDistances;
-		std::vector<Food> foods;
-
-		for (int end = 0; end < cityNames.size(); end++)
-		{
-			if (start != end)
-			{
-				cityDistances.push_back(queryDistance(cityNames[start], cityNames[end]));
-				foods = queryFoods(cityNames[start]);
-			}
-		}
-
-		City city(cityNames[start], cityDistances, foods);
-		if (cityNames[start] == startingCity)
-		{
-			city.setIsStart(true);
-			qDebug() << "Start is: " << city.getName();
-		}
-
-		loadedCities.push_back(city);
-		//qDebug() << cityNames[start];
-	}
+	loadSelectedCities(startingCity);
+	numCities = loadedCities.size();
 }

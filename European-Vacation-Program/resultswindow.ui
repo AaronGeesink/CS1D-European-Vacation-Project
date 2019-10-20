@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="moveToFoodSelect">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>370</y>
+     <x>510</x>
+     <y>520</y>
      <width>80</width>
      <height>21</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="moveToMain">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>370</y>
+     <x>610</x>
+     <y>520</y>
      <width>80</width>
      <height>21</height>
     </rect>
@@ -39,27 +39,50 @@
     <string>Main Menu</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="resultsTable">
+  <widget class="QTableWidget" name="distanceTable">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>30</y>
+     <y>40</y>
      <width>581</width>
-     <height>331</height>
+     <height>471</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="resultsTitle">
+  <widget class="QLabel" name="distanceTitle">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>240</x>
      <y>0</y>
-     <width>61</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Trip Results</string>
+    <string>Distance to Travel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="foodTitle">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>10</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Food Receipt</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="foodTable">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>40</y>
+     <width>581</width>
+     <height>471</height>
+    </rect>
    </property>
   </widget>
  </widget>
