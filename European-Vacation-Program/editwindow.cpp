@@ -12,6 +12,11 @@ EditWindow::~EditWindow()
 	delete ui;
 }
 
+void EditWindow::loadCities()
+{
+	on_loadCities_clicked();
+}
+
 void EditWindow::on_loadCities_clicked()
 {
 	currentTable = 1;

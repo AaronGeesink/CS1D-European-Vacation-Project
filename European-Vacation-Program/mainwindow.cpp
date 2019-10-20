@@ -112,6 +112,7 @@ void MainWindow::moveToResults()
 
 void MainWindow::on_moveToEdit_clicked()
 {
+	editWind.loadCities();
 	//Stacked Widget index 6: Login Menu
 	ui->stackedWidget->setCurrentIndex(5);
 }

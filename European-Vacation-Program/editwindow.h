@@ -16,6 +16,8 @@ public:
 	explicit EditWindow(QWidget *parent = nullptr);
 	~EditWindow();
 
+	void loadCities();
+
 private slots:
 
 	void on_loadCities_clicked();
@@ -33,10 +35,6 @@ private slots:
 	void on_addFoodButton_clicked();
 
 private:
-	Qt::ItemFlags flags(const QModelIndex & index) const;
-	QVariant data(const QModelIndex &index, int role) const;
-	bool setData(const QModelIndex & index, const QVariant & value, int role);
-
 	Ui::EditWindow *ui;
 	QSqlTableModel * model;
 	QSqlQueryModel * queryModel;
