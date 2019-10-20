@@ -2,8 +2,7 @@
 #include "ui_editwindow.h"
 
 EditWindow::EditWindow(QWidget *parent) :
-	QWidget(parent),
-	ui(new Ui::EditWindow)
+	QWidget(parent), ui(new Ui::EditWindow)
 {
 	ui->setupUi(this);
 }
@@ -22,7 +21,9 @@ void EditWindow::on_loadCities_clicked()
 	model->select();
 
 	model->setHeaderData(0, Qt::Horizontal, tr("City Name"));
+	model->setHeaderData(1, Qt::Horizontal, tr("Active"));
 
+	ui->databaseView->verticalHeader()->setVisible(false);
 	ui->databaseView->setModel(model);
 }
 
@@ -34,26 +35,26 @@ void EditWindow::on_loadFood_clicked()
 	model->setTable("food");
 	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
 	model->select();
-	model->setHeaderData(0, Qt::Horizontal, tr("City"));
-	model->setHeaderData(1, Qt::Horizontal, tr("Food Name"));
-	model->setHeaderData(2, Qt::Horizontal, tr("Price"));
+	model->setHeaderData(0, Qt::Horizontal, tr("Food ID"));
+	model->setHeaderData(1, Qt::Horizontal, tr("City"));
+	model->setHeaderData(2, Qt::Horizontal, tr("Food Name"));
+	model->setHeaderData(3, Qt::Horizontal, tr("Price"));
 
+	ui->databaseView->verticalHeader()->setVisible(false);
 	ui->databaseView->setModel(model);
 }
 
 void EditWindow::on_loadDistances_clicked()
 {
-	currentTable = 3;
+	currentTable = 1;
 
-	model = new QSqlTableModel(this);
-	model->setTable("distance");
-	model->setEditStrategy(QSqlTableModel::OnManualSubmit);
-	model->select();
-	model->setHeaderData(0, Qt::Horizontal, tr("Start City"));
-	model->setHeaderData(1, Qt::Horizontal, tr("End City"));
-	model->setHeaderData(2, Qt::Horizontal, tr("Distance"));
+	QSqlQueryModel * qmodel;
+	qmodel = new QSqlQueryModel;
+	QSqlQuery query(QSqlDatabase::database());
 
-	ui->databaseView->setModel(model);
+	query.exec("select * from distance");
+	qmodel->setQuery(query);
+	ui->databaseView->setModel(qmodel);
 }
 
 void EditWindow::on_submitButton_clicked()
@@ -73,55 +74,71 @@ void EditWindow::on_revertButton_clicked()
 	model->QSqlTableModel::revertAll();
 }
 
-// This one needs some work
-void EditWindow::on_addButton_clicked()
+void EditWindow::on_deleteFoodItem_clicked()
 {
 	if(checkConnection())
 	{
 		QSqlQuery query(QSqlDatabase::database());
-		if(currentTable == 1)
+		if(currentTable != 2)
 		{
-			query.prepare("INSERT INTO city DEFAULT VALUES");
+			ui->statusLabel->setText("Error: Load Food before deleting");
 		}
-		else if (currentTable == 2)
+		else
 		{
-			query.prepare("INSERT INTO food DEFAULT VALUES");
+			QString foodValue;
+			foodValue = ui->deleteLineEdit->text();
+			QSqlQuery query(QSqlDatabase::database());
+			query.prepare("DELETE FROM food WHERE foodID='"+foodValue+"'");
+			if(!query.exec())
+			{
+				qDebug("Failed to delete");
+			}
+			else
+			{
+				ui->deleteLineEdit->setText("");
+			}
+			model->select();
+			ui->databaseView->setModel(model);
 		}
-		else if (currentTable == 3)
-		{
-			query.prepare("INSERT INTO distance DEFAULT VALUES");
-		}
+	}
+}
 
+void EditWindow::on_addFoodButton_clicked()
+{
+	if(checkConnection())
+	{
+		QSqlQuery query(QSqlDatabase::database());
+		if(currentTable != 2)
+		{
+			ui->statusLabel->setText("Error: Load Food before adding");
+		}
+		else
+		{
+			QString cityName, foodName, foodPrice;
+			cityName = ui->cityComboBox->currentText();
+			foodName = ui->foodLineEdit->text();
+			foodPrice = ui->priceLineEdit->text();
+
+			bool isFloat;
+			foodPrice.toFloat(&isFloat);
+
+			if (isFloat == true)
+			{
+				query.prepare("INSERT INTO food VALUES(NULL,'"+cityName+"','"+foodName+"','"+foodPrice+"')");
+			}
+			else
+			{
+				ui->statusLabel->setText("Error: Not a valid price!");
+			}
+		}
 		if(!query.exec())
 		{
 			qDebug("Failed to add new record");
 		}
-		model->select();
-		ui->databaseView->setModel(model);
-	}
-}
-
-void EditWindow::on_deleteButton_clicked()
-{
-	if(checkConnection())
-	{
-		QSqlQuery query(QSqlDatabase::database());
-		if(currentTable == 1)
+		else
 		{
-			query.prepare("DELETE FROM city WHERE ROWID = (SELECT MAX(ROWID) FROM city)");
-		}
-		else if (currentTable == 2)
-		{
-			query.prepare("DELETE FROM food WHERE ROWID = (SELECT MAX(ROWID) FROM food)");
-		}
-		else if (currentTable == 3)
-		{
-			query.prepare("DELETE FROM distance WHERE ROWID = (SELECT MAX(ROWID) FROM distance)");
-		}
-
-		if(!query.exec())
-		{
-			qDebug("Failed to delete");
+			ui->foodLineEdit->setText("");
+			ui->priceLineEdit->setText("");
 		}
 		model->select();
 		ui->databaseView->setModel(model);

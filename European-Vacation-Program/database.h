@@ -2,7 +2,7 @@
 #define DATABASE_H
 
 #include <QtSql>
-#include "City.h"
+#include "city.h"
 #include <QFile>
 #include <QDir>
 
