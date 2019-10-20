@@ -35,9 +35,11 @@ public:
 	QString getName();
 	QString getName() const;
 	int getNumFoods();
+	int getNumNonZeroFoods();
 	bool getIsStart() const;
 	bool setIsStart(bool value);
-	std::vector<Food> getFoods();
+	std::vector<Food>& getFoods();
+	std::vector<Food> getNonZeroFoods();
 	void removeCityDistance(QString name);
 	void sortDistances();
 	CityDistance getShortestDistance() const;

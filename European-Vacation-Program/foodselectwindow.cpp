@@ -35,17 +35,15 @@ void FoodSelectWindow::setFoodSelection(std::vector<City> &loadedCities)
 	ui->foodTable->setSelectionMode(QAbstractItemView::NoSelection);
 
 	QLabel *label;
-	//std::vector<Food> foods;
 	int foodsLoaded = 0;
 
 	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{
+		// set the name of the city
 		label = new QLabel();
 		label->setText(loadedCities[i].getName());
 		ui->foodTable->setCellWidget(foodsLoaded, 0, label);
 
-		//foods.clear();
-		//foods = loadedCities[i].getFoods();
 		for (unsigned int j = 0; j < loadedCities[i].getFoods().size(); j++)
 		{
 			// set the name of the food
@@ -78,7 +76,6 @@ void FoodSelectWindow::loadFoodQuantities()
 			if (spinBox)
 			{
 				it->getFoods()[j].setQuantity(spinBox->value());
-				//qDebug() << spinBox->value();
 			}
 			foodsLoaded++;
 		}

@@ -25,6 +25,11 @@ QString Food::getName()
 	return name;
 }
 
+int Food::getQuantity()
+{
+	return quantity;
+}
+
 double Food::calculateTotal()
 {
 	return price * quantity;

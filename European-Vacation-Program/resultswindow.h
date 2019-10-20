@@ -19,7 +19,7 @@ public:
 	explicit ResultsWindow(QWidget *parent = nullptr);
 	~ResultsWindow();
 
-	void setResults(std::vector<City>& loadedCities);
+	void setResults(std::vector<City>& loadedCities, int numCities);
 
 	City getClosestCity(std::vector<City> loadedCities, QString name);
 	City getStartingCity(std::vector<City> loadedCities);

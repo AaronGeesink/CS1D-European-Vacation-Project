@@ -105,7 +105,7 @@ void MainWindow::moveToFoodSelect()
 
 void MainWindow::moveToResults()
 {
-	resultsWind.setResults(foodSelectWind.getLoadedCities());
+	resultsWind.setResults(foodSelectWind.getLoadedCities(), citySelectWind.getNumCities());
 	//Stacked Widget index 5: Trip Result Menu
 	ui->stackedWidget->setCurrentIndex(4);
 }
