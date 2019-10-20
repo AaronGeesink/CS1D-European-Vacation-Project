@@ -2,6 +2,7 @@
 #define EDITWINDOW_H
 
 #include <QWidget>
+#include <QMessageBox>
 #include "database.h"
 
 namespace Ui {

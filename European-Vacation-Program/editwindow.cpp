@@ -65,10 +65,13 @@ void EditWindow::on_loadDistances_clicked()
 void EditWindow::on_submitButton_clicked()
 {
 	model->database().transaction();
-	if (model->submitAll()){
+	if (model->submitAll())
+	{
 		model->database().commit();
+		QMessageBox::information(this, tr("Database updated"), tr("Database updated!"));
 	}
-	else {
+	else
+	{
 		model->database().rollback();
 		qDebug("Failed to update SQL Database");
 	}
@@ -86,7 +89,7 @@ void EditWindow::on_deleteFoodItem_clicked()
 		QSqlQuery query(QSqlDatabase::database());
 		if(currentTable != 2)
 		{
-			ui->statusLabel->setText("Error: Load Food before deleting");
+			QMessageBox::information(this, tr("Error deleting"), tr("Please load Food before deleting"));
 		}
 		else
 		{
@@ -115,7 +118,7 @@ void EditWindow::on_addFoodButton_clicked()
 		QSqlQuery query(QSqlDatabase::database());
 		if(currentTable != 2)
 		{
-			ui->statusLabel->setText("Error: Load Food before adding");
+			QMessageBox::information(this, tr("Error adding"), tr("Please load Food before adding"));
 		}
 		else
 		{
@@ -127,13 +130,33 @@ void EditWindow::on_addFoodButton_clicked()
 			bool isFloat;
 			foodPrice.toFloat(&isFloat);
 
-			if (isFloat == true)
+			query.prepare("select * from food where cityName='"+cityName+"'");
+			if(!query.exec())
 			{
-				query.prepare("INSERT INTO food VALUES(NULL,'"+cityName+"','"+foodName+"','"+foodPrice+"')");
+				qDebug() << "Failed to query from SQL Database";
 			}
 			else
 			{
-				ui->statusLabel->setText("Error: Not a valid price!");
+				int count = 0;
+				while(query.next())
+				{
+					count++;
+				}
+				if (count >= 6)
+				{
+					QMessageBox::information(this, tr("Error adding"), tr("Can not add more than 6 foods for a City!"));
+				}
+				else
+				{
+					if (isFloat == true)
+					{
+						query.prepare("INSERT INTO food VALUES(NULL,'"+cityName+"','"+foodName+"','"+foodPrice+"')");
+					}
+					else
+					{
+						QMessageBox::information(this, tr("Error adding"), tr("Invalid Price"));
+					}
+				}
 			}
 		}
 		if(!query.exec())
