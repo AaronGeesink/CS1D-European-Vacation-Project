@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="ui__loginwindow_8h" kind="file" language="C++">
+    <compoundname>ui_loginwindow.h</compoundname>
+    <includes local="no">QtCore/QVariant</includes>
+    <includes local="no">QtWidgets/QApplication</includes>
+    <includes local="no">QtWidgets/QGroupBox</includes>
+    <includes local="no">QtWidgets/QLabel</includes>
+    <includes local="no">QtWidgets/QLineEdit</includes>
+    <includes local="no">QtWidgets/QPushButton</includes>
+    <includes local="no">QtWidgets/QWidget</includes>
+    <includedby refid="loginwindow_8cpp" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="603">
+        <label>QtWidgets/QWidget</label>
+      </node>
+      <node id="600">
+        <label>QtWidgets/QLabel</label>
+      </node>
+      <node id="596">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h</label>
+        <link refid="ui__loginwindow_8h"/>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="602">
+        <label>QtWidgets/QPushButton</label>
+      </node>
+      <node id="601">
+        <label>QtWidgets/QLineEdit</label>
+      </node>
+      <node id="598">
+        <label>QtWidgets/QApplication</label>
+      </node>
+      <node id="599">
+        <label>QtWidgets/QGroupBox</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="604">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h</label>
+        <link refid="ui__loginwindow_8h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="605">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp</label>
+        <link refid="loginwindow_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ui___login_window" prot="public">Ui_LoginWindow</innerclass>
+    <innerclass refid="class_ui_1_1_login_window" prot="public">Ui::LoginWindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>generated<sp/>from<sp/>reading<sp/>UI<sp/>file<sp/>&apos;loginwindow.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created<sp/>by:<sp/>Qt<sp/>User<sp/>Interface<sp/>Compiler<sp/>version<sp/>5.13.0</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost<sp/>when<sp/>recompiling<sp/>UI<sp/>file!</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UI_LOGINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UI_LOGINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QGroupBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_ui___login_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ui___login_window" kindref="compound">Ui_LoginWindow</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit<sp/>*<ref refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" kindref="member">usernameLineEdit</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit<sp/>*<ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref>;</highlight></codeline>
+<codeline lineno="30" refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGroupBox<sp/>*<ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>;</highlight></codeline>
+<codeline lineno="31" refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" kindref="member">loginButton</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_ui___login_window_1a1c3ffc6b9784b68654c59db923f3c217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ui___login_window_1a1c3ffc6b9784b68654c59db923f3c217" kindref="member">setupUi</ref>(QWidget<sp/>*<ref refid="class_login_window" kindref="compound">LoginWindow</ref>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>-&gt;objectName().isEmpty())</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_login_window" kindref="compound">LoginWindow</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_login_window" kindref="compound">LoginWindow</ref>-&gt;resize(1201,<sp/>731);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" kindref="member">usernameLineEdit</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLineEdit(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" kindref="member">usernameLineEdit</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;usernameLineEdit&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" kindref="member">usernameLineEdit</ref>-&gt;setGeometry(QRect(510,<sp/>280,<sp/>113,<sp/>21));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLineEdit(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;passwordLineEdit&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref>-&gt;setGeometry(QRect(510,<sp/>320,<sp/>113,<sp/>21));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref>-&gt;setEchoMode(QLineEdit::Password);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;usernameLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref>-&gt;setGeometry(QRect(450,<sp/>280,<sp/>51,<sp/>21));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;passwordLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref>-&gt;setGeometry(QRect(450,<sp/>320,<sp/>51,<sp/>21));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;statusLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref>-&gt;setGeometry(QRect(350,<sp/>450,<sp/>341,<sp/>16));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGroupBox(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;loginGroupBox&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>-&gt;setGeometry(QRect(400,<sp/>180,<sp/>311,<sp/>271));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" kindref="member">loginButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" kindref="member">loginButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;loginButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" kindref="member">loginButton</ref>-&gt;setGeometry(QRect(120,<sp/>170,<sp/>80,<sp/>21));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" kindref="member">usernameLineEdit</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" kindref="member">passwordLineEdit</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a5f6832fbf9554aef841da1efc1b0fa84" kindref="member">retranslateUi</ref>(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMetaObject::connectSlotsByName(<ref refid="class_login_window" kindref="compound">LoginWindow</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>setupUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_ui___login_window_1a5f6832fbf9554aef841da1efc1b0fa84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ui___login_window_1a5f6832fbf9554aef841da1efc1b0fa84" kindref="member">retranslateUi</ref>(QWidget<sp/>*<ref refid="class_login_window" kindref="compound">LoginWindow</ref>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_login_window" kindref="compound">LoginWindow</ref>-&gt;setWindowTitle(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Form&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" kindref="member">usernameLabel</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Username:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" kindref="member">passwordLabel</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Password:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" kindref="member">statusLabel</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[+]Status&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" kindref="member">loginGroupBox</ref>-&gt;setTitle(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Sign<sp/>In&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" kindref="member">loginButton</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;LoginWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Login&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>retranslateUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ui" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="class_ui_1_1_login_window" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ui_1_1_login_window" kindref="compound">LoginWindow</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_ui___login_window" kindref="compound">Ui_LoginWindow</ref><sp/>{};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>UI_LOGINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_city_distance" kind="struct" language="C++" prot="public">
+    <compoundname>CityDistance</compoundname>
+    <includes refid="city_8h" local="no">city.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CityDistance::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="17" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString CityDistance::endCity</definition>
+        <argsstring></argsstring>
+        <name>endCity</name>
+        <briefdescription>
+<para>Distance from one city to another. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="18" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_city_distance_1aa486f287fb876e7aec9d41340a9a2b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CityDistance::CityDistance</definition>
+        <argsstring>()</argsstring>
+        <name>CityDistance</name>
+        <briefdescription>
+<para>Name of the other city from the current one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_city_distance_1aa486f287fb876e7aec9d41340a9a2b62" kindref="member">CityDistance()</ref> Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="24" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_city_distance_1a5710d1d7374892efd201c4cd187d9e42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CityDistance::CityDistance</definition>
+        <argsstring>(int distance, QString endCity)</argsstring>
+        <name>CityDistance</name>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>endCity</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_city_distance_1a5710d1d7374892efd201c4cd187d9e42" kindref="member">CityDistance(int distance, QString endCity)</ref> Overloaded Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="30" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_city_distance_1a6195d187d1f0309e67ee62b3a5b56b86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CityDistance::operator&lt;</definition>
+        <argsstring>(const CityDistance &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="struct_city_distance" kindref="compound">CityDistance</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_city_distance_1a6195d187d1f0309e67ee62b3a5b56b86" kindref="member">CityDistance::operator&lt;()</ref> Overloaded less than comparison operator Compares the distances between two pairs of cities to determine which is shorter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="37" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_city_distance_1ae56feb19d11926e9d3bc03b5abfc9b48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CityDistance::operator!=</definition>
+        <argsstring>(const CityDistance &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="struct_city_distance" kindref="compound">CityDistance</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="struct_city_distance_1ae56feb19d11926e9d3bc03b5abfc9b48" kindref="member">CityDistance::operator!=()</ref> Overloaded inequality operator Returns true if both city distances are not equal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="47" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_city_distance" kindref="compound">CityDistance</ref> struct A struct which contains the distance from a given city to another city. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="date"><para>October 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="16" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_city_distance_1aa486f287fb876e7aec9d41340a9a2b62" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>CityDistance</name></member>
+      <member refid="struct_city_distance_1a5710d1d7374892efd201c4cd187d9e42" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>CityDistance</name></member>
+      <member refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>distance</name></member>
+      <member refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>endCity</name></member>
+      <member refid="struct_city_distance_1ae56feb19d11926e9d3bc03b5abfc9b48" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>operator!=</name></member>
+      <member refid="struct_city_distance_1a6195d187d1f0309e67ee62b3a5b56b86" prot="public" virt="non-virtual"><scope>CityDistance</scope><name>operator&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

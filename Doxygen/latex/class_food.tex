@@ -1,0 +1,270 @@
+\hypertarget{class_food}{}\section{Food Class Reference}
+\label{class_food}\index{Food@{Food}}
+
+
+\mbox{\hyperlink{class_food}{Food}} class A food class for instantiating food.  
+
+
+
+
+{\ttfamily \#include $<$food.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food()}} Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_aa479389d71859831d48d21bae7fa5217}{Food}} (Q\+String name, double price, int quantity=0)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food}{Food}}(Q\+String name, double price, int quantity = 0) Overloaded constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_a6f25dffd1fb347c982a53b9a384c611a}{$\sim$\+Food}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a6f25dffd1fb347c982a53b9a384c611a}{$\sim$\+Food()}} Destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_aa29cc2869e2607983876962343c12809}{set\+Quantity}} (int quantity)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_aa29cc2869e2607983876962343c12809}{set\+Quantity(int quantity)}} Sets the quantity of food the user purchases \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_food_a16683d009125620dd07432fbe7711597}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a16683d009125620dd07432fbe7711597}{get\+Price()}} Returns the price of a food item \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_food_a5652293c23e8b797d363c08efc585601}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a5652293c23e8b797d363c08efc585601}{get\+Name()}} Returns the name of a food item \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_food_ac50c1e254e20ffeda0d28f84e1cc2160}{calculate\+Total}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_ac50c1e254e20ffeda0d28f84e1cc2160}{calculate\+Total()}} Returns the total price of all purchased food items \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food}{Food}} \& \mbox{\hyperlink{class_food_abe2267ba02f1b812c71028f427d92d81}{operator=}} (\mbox{\hyperlink{class_food}{Food}} other)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_abe2267ba02f1b812c71028f427d92d81}{operator=(\+Food other)}} An copy assignment for food items \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food}{Food}} \& \mbox{\hyperlink{class_food_a0ba9d6f416f396bc8e4a1c2ad519d3eb}{operator=}} (\mbox{\hyperlink{class_food}{Food}} \&\&other)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a0ba9d6f416f396bc8e4a1c2ad519d3eb}{operator=(\+Food\&\& other)}} A move assignment for food items \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_a365c2d6175447d0fe29e57facc277570}{Food}} (const \mbox{\hyperlink{class_food}{Food}} \&other)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a365c2d6175447d0fe29e57facc277570}{Food(const Food\& other)}}; A copy constructor for food items. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_a82c4dcbac6b4bb4ce921bc3aea627387}{Food}} (\mbox{\hyperlink{class_food}{Food}} \&\&other)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_a365c2d6175447d0fe29e57facc277570}{Food(const Food\& other)}}; A copy assignment for food items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_food}{Food}} class A food class for instantiating food. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2019 
+\end{DoxyDate}
+
+
+Definition at line 13 of file food.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_food_a75d4d7f76fd495cc8133302ca9fdc485}\label{class_food_a75d4d7f76fd495cc8133302ca9fdc485}} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\subsubsection{\texorpdfstring{Food()}{Food()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food()}} Default constructor. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 3 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_aa479389d71859831d48d21bae7fa5217}\label{class_food_aa479389d71859831d48d21bae7fa5217}} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\subsubsection{\texorpdfstring{Food()}{Food()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}\item[{Q\+String}]{name,  }\item[{double}]{price,  }\item[{int}]{quantity = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food}{Food}}(Q\+String name, double price, int quantity = 0) Overloaded constructor. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 6 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a6f25dffd1fb347c982a53b9a384c611a}\label{class_food_a6f25dffd1fb347c982a53b9a384c611a}} 
+\index{Food@{Food}!````~Food@{$\sim$Food}}
+\index{````~Food@{$\sim$Food}!Food@{Food}}
+\subsubsection{\texorpdfstring{$\sim$Food()}{~Food()}}
+{\footnotesize\ttfamily Food\+::$\sim$\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a6f25dffd1fb347c982a53b9a384c611a}{$\sim$\+Food()}} Destructor 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 10 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a365c2d6175447d0fe29e57facc277570}\label{class_food_a365c2d6175447d0fe29e57facc277570}} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\subsubsection{\texorpdfstring{Food()}{Food()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_food}{Food}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a365c2d6175447d0fe29e57facc277570}{Food(const Food\& other)}}; A copy constructor for food items. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 49 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a82c4dcbac6b4bb4ce921bc3aea627387}\label{class_food_a82c4dcbac6b4bb4ce921bc3aea627387}} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\subsubsection{\texorpdfstring{Food()}{Food()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_food}{Food}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a365c2d6175447d0fe29e57facc277570}{Food(const Food\& other)}}; A copy assignment for food items. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 56 of file food.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_food_ac50c1e254e20ffeda0d28f84e1cc2160}\label{class_food_ac50c1e254e20ffeda0d28f84e1cc2160}} 
+\index{Food@{Food}!calculateTotal@{calculateTotal}}
+\index{calculateTotal@{calculateTotal}!Food@{Food}}
+\subsubsection{\texorpdfstring{calculateTotal()}{calculateTotal()}}
+{\footnotesize\ttfamily double Food\+::calculate\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_ac50c1e254e20ffeda0d28f84e1cc2160}{calculate\+Total()}} Returns the total price of all purchased food items 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a5652293c23e8b797d363c08efc585601}\label{class_food_a5652293c23e8b797d363c08efc585601}} 
+\index{Food@{Food}!getName@{getName}}
+\index{getName@{getName}!Food@{Food}}
+\subsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily Q\+String Food\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a5652293c23e8b797d363c08efc585601}{get\+Name()}} Returns the name of a food item 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Qstring 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a16683d009125620dd07432fbe7711597}\label{class_food_a16683d009125620dd07432fbe7711597}} 
+\index{Food@{Food}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Food@{Food}}
+\subsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily double Food\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a16683d009125620dd07432fbe7711597}{get\+Price()}} Returns the price of a food item 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_abe2267ba02f1b812c71028f427d92d81}\label{class_food_abe2267ba02f1b812c71028f427d92d81}} 
+\index{Food@{Food}!operator=@{operator=}}
+\index{operator=@{operator=}!Food@{Food}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_food}{Food}} \& Food\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_food}{Food}}}]{other }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_abe2267ba02f1b812c71028f427d92d81}{operator=(\+Food other)}} An copy assignment for food items 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_food}{Food}} \& 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_a0ba9d6f416f396bc8e4a1c2ad519d3eb}\label{class_food_a0ba9d6f416f396bc8e4a1c2ad519d3eb}} 
+\index{Food@{Food}!operator=@{operator=}}
+\index{operator=@{operator=}!Food@{Food}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_food}{Food}} \& Food\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_food}{Food}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_a0ba9d6f416f396bc8e4a1c2ad519d3eb}{operator=(\+Food\&\& other)}} A move assignment for food items 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_food}{Food}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file food.\+cpp.
+
+\mbox{\Hypertarget{class_food_aa29cc2869e2607983876962343c12809}\label{class_food_aa29cc2869e2607983876962343c12809}} 
+\index{Food@{Food}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!Food@{Food}}
+\subsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Food\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_aa29cc2869e2607983876962343c12809}{set\+Quantity(int quantity)}} Sets the quantity of food the user purchases 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & quantity \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file food.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{food_8h}{food.\+h}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{food_8cpp}{food.\+cpp}}\end{DoxyCompactItemize}

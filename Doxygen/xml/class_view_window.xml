@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_view_window" kind="class" language="C++" prot="public">
+    <compoundname>ViewWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="viewwindow_8h" local="no">viewwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_view_window_1a47f55a5aadd1d322d446602e044e0ab0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_view_window" kindref="compound">Ui::ViewWindow</ref> *</type>
+        <definition>Ui::ViewWindow* ViewWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="51" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_window_1a47d1b4284524a2c5978ea57df8eab916" prot="private" static="no" mutable="no">
+        <type>QSqlQueryModel *</type>
+        <definition>QSqlQueryModel* ViewWindow::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="52" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_view_window_1a6a50ff7682c6a5286212470306fbb72d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ViewWindow::ViewWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>ViewWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="24" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_window_1a65bccd157aa22ab8ea5de62a5a5bcf12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ViewWindow::~ViewWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~ViewWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="25" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_view_window_1a820047ca26341fc01c06348686fb8654" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewWindow::on_loadCities_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_loadCities_clicked</name>
+        <briefdescription>
+<para>on_loadCities_clicked() Displays the city table from the SQL database </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Garrett Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="34" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_view_window_1aaa42ff359af7778e21ace16bbcb0ff3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewWindow::on_loadFood_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_loadFood_clicked</name>
+        <briefdescription>
+<para>on_loadFood_clicked() Displays the food table from the SQL database </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Garrett Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="41" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_view_window_1aa48f602e31e3de864901f693252bb258" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewWindow::on_loadDistances_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_loadDistances_clicked</name>
+        <briefdescription>
+<para>on_loadDistances_clicked() Displays the distance table from the SQL database </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Garrett Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="48" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="104">
+        <label>ViewWindow</label>
+        <link refid="class_view_window"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>ViewWindow</label>
+        <link refid="class_view_window"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" line="20" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h" bodystart="19" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_view_window_1a47d1b4284524a2c5978ea57df8eab916" prot="private" virt="non-virtual"><scope>ViewWindow</scope><name>model</name></member>
+      <member refid="class_view_window_1a820047ca26341fc01c06348686fb8654" prot="private" virt="non-virtual"><scope>ViewWindow</scope><name>on_loadCities_clicked</name></member>
+      <member refid="class_view_window_1aa48f602e31e3de864901f693252bb258" prot="private" virt="non-virtual"><scope>ViewWindow</scope><name>on_loadDistances_clicked</name></member>
+      <member refid="class_view_window_1aaa42ff359af7778e21ace16bbcb0ff3e" prot="private" virt="non-virtual"><scope>ViewWindow</scope><name>on_loadFood_clicked</name></member>
+      <member refid="class_view_window_1a47f55a5aadd1d322d446602e044e0ab0" prot="private" virt="non-virtual"><scope>ViewWindow</scope><name>ui</name></member>
+      <member refid="class_view_window_1a6a50ff7682c6a5286212470306fbb72d" prot="public" virt="non-virtual"><scope>ViewWindow</scope><name>ViewWindow</name></member>
+      <member refid="class_view_window_1a65bccd157aa22ab8ea5de62a5a5bcf12" prot="public" virt="non-virtual"><scope>ViewWindow</scope><name>~ViewWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

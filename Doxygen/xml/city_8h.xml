@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="city_8h" kind="file" language="C++">
+    <compoundname>city.h</compoundname>
+    <includes local="no">QString</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">QDebug</includes>
+    <includes refid="food_8h" local="yes">food.h</includes>
+    <includedby refid="city_8cpp" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp</includedby>
+    <includedby refid="database_8h" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/database.h</includedby>
+    <includedby refid="cityselectwindow_8h" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h</includedby>
+    <includedby refid="foodselectwindow_8h" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/foodselectwindow.h</includedby>
+    <includedby refid="mainwindow_8h" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h</includedby>
+    <includedby refid="resultswindow_8h" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>QDebug</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>QString</label>
+      </node>
+      <node id="12">
+        <label>food.h</label>
+        <link refid="food_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h</label>
+        <link refid="city_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="33">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.cpp</label>
+        <link refid="viewwindow_8cpp"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/viewwindow.h</label>
+        <link refid="viewwindow_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h</label>
+        <link refid="cityselectwindow_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp</label>
+        <link refid="resultswindow_8cpp"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/database.cpp</label>
+        <link refid="database_8cpp"/>
+      </node>
+      <node id="27">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/editwindow.cpp</label>
+        <link refid="editwindow_8cpp"/>
+      </node>
+      <node id="32">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_viewwindow.cpp</label>
+        <link refid="moc__viewwindow_8cpp"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_loginwindow.cpp</label>
+        <link refid="moc__loginwindow_8cpp"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp</label>
+        <link refid="city_8cpp"/>
+      </node>
+      <node id="30">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp</label>
+        <link refid="loginwindow_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp</label>
+        <link refid="cityselectwindow_8cpp"/>
+      </node>
+      <node id="36">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/foodselectwindow.cpp</label>
+        <link refid="foodselectwindow_8cpp"/>
+      </node>
+      <node id="35">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_foodselectwindow.cpp</label>
+        <link refid="moc__foodselectwindow_8cpp"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_editwindow.cpp</label>
+        <link refid="moc__editwindow_8cpp"/>
+      </node>
+      <node id="37">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h</label>
+        <link refid="resultswindow_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_resultswindow.cpp</label>
+        <link refid="moc__resultswindow_8cpp"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h</label>
+        <link refid="loginwindow_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp</label>
+        <link refid="moc__cityselectwindow_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h</label>
+        <link refid="city_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/foodselectwindow.h</label>
+        <link refid="foodselectwindow_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/editwindow.h</label>
+        <link refid="editwindow_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_city_distance" prot="public">CityDistance</innerclass>
+    <innerclass refid="class_city" prot="public">City</innerclass>
+    <innerclass refid="struct_compare_city" prot="public">CompareCity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="food_8h" kindref="compound">food.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_city_distance" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_city_distance" kindref="compound">CityDistance</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" kindref="member">endCity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="struct_city_distance_1aa486f287fb876e7aec9d41340a9a2b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_city_distance_1aa486f287fb876e7aec9d41340a9a2b62" kindref="member">CityDistance</ref>():<sp/><ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>{0},<sp/><ref refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" kindref="member">endCity</ref>{</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">}<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_city_distance_1a5710d1d7374892efd201c4cd187d9e42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_city_distance_1a5710d1d7374892efd201c4cd187d9e42" kindref="member">CityDistance</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>,<sp/>QString<sp/><ref refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" kindref="member">endCity</ref>):<sp/><ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>{<ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>},<sp/><ref refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" kindref="member">endCity</ref>{<ref refid="struct_city_distance_1a7f1fe8d0c76af2abf5bc5c6bd1800e7f" kindref="member">endCity</ref>}<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_city_distance_1a6195d187d1f0309e67ee62b3a5b56b86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance_1a6195d187d1f0309e67ee62b3a5b56b86" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance" kindref="compound">CityDistance</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="38"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref><sp/>&lt;<sp/>other.<ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_city_distance_1ae56feb19d11926e9d3bc03b5abfc9b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance_1ae56feb19d11926e9d3bc03b5abfc9b48" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_city_distance" kindref="compound">CityDistance</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="48"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;distance<sp/>!=<sp/>other.<ref refid="struct_city_distance_1aabe1e1bba711dab73cd70f1105c35c9e" kindref="member">distance</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_city" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_city" kindref="compound">City</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_city_1a1b1f549430f0a7ecd0ec7b1605415193" kindref="member">City</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_city_1a1b1f549430f0a7ecd0ec7b1605415193" kindref="member">City</ref>(QString<sp/>name,<sp/>std::vector&lt;CityDistance&gt;<sp/>otherCities,<sp/>std::vector&lt;Food&gt;<sp/>foods,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isStart<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_city_1afe733410d61155d8a4013293b0b72408" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_city_1afe733410d61155d8a4013293b0b72408" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_city_1a1462a90a0d40e0d946903b1db214da0e" kindref="member">getNumFoods</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_city_1a9fcdb0c59ac7760dd3996803ddb6bf86" kindref="member">setIsStart</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Food&gt;<sp/><ref refid="class_city_1abbfdb9d3dba484ee8f9daee6ef03cd97" kindref="member">getFoods</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_city_1ac4829f9fc09b4c0f4cf2f7453c974264" kindref="member">removeCityDistance</ref>(QString<sp/>name);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_city_1a9e3da459f9dcf61ae1a4551d79abafb8" kindref="member">sortDistances</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_city_distance" kindref="compound">CityDistance</ref><sp/><ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>name;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CityDistance&gt;<sp/>otherCities;<sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Food&gt;<sp/>foods;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isStart;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="struct_compare_city" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_compare_city" kindref="compound">CompareCity</ref></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168" refid="struct_compare_city_1a08fbbcc6710ad653fdee21de31576d10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_compare_city_1a08fbbcc6710ad653fdee21de31576d10" kindref="member">operator()</ref>(<ref refid="class_city" kindref="compound">City</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>c1,<sp/><ref refid="class_city" kindref="compound">City</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>c2)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c1.<ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart</ref>()<sp/>!=<sp/>c2.<ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart</ref>())</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c1.<ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart</ref>()<sp/>&lt;<sp/>c2.<ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c1.<ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance</ref>()<sp/>!=<sp/>c2.<ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance</ref>())</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c1.<ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance</ref>()<sp/>&lt;<sp/>c2.<ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CITY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h"/>
+  </compounddef>
+</doxygen>

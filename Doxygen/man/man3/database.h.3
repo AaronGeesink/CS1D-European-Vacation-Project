@@ -1,0 +1,141 @@
+.TH "C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/database.h" 3 "Sun Oct 20 2019" "Version 1.0" "European Vacation Planner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/database.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <QtSql>\fP
+.br
+\fC#include 'city\&.h'\fP
+.br
+\fC#include <QFile>\fP
+.br
+\fC#include <QDir>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcreateDatabase\fP ()"
+.br
+.RI "\fBcreateDatabase()\fP Finds the SQL database file and loads it "
+.ti -1c
+.RI "bool \fBcheckConnection\fP ()"
+.br
+.RI "\fBcheckConnection()\fP Checks the connection to the SQL database "
+.ti -1c
+.RI "std::vector< QString > \fBqueryCityNames\fP ()"
+.br
+.RI "Finds the SQL database file and loads it\&. "
+.ti -1c
+.RI "\fBCityDistance\fP \fBqueryDistance\fP (QString start, QString end)"
+.br
+.RI "\fBqueryCityNames()\fP Queries the SQL database for the distance between a start and end city "
+.ti -1c
+.RI "std::vector< \fBFood\fP > \fBqueryFoods\fP (QString cityName)"
+.br
+.RI "\fBqueryFoods(QString cityName)\fP Queries the SQL database for a city's food\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool checkConnection ()"
+
+.PP
+\fBcheckConnection()\fP Checks the connection to the SQL database 
+.PP
+\fBAuthor:\fP
+.RS 4
+Garrett Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file database\&.cpp\&.
+.SS "void createDatabase ()"
+
+.PP
+\fBcreateDatabase()\fP Finds the SQL database file and loads it 
+.PP
+\fBAuthor:\fP
+.RS 4
+Garrett Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 3 of file database\&.cpp\&.
+.SS "std::vector<QString> queryCityNames ()"
+
+.PP
+Finds the SQL database file and loads it\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Garrett Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+vector<QString> 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file database\&.cpp\&.
+.SS "\fBCityDistance\fP queryDistance (QString start, QString end)"
+
+.PP
+\fBqueryCityNames()\fP Queries the SQL database for the distance between a start and end city 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIQString\fP start, QString end 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBCityDistance\fP 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file database\&.cpp\&.
+.SS "std::vector<\fBFood\fP> queryFoods (QString cityName)"
+
+.PP
+\fBqueryFoods(QString cityName)\fP Queries the SQL database for a city's food\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIQString\fP cityName 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+vector<Food> 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file database\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for European Vacation Planner from the source code\&.

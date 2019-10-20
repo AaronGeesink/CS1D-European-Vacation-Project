@@ -1,0 +1,145 @@
+.TH "ResultsWindow" 3 "Sun Oct 20 2019" "Version 1.0" "European Vacation Planner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ResultsWindow
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <resultswindow\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Signals"
+
+.in +1c
+.ti -1c
+.RI "void \fBmoveToMainClicked\fP ()"
+.br
+.RI "\fBmoveToMainClicked()\fP Proceeds to the \fBMainWindow\fP "
+.ti -1c
+.RI "void \fBmoveToFoodSelectClicked\fP ()"
+.br
+.RI "\fBmoveToFoodSelectClicked()\fP Proceeds to the \fBFoodSelectWindow\fP "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResultsWindow\fP (QWidget *parent=nullptr)"
+.br
+.ti -1c
+.RI "\fB~ResultsWindow\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetResults\fP (std::vector< \fBCity\fP > &loadedCities)"
+.br
+.RI "\fBsetResults(std::vector<City>& loadedCities)\fP Sets the results screen to the currently loaded cities "
+.ti -1c
+.RI "\fBCity\fP \fBgetClosestCity\fP (std::vector< \fBCity\fP > loadedCities, QString name)"
+.br
+.RI "\fBgetClosestCity(std::vector<City> loadedCities, QString name)\fP Returns the closest city to the current city "
+.ti -1c
+.RI "\fBCity\fP \fBgetStartingCity\fP (std::vector< \fBCity\fP > loadedCities)"
+.br
+.RI "\fBgetStartingCity(std::vector<City> loadedCities)\fP Returns the starting city of a trip "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file resultswindow\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ResultsWindow::ResultsWindow (QWidget * parent = \fCnullptr\fP)\fC [explicit]\fP"
+
+.PP
+Definition at line 4 of file resultswindow\&.cpp\&.
+.SS "ResultsWindow::~ResultsWindow ()"
+
+.PP
+Definition at line 11 of file resultswindow\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCity\fP ResultsWindow::getClosestCity (std::vector< \fBCity\fP > loadedCities, QString name)"
+
+.PP
+\fBgetClosestCity(std::vector<City> loadedCities, QString name)\fP Returns the closest city to the current city 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvector<city>&\fP loadedCities, QString name 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file resultswindow\&.cpp\&.
+.SS "\fBCity\fP ResultsWindow::getStartingCity (std::vector< \fBCity\fP > loadedCities)"
+
+.PP
+\fBgetStartingCity(std::vector<City> loadedCities)\fP Returns the starting city of a trip 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvector<city>&\fP loadedCities 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file resultswindow\&.cpp\&.
+.SS "void ResultsWindow::moveToFoodSelectClicked ()\fC [signal]\fP"
+
+.PP
+\fBmoveToFoodSelectClicked()\fP Proceeds to the \fBFoodSelectWindow\fP 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 160 of file moc_resultswindow\&.cpp\&.
+.SS "void ResultsWindow::moveToMainClicked ()\fC [signal]\fP"
+
+.PP
+\fBmoveToMainClicked()\fP Proceeds to the \fBMainWindow\fP 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file moc_resultswindow\&.cpp\&.
+.SS "void ResultsWindow::setResults (std::vector< \fBCity\fP > & loadedCities)"
+
+.PP
+\fBsetResults(std::vector<City>& loadedCities)\fP Sets the results screen to the currently loaded cities 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvector<city>&\fP loadedCities 
+.RE
+.PP
+
+.PP
+Definition at line 16 of file resultswindow\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for European Vacation Planner from the source code\&.

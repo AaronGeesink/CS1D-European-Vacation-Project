@@ -1,0 +1,270 @@
+\hypertarget{class_city}{}\section{City Class Reference}
+\label{class_city}\index{City@{City}}
+
+
+\mbox{\hyperlink{class_city}{City}} class This is the \mbox{\hyperlink{class_city}{City}} class used to instantiate, store, and perform calculations on cities.  
+
+
+
+
+{\ttfamily \#include $<$city.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_city_a1b1f549430f0a7ecd0ec7b1605415193}{City}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_a1b1f549430f0a7ecd0ec7b1605415193}{City()}} Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_city_a45f0a3c80b0e4ff9dc33256d2ff5eb0d}{City}} (Q\+String name, std\+::vector$<$ \mbox{\hyperlink{struct_city_distance}{City\+Distance}} $>$ other\+Cities, std\+::vector$<$ \mbox{\hyperlink{class_food}{Food}} $>$ foods, bool is\+Start=false)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city}{City}}(Q\+String name, std\+::vector$<$\+City\+Distance$>$ other\+Cities, std\+::vector$<$\+Food$>$ foods, bool is\+Start = false) Overloaded Constructor. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_city_afe733410d61155d8a4013293b0b72408}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_afe733410d61155d8a4013293b0b72408}{get\+Name()}} This method returns a Q\+String containing the name of the \mbox{\hyperlink{class_city}{City}} \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_city_ad73598d937870a165cb530958106ff07}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_ad73598d937870a165cb530958106ff07}{get\+Name() const}} Const method which returns a Q\+String containing the name of the \mbox{\hyperlink{class_city}{City}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_city_a1462a90a0d40e0d946903b1db214da0e}{get\+Num\+Foods}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_a1462a90a0d40e0d946903b1db214da0e}{get\+Num\+Foods()}} This method returns the number of foods in a \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s food vector \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_city_ae817fa08cc2191da09c91c3d6b4069d5}{get\+Is\+Start}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_ae817fa08cc2191da09c91c3d6b4069d5}{get\+Is\+Start()}} Returns the value of the \char`\"{}is\+Start\char`\"{} data member If the city is the starting city, return true. Else, return false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_city_a9fcdb0c59ac7760dd3996803ddb6bf86}{set\+Is\+Start}} (bool value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_a9fcdb0c59ac7760dd3996803ddb6bf86}{set\+Is\+Start()}} Sets a the value of a \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s is\+Start data member \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_food}{Food}} $>$ \mbox{\hyperlink{class_city_abbfdb9d3dba484ee8f9daee6ef03cd97}{get\+Foods}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_abbfdb9d3dba484ee8f9daee6ef03cd97}{get\+Foods()}} Returns the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s food vector to the client \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_ac4829f9fc09b4c0f4cf2f7453c974264}{remove\+City\+Distance}} (Q\+String name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_ac4829f9fc09b4c0f4cf2f7453c974264}{remove\+City\+Distance()}} Removes all distances related to the argument city from the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s distance vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_a9e3da459f9dcf61ae1a4551d79abafb8}{sort\+Distances}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_a9e3da459f9dcf61ae1a4551d79abafb8}{sort\+Distances()}} Sorts the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s distance vector in order of shortest to longest distance \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city_distance}{City\+Distance}} \mbox{\hyperlink{class_city_ad577ecd4be83b37ef2f9c5ff547f5259}{get\+Shortest\+Distance}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_ad577ecd4be83b37ef2f9c5ff547f5259}{get\+Shortest\+Distance()}} Returns the distance to the closest city in the city vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_city}{City}} class This is the \mbox{\hyperlink{class_city}{City}} class used to instantiate, store, and perform calculations on cities. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2019 
+\end{DoxyDate}
+
+
+Definition at line 59 of file city.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_city_a1b1f549430f0a7ecd0ec7b1605415193}\label{class_city_a1b1f549430f0a7ecd0ec7b1605415193}} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\subsubsection{\texorpdfstring{City()}{City()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_a1b1f549430f0a7ecd0ec7b1605415193}{City()}} Default Constructor. 
+
+
+
+Definition at line 3 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_a45f0a3c80b0e4ff9dc33256d2ff5eb0d}\label{class_city_a45f0a3c80b0e4ff9dc33256d2ff5eb0d}} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\subsubsection{\texorpdfstring{City()}{City()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}\item[{Q\+String}]{name,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_city_distance}{City\+Distance}} $>$}]{other\+Cities,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_food}{Food}} $>$}]{foods,  }\item[{bool}]{is\+Start = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city}{City}}(Q\+String name, std\+::vector$<$\+City\+Distance$>$ other\+Cities, std\+::vector$<$\+Food$>$ foods, bool is\+Start = false) Overloaded Constructor. 
+
+
+
+Definition at line 6 of file city.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_city_abbfdb9d3dba484ee8f9daee6ef03cd97}\label{class_city_abbfdb9d3dba484ee8f9daee6ef03cd97}} 
+\index{City@{City}!getFoods@{getFoods}}
+\index{getFoods@{getFoods}!City@{City}}
+\subsubsection{\texorpdfstring{getFoods()}{getFoods()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_food}{Food}} $>$ City\+::get\+Foods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_abbfdb9d3dba484ee8f9daee6ef03cd97}{get\+Foods()}} Returns the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s food vector to the client 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+vector$<$food$>$ 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_ae817fa08cc2191da09c91c3d6b4069d5}\label{class_city_ae817fa08cc2191da09c91c3d6b4069d5}} 
+\index{City@{City}!getIsStart@{getIsStart}}
+\index{getIsStart@{getIsStart}!City@{City}}
+\subsubsection{\texorpdfstring{getIsStart()}{getIsStart()}}
+{\footnotesize\ttfamily bool City\+::get\+Is\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_city_ae817fa08cc2191da09c91c3d6b4069d5}{get\+Is\+Start()}} Returns the value of the \char`\"{}is\+Start\char`\"{} data member If the city is the starting city, return true. Else, return false. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_afe733410d61155d8a4013293b0b72408}\label{class_city_afe733410d61155d8a4013293b0b72408}} 
+\index{City@{City}!getName@{getName}}
+\index{getName@{getName}!City@{City}}
+\subsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+String City\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_afe733410d61155d8a4013293b0b72408}{get\+Name()}} This method returns a Q\+String containing the name of the \mbox{\hyperlink{class_city}{City}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_ad73598d937870a165cb530958106ff07}\label{class_city_ad73598d937870a165cb530958106ff07}} 
+\index{City@{City}!getName@{getName}}
+\index{getName@{getName}!City@{City}}
+\subsubsection{\texorpdfstring{getName()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+String City\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_city_ad73598d937870a165cb530958106ff07}{get\+Name() const}} Const method which returns a Q\+String containing the name of the \mbox{\hyperlink{class_city}{City}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_a1462a90a0d40e0d946903b1db214da0e}\label{class_city_a1462a90a0d40e0d946903b1db214da0e}} 
+\index{City@{City}!getNumFoods@{getNumFoods}}
+\index{getNumFoods@{getNumFoods}!City@{City}}
+\subsubsection{\texorpdfstring{getNumFoods()}{getNumFoods()}}
+{\footnotesize\ttfamily int City\+::get\+Num\+Foods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_a1462a90a0d40e0d946903b1db214da0e}{get\+Num\+Foods()}} This method returns the number of foods in a \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s food vector 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_ad577ecd4be83b37ef2f9c5ff547f5259}\label{class_city_ad577ecd4be83b37ef2f9c5ff547f5259}} 
+\index{City@{City}!getShortestDistance@{getShortestDistance}}
+\index{getShortestDistance@{getShortestDistance}!City@{City}}
+\subsubsection{\texorpdfstring{getShortestDistance()}{getShortestDistance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city_distance}{City\+Distance}} City\+::get\+Shortest\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_city_ad577ecd4be83b37ef2f9c5ff547f5259}{get\+Shortest\+Distance()}} Returns the distance to the closest city in the city vector 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_city_distance}{City\+Distance}} 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_ac4829f9fc09b4c0f4cf2f7453c974264}\label{class_city_ac4829f9fc09b4c0f4cf2f7453c974264}} 
+\index{City@{City}!removeCityDistance@{removeCityDistance}}
+\index{removeCityDistance@{removeCityDistance}!City@{City}}
+\subsubsection{\texorpdfstring{removeCityDistance()}{removeCityDistance()}}
+{\footnotesize\ttfamily void City\+::remove\+City\+Distance (\begin{DoxyParamCaption}\item[{Q\+String}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_ac4829f9fc09b4c0f4cf2f7453c974264}{remove\+City\+Distance()}} Removes all distances related to the argument city from the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s distance vector 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 20 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_a9fcdb0c59ac7760dd3996803ddb6bf86}\label{class_city_a9fcdb0c59ac7760dd3996803ddb6bf86}} 
+\index{City@{City}!setIsStart@{setIsStart}}
+\index{setIsStart@{setIsStart}!City@{City}}
+\subsubsection{\texorpdfstring{setIsStart()}{setIsStart()}}
+{\footnotesize\ttfamily bool City\+::set\+Is\+Start (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_a9fcdb0c59ac7760dd3996803ddb6bf86}{set\+Is\+Start()}} Sets a the value of a \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s is\+Start data member 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file city.\+cpp.
+
+\mbox{\Hypertarget{class_city_a9e3da459f9dcf61ae1a4551d79abafb8}\label{class_city_a9e3da459f9dcf61ae1a4551d79abafb8}} 
+\index{City@{City}!sortDistances@{sortDistances}}
+\index{sortDistances@{sortDistances}!City@{City}}
+\subsubsection{\texorpdfstring{sortDistances()}{sortDistances()}}
+{\footnotesize\ttfamily void City\+::sort\+Distances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_a9e3da459f9dcf61ae1a4551d79abafb8}{sort\+Distances()}} Sorts the \mbox{\hyperlink{class_city}{City}}\textquotesingle{}s distance vector in order of shortest to longest distance 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 32 of file city.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{city_8h}{city.\+h}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{city_8cpp}{city.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structqt__meta__stringdata___city_select_window__t" kind="struct" language="C++" prot="public">
+    <compoundname>qt_meta_stringdata_CitySelectWindow_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqt__meta__stringdata___city_select_window__t_1a074c084d258320c4c69d13a07febd2ab" prot="public" static="no" mutable="no">
+        <type>QByteArrayData</type>
+        <definition>QByteArrayData qt_meta_stringdata_CitySelectWindow_t::data[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" line="25" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqt__meta__stringdata___city_select_window__t_1a87be28223e0ce0f734ed224649fef90e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char qt_meta_stringdata_CitySelectWindow_t::stringdata0[70]</definition>
+        <argsstring>[70]</argsstring>
+        <name>stringdata0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" line="26" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" line="24" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" bodystart="24" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structqt__meta__stringdata___city_select_window__t_1a074c084d258320c4c69d13a07febd2ab" prot="public" virt="non-virtual"><scope>qt_meta_stringdata_CitySelectWindow_t</scope><name>data</name></member>
+      <member refid="structqt__meta__stringdata___city_select_window__t_1a87be28223e0ce0f734ed224649fef90e" prot="public" virt="non-virtual"><scope>qt_meta_stringdata_CitySelectWindow_t</scope><name>stringdata0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

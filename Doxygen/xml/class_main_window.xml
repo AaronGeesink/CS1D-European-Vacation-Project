@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_main_window" kindref="compound">Ui::MainWindow</ref> *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="117" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1ae489581ca88a801390913654e47cc7d3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_view_window" kindref="compound">ViewWindow</ref></type>
+        <definition>ViewWindow MainWindow::viewWind</definition>
+        <argsstring></argsstring>
+        <name>viewWind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="119" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a088587cf1ee9131cc2dc51897098c5dd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_login_window" kindref="compound">LoginWindow</ref></type>
+        <definition>LoginWindow MainWindow::loginWind</definition>
+        <argsstring></argsstring>
+        <name>loginWind</name>
+        <briefdescription>
+<para><ref refid="class_view_window" kindref="compound">ViewWindow</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="120" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a556efb230ea98c9f72730232a9cf9639" prot="private" static="no" mutable="no">
+        <type><ref refid="class_edit_window" kindref="compound">EditWindow</ref></type>
+        <definition>EditWindow MainWindow::editWind</definition>
+        <argsstring></argsstring>
+        <name>editWind</name>
+        <briefdescription>
+<para><ref refid="class_login_window" kindref="compound">LoginWindow</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="121" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a71e646dd6a2c16bd3a314e36b3af2c5e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_city_select_window" kindref="compound">CitySelectWindow</ref></type>
+        <definition>CitySelectWindow MainWindow::citySelectWind</definition>
+        <argsstring></argsstring>
+        <name>citySelectWind</name>
+        <briefdescription>
+<para><ref refid="class_edit_window" kindref="compound">EditWindow</ref> Object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="122" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a6e177d7f28b642c515b0062e9e7a6a8f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref></type>
+        <definition>FoodSelectWindow MainWindow::foodSelectWind</definition>
+        <argsstring></argsstring>
+        <name>foodSelectWind</name>
+        <briefdescription>
+<para><ref refid="class_city_select_window" kindref="compound">CitySelectWindow</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="123" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a9f3857b32c508588f65df5e5015d38f3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_results_window" kindref="compound">ResultsWindow</ref></type>
+        <definition>ResultsWindow MainWindow::resultsWind</definition>
+        <argsstring></argsstring>
+        <name>resultsWind</name>
+        <briefdescription>
+<para><ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="124" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="27" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="4" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="28" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1afcbbbc80001065310d2cd6221c5be55c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_exitButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_exitButton_clicked</name>
+        <briefdescription>
+<para>on_exitButton_clicked() Closes the program </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="36" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0b56ed85ef4179432beb6a879105dc37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_mainButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_mainButton_clicked</name>
+        <briefdescription>
+<para>on_mainButton_clicked() Sends a signal to move to the mainWindow </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="43" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a5c1beccabe442b31ea4182e64319b249" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::moveToMain</definition>
+        <argsstring>()</argsstring>
+        <name>moveToMain</name>
+        <briefdescription>
+<para>moveToMain() Proceeds to the mainWindow </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="50" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1af50cef20d9e9a341e199b2ab266b651b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_moveToView_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToView_clicked</name>
+        <briefdescription>
+<para>on_moveToView_clicked() Sends a signal to move to the viewWindow </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="57" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a2364a14879f4e957574322e3ddc9b5c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::moveToCitySelect</definition>
+        <argsstring>()</argsstring>
+        <name>moveToCitySelect</name>
+        <briefdescription>
+<para>moveToCitySelect() Proceeds to the <ref refid="class_city_select_window" kindref="compound">CitySelectWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="64" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0d716f6d0f8992ae524e2a3ecd90c641" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_moveTo11Cities_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveTo11Cities_clicked</name>
+        <briefdescription>
+<para>on_moveTo11Cities_clicked() Sends a signal to move to the 11 cities trip plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="71" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a77979e638054b77a5eba674c17527d99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_moveToLondon_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToLondon_clicked</name>
+        <briefdescription>
+<para>on_moveToLondon_clicked() Sends a signal to move to the london trip plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="78" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a54ff792d5487a2cfb4adfc7b509eabf0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_moveToCustom_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToCustom_clicked</name>
+        <briefdescription>
+<para>on_moveToCustom_clicked() Sends a signal to move to the custom trip plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="85" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a6c6c95b7ff3974b91047530d46f3dc77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::moveToFoodSelect</definition>
+        <argsstring>()</argsstring>
+        <name>moveToFoodSelect</name>
+        <briefdescription>
+<para>moveToFoodSelect() Proceeds to the <ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="92" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="98" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a80a97641dbc8231c5a033e4ff9e7bcce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::moveToResults</definition>
+        <argsstring>()</argsstring>
+        <name>moveToResults</name>
+        <briefdescription>
+<para>moveToResults() Proceeds to the <ref refid="class_results_window" kindref="compound">ResultsWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="99" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a623d5c98ccb5a305ed7f2a4d051b460b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_moveToEdit_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToEdit_clicked</name>
+        <briefdescription>
+<para>on_moveToEdit_clicked() Sends a signal to move to the <ref refid="class_edit_window" kindref="compound">EditWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="106" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a24e4efd739c5e415bd4b983c8b1bb574" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::moveToEdit</definition>
+        <argsstring>()</argsstring>
+        <name>moveToEdit</name>
+        <briefdescription>
+<para>moveToEdit() Proceeds to the <ref refid="class_edit_window" kindref="compound">EditWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="113" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="42">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" line="23" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.h" bodystart="22" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_main_window_1a71e646dd6a2c16bd3a314e36b3af2c5e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>citySelectWind</name></member>
+      <member refid="class_main_window_1a556efb230ea98c9f72730232a9cf9639" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editWind</name></member>
+      <member refid="class_main_window_1a6e177d7f28b642c515b0062e9e7a6a8f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>foodSelectWind</name></member>
+      <member refid="class_main_window_1a088587cf1ee9131cc2dc51897098c5dd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>loginWind</name></member>
+      <member refid="class_main_window_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a2364a14879f4e957574322e3ddc9b5c0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moveToCitySelect</name></member>
+      <member refid="class_main_window_1a24e4efd739c5e415bd4b983c8b1bb574" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moveToEdit</name></member>
+      <member refid="class_main_window_1a6c6c95b7ff3974b91047530d46f3dc77" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moveToFoodSelect</name></member>
+      <member refid="class_main_window_1a5c1beccabe442b31ea4182e64319b249" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moveToMain</name></member>
+      <member refid="class_main_window_1a80a97641dbc8231c5a033e4ff9e7bcce" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>moveToResults</name></member>
+      <member refid="class_main_window_1afcbbbc80001065310d2cd6221c5be55c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_exitButton_clicked</name></member>
+      <member refid="class_main_window_1a0b56ed85ef4179432beb6a879105dc37" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_mainButton_clicked</name></member>
+      <member refid="class_main_window_1a0d716f6d0f8992ae524e2a3ecd90c641" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_moveTo11Cities_clicked</name></member>
+      <member refid="class_main_window_1a54ff792d5487a2cfb4adfc7b509eabf0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_moveToCustom_clicked</name></member>
+      <member refid="class_main_window_1a623d5c98ccb5a305ed7f2a4d051b460b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_moveToEdit_clicked</name></member>
+      <member refid="class_main_window_1a77979e638054b77a5eba674c17527d99" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_moveToLondon_clicked</name></member>
+      <member refid="class_main_window_1af50cef20d9e9a341e199b2ab266b651b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_moveToView_clicked</name></member>
+      <member refid="class_main_window_1a9f3857b32c508588f65df5e5015d38f3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>resultsWind</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae489581ca88a801390913654e47cc7d3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>viewWind</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

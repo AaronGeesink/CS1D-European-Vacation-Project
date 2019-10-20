@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_ui_1_1_trip_window" kind="class" language="C++" prot="public">
+    <compoundname>Ui::TripWindow</compoundname>
+    <basecompoundref refid="class_ui___trip_window" prot="public" virt="non-virtual">Ui_TripWindow</basecompoundref>
+    <includes refid="ui__tripwindow_8h" local="no">ui_tripwindow.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="72">
+        <label>Ui::TripWindow</label>
+        <link refid="class_ui_1_1_trip_window"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>Ui_TripWindow</label>
+        <link refid="class_ui___trip_window"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="74">
+        <label>Ui::TripWindow</label>
+        <link refid="class_ui_1_1_trip_window"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>Ui_TripWindow</label>
+        <link refid="class_ui___trip_window"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_tripwindow.h" line="72" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_tripwindow.h" bodystart="72" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_ui___trip_window_1a19829ebaaefb4342ccde12cf00d2da70" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>moveTo11Cities</name></member>
+      <member refid="class_ui___trip_window_1a405a6edc979b22f8745c2fa67e0f28ea" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>moveToCustom</name></member>
+      <member refid="class_ui___trip_window_1aad7407aaada3011e791c80d36847bd71" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>moveToLondon</name></member>
+      <member refid="class_ui___trip_window_1af9ed0863c361828932fa02423a503929" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>moveToMain</name></member>
+      <member refid="class_ui___trip_window_1a9695983139e7fd78cee61c7a8b920bf8" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>retranslateUi</name></member>
+      <member refid="class_ui___trip_window_1a42dbbe827a8e59f90d532bc9febed469" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>setupUi</name></member>
+      <member refid="class_ui___trip_window_1a45b26400477d661fbb99a67999ac4035" prot="public" virt="non-virtual"><scope>Ui::TripWindow</scope><name>titleText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,138 @@
+\hypertarget{struct_city_distance}{}\section{City\+Distance Struct Reference}
+\label{struct_city_distance}\index{CityDistance@{CityDistance}}
+
+
+\mbox{\hyperlink{struct_city_distance}{City\+Distance}} struct A struct which contains the distance from a given city to another city.  
+
+
+
+
+{\ttfamily \#include $<$city.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_city_distance_aa486f287fb876e7aec9d41340a9a2b62}{City\+Distance}} ()
+\begin{DoxyCompactList}\small\item\em Name of the other city from the current one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city_distance_a5710d1d7374892efd201c4cd187d9e42}{City\+Distance}} (int \mbox{\hyperlink{struct_city_distance_aabe1e1bba711dab73cd70f1105c35c9e}{distance}}, Q\+String \mbox{\hyperlink{struct_city_distance_a7f1fe8d0c76af2abf5bc5c6bd1800e7f}{end\+City}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_city_distance_a5710d1d7374892efd201c4cd187d9e42}{City\+Distance(int distance, Q\+String end\+City)}} Overloaded Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_city_distance_a6195d187d1f0309e67ee62b3a5b56b86}{operator$<$}} (const \mbox{\hyperlink{struct_city_distance}{City\+Distance}} \&other) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_city_distance_a6195d187d1f0309e67ee62b3a5b56b86}{City\+Distance\+::operator$<$()}} Overloaded less than comparison operator Compares the distances between two pairs of cities to determine which is shorter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_city_distance_ae56feb19d11926e9d3bc03b5abfc9b48}{operator!=}} (const \mbox{\hyperlink{struct_city_distance}{City\+Distance}} \&other) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_city_distance_ae56feb19d11926e9d3bc03b5abfc9b48}{City\+Distance\+::operator!=()}} Overloaded inequality operator Returns true if both city distances are not equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_city_distance_aabe1e1bba711dab73cd70f1105c35c9e}{distance}}
+\item 
+Q\+String \mbox{\hyperlink{struct_city_distance_a7f1fe8d0c76af2abf5bc5c6bd1800e7f}{end\+City}}
+\begin{DoxyCompactList}\small\item\em Distance from one city to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{struct_city_distance}{City\+Distance}} struct A struct which contains the distance from a given city to another city. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 2019 
+\end{DoxyDate}
+
+
+Definition at line 15 of file city.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_city_distance_aa486f287fb876e7aec9d41340a9a2b62}\label{struct_city_distance_aa486f287fb876e7aec9d41340a9a2b62}} 
+\index{CityDistance@{CityDistance}!CityDistance@{CityDistance}}
+\index{CityDistance@{CityDistance}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{CityDistance()}{CityDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily City\+Distance\+::\+City\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Name of the other city from the current one. 
+
+\mbox{\hyperlink{struct_city_distance_aa486f287fb876e7aec9d41340a9a2b62}{City\+Distance()}} Default Constructor 
+
+Definition at line 24 of file city.\+h.
+
+\mbox{\Hypertarget{struct_city_distance_a5710d1d7374892efd201c4cd187d9e42}\label{struct_city_distance_a5710d1d7374892efd201c4cd187d9e42}} 
+\index{CityDistance@{CityDistance}!CityDistance@{CityDistance}}
+\index{CityDistance@{CityDistance}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{CityDistance()}{CityDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily City\+Distance\+::\+City\+Distance (\begin{DoxyParamCaption}\item[{int}]{distance,  }\item[{Q\+String}]{end\+City }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{struct_city_distance_a5710d1d7374892efd201c4cd187d9e42}{City\+Distance(int distance, Q\+String end\+City)}} Overloaded Constructor. 
+
+
+
+Definition at line 30 of file city.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_city_distance_ae56feb19d11926e9d3bc03b5abfc9b48}\label{struct_city_distance_ae56feb19d11926e9d3bc03b5abfc9b48}} 
+\index{CityDistance@{CityDistance}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool City\+Distance\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_city_distance}{City\+Distance}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{struct_city_distance_ae56feb19d11926e9d3bc03b5abfc9b48}{City\+Distance\+::operator!=()}} Overloaded inequality operator Returns true if both city distances are not equal. 
+
+
+
+Definition at line 47 of file city.\+h.
+
+\mbox{\Hypertarget{struct_city_distance_a6195d187d1f0309e67ee62b3a5b56b86}\label{struct_city_distance_a6195d187d1f0309e67ee62b3a5b56b86}} 
+\index{CityDistance@{CityDistance}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool City\+Distance\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_city_distance}{City\+Distance}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{struct_city_distance_a6195d187d1f0309e67ee62b3a5b56b86}{City\+Distance\+::operator$<$()}} Overloaded less than comparison operator Compares the distances between two pairs of cities to determine which is shorter. 
+
+
+
+Definition at line 37 of file city.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_city_distance_aabe1e1bba711dab73cd70f1105c35c9e}\label{struct_city_distance_aabe1e1bba711dab73cd70f1105c35c9e}} 
+\index{CityDistance@{CityDistance}!distance@{distance}}
+\index{distance@{distance}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily int City\+Distance\+::distance}
+
+
+
+Definition at line 17 of file city.\+h.
+
+\mbox{\Hypertarget{struct_city_distance_a7f1fe8d0c76af2abf5bc5c6bd1800e7f}\label{struct_city_distance_a7f1fe8d0c76af2abf5bc5c6bd1800e7f}} 
+\index{CityDistance@{CityDistance}!endCity@{endCity}}
+\index{endCity@{endCity}!CityDistance@{CityDistance}}
+\subsubsection{\texorpdfstring{endCity}{endCity}}
+{\footnotesize\ttfamily Q\+String City\+Distance\+::end\+City}
+
+
+
+Distance from one city to another. 
+
+
+
+Definition at line 18 of file city.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{city_8h}{city.\+h}}\end{DoxyCompactItemize}

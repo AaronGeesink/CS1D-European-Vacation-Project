@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_city_select_window" kind="class" language="C++" prot="public">
+    <compoundname>CitySelectWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="cityselectwindow_8h" local="no">cityselectwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_city_select_window_1abdb25f647f618c60db5c7cef0374e687" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_city_select_window" kindref="compound">Ui::CitySelectWindow</ref> *</type>
+        <definition>Ui::CitySelectWindow* CitySelectWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="79" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_select_window_1ab32418ce682625925e5c03fe52618fb0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; QString &gt;</type>
+        <definition>std::vector&lt;QString&gt; CitySelectWindow::cityNames</definition>
+        <argsstring></argsstring>
+        <name>cityNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="80" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_select_window_1ac6e18edfe1d778fe3a9de0c3836d3316" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_city" kindref="compound">City</ref> &gt;</type>
+        <definition>std::vector&lt;City&gt; CitySelectWindow::loadedCities</definition>
+        <argsstring></argsstring>
+        <name>loadedCities</name>
+        <briefdescription>
+<para>A vector containing the names of cities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="81" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_select_window_1ab2b4388c1f4853c6fde54cbf82046961" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CitySelectWindow::planNumber</definition>
+        <argsstring></argsstring>
+        <name>planNumber</name>
+        <briefdescription>
+<para>A vector containing the currently loaded cities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="82" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_city_select_window_1a7a259de30cddf3e5dc8835546ea2de65" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CitySelectWindow::CitySelectWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>CitySelectWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="28" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a90e12e1a1f6f246a00ddabd0c41ad589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CitySelectWindow::~CitySelectWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~CitySelectWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="29" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a771b0feebb7c7fdb1714917b337a37f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::setCitySelection</definition>
+        <argsstring>()</argsstring>
+        <name>setCitySelection</name>
+        <briefdescription>
+<para><ref refid="class_city_select_window_1a771b0feebb7c7fdb1714917b337a37f3" kindref="member">setCitySelection()</ref> Sets the city selection of the <ref refid="class_city_select_window" kindref="compound">CitySelectWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="36" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="16" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a7a0aacdfc7b496f7b21cba7ab6311468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_city" kindref="compound">City</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; City &gt; &amp; CitySelectWindow::getLoadedCities</definition>
+        <argsstring>()</argsstring>
+        <name>getLoadedCities</name>
+        <briefdescription>
+<para><ref refid="class_city_select_window_1a7a0aacdfc7b496f7b21cba7ab6311468" kindref="member">getLoadedCities()</ref> Returns a vector containing the currently loaded cities </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>vector&lt;City&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="44" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a63048482e621b1653250c7acbd28c3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CitySelectWindow::getPlanNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getPlanNumber</name>
+        <briefdescription>
+<para><ref refid="class_city_select_window_1a63048482e621b1653250c7acbd28c3aa" kindref="member">getPlanNumber()</ref> Returns the value of the selected trip plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="52" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a6afffce8400f9541a3c31e0e359c0d9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::setPlanNumber</definition>
+        <argsstring>(int number)</argsstring>
+        <name>setPlanNumber</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_city_select_window_1a6afffce8400f9541a3c31e0e359c0d9b" kindref="member">setPlanNumber()</ref> Sets the value of the selected trip plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="60" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_city_select_window_1a6181200e04334e668f39df57af243fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::moveToFoodSelectClicked</definition>
+        <argsstring>()</argsstring>
+        <name>moveToFoodSelectClicked</name>
+        <briefdescription>
+<para>moveToFoodSelectClicked Proceeds to the <ref refid="class_food" kindref="compound">Food</ref> Select window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="68" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_cityselectwindow.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_city_select_window_1a4a285859ed0f222757ddcc0c266c44ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::on_moveToFoodSelect_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToFoodSelect_clicked</name>
+        <briefdescription>
+<para>on_moveToFoodSelect_clicked() Sends a signal to proceed the the food select menu </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="76" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_city_select_window_1aef0a789e56ba0950c68cebabe5671a5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::setParisPlan</definition>
+        <argsstring>()</argsstring>
+        <name>setParisPlan</name>
+        <briefdescription>
+<para>The plan number for the current trip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink setParisPlan() Sets the city selection to the Paris plan </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="89" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="104" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a3a14542f15ff41dc8fc0d46f65bca215" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::setLondonPlan</definition>
+        <argsstring>()</argsstring>
+        <name>setLondonPlan</name>
+        <briefdescription>
+<para>setLondonPlan() Sets the city selection to the London plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="96" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="125" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a56b1bc97e1da975f768cf873fcd1a0a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::setCustomPlan</definition>
+        <argsstring>()</argsstring>
+        <name>setCustomPlan</name>
+        <briefdescription>
+<para>setCustomPlan() Sets the city selection to the Custom plan </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="103" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="143" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a97466d94dea53ea2f79b62c1227e1c75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::loadSelectedCities</definition>
+        <argsstring>()</argsstring>
+        <name>loadSelectedCities</name>
+        <briefdescription>
+<para>loadSelectedCities() loads the cities selected by the user for their trip </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="110" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="57" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1a85938f15119fa0813bac08c903b4f5f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::loadParisPlan</definition>
+        <argsstring>()</argsstring>
+        <name>loadParisPlan</name>
+        <briefdescription>
+<para>loadParisPlan() loads the Paris plan to the city select window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="117" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="167" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1aee4754de6a17710f4759d4b160b3b296" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::loadLondonPlan</definition>
+        <argsstring>()</argsstring>
+        <name>loadLondonPlan</name>
+        <briefdescription>
+<para>loadLondonPlan() loads the Paris plan to the city select window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="124" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="215" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_select_window_1adce76f336302be229a2eca2d332e8381" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CitySelectWindow::loadCustomPlan</definition>
+        <argsstring>()</argsstring>
+        <name>loadCustomPlan</name>
+        <briefdescription>
+<para>loadCustomPlan() loads the Paris plan to the city select window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="131" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.cpp" bodystart="262" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>CitySelectWindow</label>
+        <link refid="class_city_select_window"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>CitySelectWindow</label>
+        <link refid="class_city_select_window"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" line="24" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/cityselectwindow.h" bodystart="23" bodyend="132"/>
+    <listofallmembers>
+      <member refid="class_city_select_window_1ab32418ce682625925e5c03fe52618fb0" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>cityNames</name></member>
+      <member refid="class_city_select_window_1a7a259de30cddf3e5dc8835546ea2de65" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>CitySelectWindow</name></member>
+      <member refid="class_city_select_window_1a7a0aacdfc7b496f7b21cba7ab6311468" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>getLoadedCities</name></member>
+      <member refid="class_city_select_window_1a63048482e621b1653250c7acbd28c3aa" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>getPlanNumber</name></member>
+      <member refid="class_city_select_window_1adce76f336302be229a2eca2d332e8381" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>loadCustomPlan</name></member>
+      <member refid="class_city_select_window_1ac6e18edfe1d778fe3a9de0c3836d3316" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>loadedCities</name></member>
+      <member refid="class_city_select_window_1aee4754de6a17710f4759d4b160b3b296" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>loadLondonPlan</name></member>
+      <member refid="class_city_select_window_1a85938f15119fa0813bac08c903b4f5f2" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>loadParisPlan</name></member>
+      <member refid="class_city_select_window_1a97466d94dea53ea2f79b62c1227e1c75" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>loadSelectedCities</name></member>
+      <member refid="class_city_select_window_1a6181200e04334e668f39df57af243fff" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>moveToFoodSelectClicked</name></member>
+      <member refid="class_city_select_window_1a4a285859ed0f222757ddcc0c266c44ab" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>on_moveToFoodSelect_clicked</name></member>
+      <member refid="class_city_select_window_1ab2b4388c1f4853c6fde54cbf82046961" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>planNumber</name></member>
+      <member refid="class_city_select_window_1a771b0feebb7c7fdb1714917b337a37f3" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>setCitySelection</name></member>
+      <member refid="class_city_select_window_1a56b1bc97e1da975f768cf873fcd1a0a3" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>setCustomPlan</name></member>
+      <member refid="class_city_select_window_1a3a14542f15ff41dc8fc0d46f65bca215" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>setLondonPlan</name></member>
+      <member refid="class_city_select_window_1aef0a789e56ba0950c68cebabe5671a5f" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>setParisPlan</name></member>
+      <member refid="class_city_select_window_1a6afffce8400f9541a3c31e0e359c0d9b" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>setPlanNumber</name></member>
+      <member refid="class_city_select_window_1abdb25f647f618c60db5c7cef0374e687" prot="private" virt="non-virtual"><scope>CitySelectWindow</scope><name>ui</name></member>
+      <member refid="class_city_select_window_1a90e12e1a1f6f246a00ddabd0c41ad589" prot="public" virt="non-virtual"><scope>CitySelectWindow</scope><name>~CitySelectWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

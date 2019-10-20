@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_results_window" kind="class" language="C++" prot="public">
+    <compoundname>ResultsWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="resultswindow_8h" local="no">resultswindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_results_window_1a653b598b6278715ebf93a64dfb062e0e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_results_window" kindref="compound">Ui::ResultsWindow</ref> *</type>
+        <definition>Ui::ResultsWindow* ResultsWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="82" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_results_window_1ab5eed3b399c8a305f588d4a98fb3a9ed" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ResultsWindow::ResultsWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>ResultsWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="24" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_results_window_1a2b320802242dbf6ac6b779480a30b86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ResultsWindow::~ResultsWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~ResultsWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="25" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_results_window_1ada6aa2afee19356d33b6b59646366cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultsWindow::setResults</definition>
+        <argsstring>(std::vector&lt; City &gt; &amp;loadedCities)</argsstring>
+        <name>setResults</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_city" kindref="compound">City</ref> &gt; &amp;</type>
+          <declname>loadedCities</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_results_window_1ada6aa2afee19356d33b6b59646366cc2" kindref="member">setResults(std::vector&lt;City&gt;&amp; loadedCities)</ref> Sets the results screen to the currently loaded cities </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector&lt;city&gt;&amp;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loadedCities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="33" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="16" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_results_window_1ad58645a2626daa51d8e824d56df7145f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_city" kindref="compound">City</ref></type>
+        <definition>City ResultsWindow::getClosestCity</definition>
+        <argsstring>(std::vector&lt; City &gt; loadedCities, QString name)</argsstring>
+        <name>getClosestCity</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_city" kindref="compound">City</ref> &gt;</type>
+          <declname>loadedCities</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_results_window_1ad58645a2626daa51d8e824d56df7145f" kindref="member">getClosestCity(std::vector&lt;City&gt; loadedCities, QString name)</ref> Returns the closest city to the current city </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector&lt;city&gt;&amp;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loadedCities, QString name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="41" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_results_window_1ae9d02be8b007fcbc61f6d6536ba1520f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_city" kindref="compound">City</ref></type>
+        <definition>City ResultsWindow::getStartingCity</definition>
+        <argsstring>(std::vector&lt; City &gt; loadedCities)</argsstring>
+        <name>getStartingCity</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_city" kindref="compound">City</ref> &gt;</type>
+          <declname>loadedCities</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_results_window_1ae9d02be8b007fcbc61f6d6536ba1520f" kindref="member">getStartingCity(std::vector&lt;City&gt; loadedCities)</ref> Returns the starting city of a trip </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector&lt;city&gt;&amp;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>loadedCities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="49" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="84" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_results_window_1a55bcbc29f4f178f52fc610a09ec21cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultsWindow::moveToMainClicked</definition>
+        <argsstring>()</argsstring>
+        <name>moveToMainClicked</name>
+        <briefdescription>
+<para><ref refid="class_results_window_1a55bcbc29f4f178f52fc610a09ec21cb3" kindref="member">moveToMainClicked()</ref> Proceeds to the <ref refid="class_main_window" kindref="compound">MainWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="57" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_resultswindow.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="signal" id="class_results_window_1a7a545927d8dd85526646a5d05d758052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultsWindow::moveToFoodSelectClicked</definition>
+        <argsstring>()</argsstring>
+        <name>moveToFoodSelectClicked</name>
+        <briefdescription>
+<para><ref refid="class_results_window_1a7a545927d8dd85526646a5d05d758052" kindref="member">moveToFoodSelectClicked()</ref> Proceeds to the <ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="64" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_resultswindow.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_results_window_1af445c688b4f68aeff3e5c5142179b291" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultsWindow::on_moveToMain_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToMain_clicked</name>
+        <briefdescription>
+<para>on_moveToMain_clicked() Sends a signal to move to the <ref refid="class_main_window" kindref="compound">MainWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="72" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_results_window_1a3e23dd0d2f772caaa80c95c563d8883b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultsWindow::on_moveToFoodSelect_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_moveToFoodSelect_clicked</name>
+        <briefdescription>
+<para>on_moveToFoodSelect_clicked() Sends a signal to move to the <ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="79" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="64">
+        <label>ResultsWindow</label>
+        <link refid="class_results_window"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="66">
+        <label>ResultsWindow</label>
+        <link refid="class_results_window"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" line="20" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/resultswindow.h" bodystart="19" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_results_window_1ad58645a2626daa51d8e824d56df7145f" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>getClosestCity</name></member>
+      <member refid="class_results_window_1ae9d02be8b007fcbc61f6d6536ba1520f" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>getStartingCity</name></member>
+      <member refid="class_results_window_1a7a545927d8dd85526646a5d05d758052" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>moveToFoodSelectClicked</name></member>
+      <member refid="class_results_window_1a55bcbc29f4f178f52fc610a09ec21cb3" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>moveToMainClicked</name></member>
+      <member refid="class_results_window_1a3e23dd0d2f772caaa80c95c563d8883b" prot="private" virt="non-virtual"><scope>ResultsWindow</scope><name>on_moveToFoodSelect_clicked</name></member>
+      <member refid="class_results_window_1af445c688b4f68aeff3e5c5142179b291" prot="private" virt="non-virtual"><scope>ResultsWindow</scope><name>on_moveToMain_clicked</name></member>
+      <member refid="class_results_window_1ab5eed3b399c8a305f588d4a98fb3a9ed" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>ResultsWindow</name></member>
+      <member refid="class_results_window_1ada6aa2afee19356d33b6b59646366cc2" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>setResults</name></member>
+      <member refid="class_results_window_1a653b598b6278715ebf93a64dfb062e0e" prot="private" virt="non-virtual"><scope>ResultsWindow</scope><name>ui</name></member>
+      <member refid="class_results_window_1a2b320802242dbf6ac6b779480a30b86c" prot="public" virt="non-virtual"><scope>ResultsWindow</scope><name>~ResultsWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_ui___login_window" kind="class" language="C++" prot="public">
+    <compoundname>Ui_LoginWindow</compoundname>
+    <derivedcompoundref refid="class_ui_1_1_login_window" prot="public" virt="non-virtual">Ui::LoginWindow</derivedcompoundref>
+    <includes refid="ui__loginwindow_8h" local="no">ui_loginwindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" prot="public" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* Ui_LoginWindow::usernameLineEdit</definition>
+        <argsstring></argsstring>
+        <name>usernameLineEdit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="25" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" prot="public" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* Ui_LoginWindow::passwordLineEdit</definition>
+        <argsstring></argsstring>
+        <name>passwordLineEdit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="26" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_LoginWindow::usernameLabel</definition>
+        <argsstring></argsstring>
+        <name>usernameLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="27" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_LoginWindow::passwordLabel</definition>
+        <argsstring></argsstring>
+        <name>passwordLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="28" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_LoginWindow::statusLabel</definition>
+        <argsstring></argsstring>
+        <name>statusLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="29" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" prot="public" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* Ui_LoginWindow::loginGroupBox</definition>
+        <argsstring></argsstring>
+        <name>loginGroupBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="30" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_LoginWindow::loginButton</definition>
+        <argsstring></argsstring>
+        <name>loginButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="31" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ui___login_window_1a1c3ffc6b9784b68654c59db923f3c217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_LoginWindow::setupUi</definition>
+        <argsstring>(QWidget *LoginWindow)</argsstring>
+        <name>setupUi</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>LoginWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="33" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="33" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ui___login_window_1a5f6832fbf9554aef841da1efc1b0fa84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_LoginWindow::retranslateUi</definition>
+        <argsstring>(QWidget *LoginWindow)</argsstring>
+        <name>retranslateUi</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>LoginWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="72" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="72" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>Ui_LoginWindow</label>
+        <link refid="class_ui___login_window"/>
+      </node>
+      <node id="86">
+        <label>Ui::LoginWindow</label>
+        <link refid="class_ui_1_1_login_window"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" line="23" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_loginwindow.h" bodystart="22" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_ui___login_window_1a09edcb5fc16a3ebe02caa58c805881ce" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>loginButton</name></member>
+      <member refid="class_ui___login_window_1a68ed6094e9a155151988d3063fda01b9" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>loginGroupBox</name></member>
+      <member refid="class_ui___login_window_1ac7e65686283e30b9bbb24dfe6c9d7123" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>passwordLabel</name></member>
+      <member refid="class_ui___login_window_1a7ca08bc4b2faa0481c83d588baba7a43" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>passwordLineEdit</name></member>
+      <member refid="class_ui___login_window_1a5f6832fbf9554aef841da1efc1b0fa84" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>retranslateUi</name></member>
+      <member refid="class_ui___login_window_1a1c3ffc6b9784b68654c59db923f3c217" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>setupUi</name></member>
+      <member refid="class_ui___login_window_1abdb557fde6663074faa84b449bb2eddc" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>statusLabel</name></member>
+      <member refid="class_ui___login_window_1a9595f2c0be7d47ee8d3de1b795d6946d" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>usernameLabel</name></member>
+      <member refid="class_ui___login_window_1a5f0e5d18fc9c536647aed75348b1305f" prot="public" virt="non-virtual"><scope>Ui_LoginWindow</scope><name>usernameLineEdit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

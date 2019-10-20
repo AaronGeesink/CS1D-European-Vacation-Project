@@ -1,13 +1,5 @@
 #include "database.h"
 
-
-void closeConnection()
-{
-	QSqlDatabase db = QSqlDatabase::database();
-	db.close();
-	QSqlDatabase::removeDatabase(QSqlDatabase::defaultConnection);
-}
-
 void createDatabase()
 {
 	QSqlDatabase::addDatabase("QSQLITE");

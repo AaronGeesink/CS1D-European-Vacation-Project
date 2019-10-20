@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="foodselectwindow_8cpp" kind="file" language="C++">
+    <compoundname>foodselectwindow.cpp</compoundname>
+    <includes refid="foodselectwindow_8h" local="yes">foodselectwindow.h</includes>
+    <includes refid="ui__foodselectwindow_8h" local="yes">ui_foodselectwindow.h</includes>
+    <incdepgraph>
+      <node id="372">
+        <label>QtWidgets/QWidget</label>
+      </node>
+      <node id="371">
+        <label>QtWidgets/QTableWidget</label>
+      </node>
+      <node id="367">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="370">
+        <label>QtWidgets/QPushButton</label>
+      </node>
+      <node id="366">
+        <label>ui_foodselectwindow.h</label>
+        <link refid="ui__foodselectwindow_8h"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>QDebug</label>
+      </node>
+      <node id="359">
+        <label>vector</label>
+      </node>
+      <node id="357">
+        <label>QWidget</label>
+      </node>
+      <node id="369">
+        <label>QtWidgets/QHeaderView</label>
+      </node>
+      <node id="365">
+        <label>utility</label>
+      </node>
+      <node id="363">
+        <label>QString</label>
+      </node>
+      <node id="364">
+        <label>food.h</label>
+        <link refid="food_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/foodselectwindow.cpp</label>
+        <link refid="foodselectwindow_8cpp"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>QLabel</label>
+      </node>
+      <node id="368">
+        <label>QtWidgets/QApplication</label>
+      </node>
+      <node id="362">
+        <label>city.h</label>
+        <link refid="city_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>QSpinBox</label>
+      </node>
+      <node id="356">
+        <label>foodselectwindow.h</label>
+        <link refid="foodselectwindow_8h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="foodselectwindow_8h" kindref="compound">foodselectwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ui__foodselectwindow_8h" kindref="compound">ui_foodselectwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_food_select_window_1a406c941abcadeffb28129c9c54f683c7" refkind="member"><highlight class="normal"><ref refid="class_food_select_window_1a406c941abcadeffb28129c9c54f683c7" kindref="member">FoodSelectWindow::FoodSelectWindow</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget(parent),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="class_food_select_window" kindref="compound">FoodSelectWindow</ref>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1ae81797d9f7f0d379818c83b9867e0333" kindref="member">setupUi</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_food_select_window_1ad9a2c1de2179eb3ce5e1e02a8d4515ba" refkind="member"><highlight class="normal"><ref refid="class_food_select_window_1ad9a2c1de2179eb3ce5e1e02a8d4515ba" kindref="member">FoodSelectWindow::~FoodSelectWindow</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_food_select_window_1a6df884d5b39d16a2708f8bcae205ecd5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_food_select_window_1a6df884d5b39d16a2708f8bcae205ecd5" kindref="member">FoodSelectWindow::setFoodSelection</ref>(std::vector&lt;City&gt;<sp/>&amp;loadedCities)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;loadedCities<sp/>=<sp/>&amp;loadedCities;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Table<sp/>Setup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numFoods<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>loadedCities.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numFoods<sp/>=<sp/>numFoods<sp/>+<sp/>loadedCities[i].getNumFoods();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setRowCount(numFoods);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setColumnCount(4);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setHorizontalHeaderItem(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(</highlight><highlight class="stringliteral">&quot;City&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setHorizontalHeaderItem(1,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(</highlight><highlight class="stringliteral">&quot;Food&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setHorizontalHeaderItem(2,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(</highlight><highlight class="stringliteral">&quot;Price&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setHorizontalHeaderItem(3,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(</highlight><highlight class="stringliteral">&quot;Quantity<sp/>to<sp/>Buy&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setSelectionMode(QAbstractItemView::NoSelection);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*label;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;Food&gt;<sp/>foods;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>foodsLoaded<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>loadedCities.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setText(loadedCities[i].getName());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setCellWidget(foodsLoaded,<sp/>0,<sp/>label);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//foods.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//foods<sp/>=<sp/>loadedCities[i].getFoods();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>loadedCities[i].getFoods().size();<sp/>j++)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>name<sp/>of<sp/>the<sp/>food</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setText(loadedCities[i].getFoods()[j].getName());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setCellWidget(foodsLoaded,<sp/>1,<sp/>label);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>price<sp/>of<sp/>the<sp/>food</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setText(</highlight><highlight class="stringliteral">&quot;$&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::number(loadedCities[i].getFoods()[j].getPrice()));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setCellWidget(foodsLoaded,<sp/>2,<sp/>label);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>QLineEdit<sp/>objects<sp/>for<sp/>quantity<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;setCellWidget(foodsLoaded,<sp/>3,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpinBox());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foodsLoaded++;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_food_select_window_1a608403f9ed5796c1a1d0ac034296bc05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_food_select_window_1a608403f9ed5796c1a1d0ac034296bc05" kindref="member">FoodSelectWindow::loadFoodQuantities</ref>()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>foodsLoaded<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>loadedCities-&gt;begin();<sp/>it<sp/>!=<sp/>loadedCities-&gt;end();<sp/>++it)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>it-&gt;getFoods().size();<sp/>j++)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSpinBox<sp/>*spinBox<sp/>=<sp/>qobject_cast&lt;QSpinBox<sp/>*&gt;(ui-&gt;<ref refid="class_ui___food_select_window_1abddd1172ee154f7cb0635e1797d6c5f7" kindref="member">foodTable</ref>-&gt;cellWidget(foodsLoaded,<sp/>3));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(spinBox)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it-&gt;getFoods()[j].setQuantity(spinBox-&gt;value());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//qDebug()<sp/>&lt;&lt;<sp/>spinBox-&gt;value();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foodsLoaded++;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_food_select_window_1a2a32ba559351db37a46af24cad9cba5d" refkind="member"><highlight class="normal">std::vector&lt;City&gt;&amp;<sp/><ref refid="class_food_select_window_1a2a32ba559351db37a46af24cad9cba5d" kindref="member">FoodSelectWindow::getLoadedCities</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*loadedCities;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FoodSelectWindow::on_moveToCitySelect_clicked()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_food_select_window_1a0d2bb2f7e07f62e62c2920d989415d8c" kindref="member">moveToCitySelectClicked</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FoodSelectWindow::on_moveToResults_clicked()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_food_select_window_1a608403f9ed5796c1a1d0ac034296bc05" kindref="member">loadFoodQuantities</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_food_select_window_1a76b0dfec8f72dfa4c336732a922287fc" kindref="member">moveToResultsClicked</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/foodselectwindow.cpp"/>
+  </compounddef>
+</doxygen>

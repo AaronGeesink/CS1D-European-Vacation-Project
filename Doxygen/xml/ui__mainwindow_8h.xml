@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="ui__mainwindow_8h" kind="file" language="C++">
+    <compoundname>ui_mainwindow.h</compoundname>
+    <includes local="no">QtCore/QVariant</includes>
+    <includes local="no">QtWidgets/QApplication</includes>
+    <includes local="no">QtWidgets/QGridLayout</includes>
+    <includes local="no">QtWidgets/QLabel</includes>
+    <includes local="no">QtWidgets/QPushButton</includes>
+    <includes local="no">QtWidgets/QSpacerItem</includes>
+    <includes local="no">QtWidgets/QStackedWidget</includes>
+    <includes local="no">QtWidgets/QWidget</includes>
+    <includedby refid="mainwindow_8cpp" local="yes">C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="614">
+        <label>QtWidgets/QWidget</label>
+      </node>
+      <node id="613">
+        <label>QtWidgets/QStackedWidget</label>
+      </node>
+      <node id="606">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_mainwindow.h</label>
+        <link refid="ui__mainwindow_8h"/>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>QtWidgets/QLabel</label>
+      </node>
+      <node id="612">
+        <label>QtWidgets/QSpacerItem</label>
+      </node>
+      <node id="607">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="611">
+        <label>QtWidgets/QPushButton</label>
+      </node>
+      <node id="608">
+        <label>QtWidgets/QApplication</label>
+      </node>
+      <node id="609">
+        <label>QtWidgets/QGridLayout</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="615">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_mainwindow.h</label>
+        <link refid="ui__mainwindow_8h"/>
+        <childnode refid="616" relation="include">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ui___main_window" prot="public">Ui_MainWindow</innerclass>
+    <innerclass refid="class_ui_1_1_main_window" prot="public">Ui::MainWindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>generated<sp/>from<sp/>reading<sp/>UI<sp/>file<sp/>&apos;mainwindow.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created<sp/>by:<sp/>Qt<sp/>User<sp/>Interface<sp/>Compiler<sp/>version<sp/>5.13.0</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost<sp/>when<sp/>recompiling<sp/>UI<sp/>file!</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UI_MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UI_MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QGridLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QSpacerItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QStackedWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtWidgets/QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_ui___main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ui___main_window" kindref="compound">Ui_MainWindow</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStackedWidget<sp/>*<ref refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" kindref="member">stackedWidget</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>;</highlight></codeline>
+<codeline lineno="30" refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout<sp/>*<ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>;</highlight></codeline>
+<codeline lineno="31" refid="class_ui___main_window_1a7871ea8c4b6c595d7ccd53960b344719" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem<sp/>*<ref refid="class_ui___main_window_1a7871ea8c4b6c595d7ccd53960b344719" kindref="member">horizontalSpacer</ref>;</highlight></codeline>
+<codeline lineno="32" refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>;</highlight></codeline>
+<codeline lineno="35" refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref>;</highlight></codeline>
+<codeline lineno="36" refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref>;</highlight></codeline>
+<codeline lineno="37" refid="class_ui___main_window_1a8384329c3663ff274e926a12024aab52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem<sp/>*<ref refid="class_ui___main_window_1a8384329c3663ff274e926a12024aab52" kindref="member">verticalSpacer</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_ui___main_window_1a9a022556cf8ce3fa47e51d79cb222ab0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem<sp/>*<ref refid="class_ui___main_window_1a9a022556cf8ce3fa47e51d79cb222ab0" kindref="member">horizontalSpacer_2</ref>;</highlight></codeline>
+<codeline lineno="39" refid="class_ui___main_window_1adc1f5fdd97fb3729999c56902d0fa591" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem<sp/>*<ref refid="class_ui___main_window_1adc1f5fdd97fb3729999c56902d0fa591" kindref="member">verticalSpacer_2</ref>;</highlight></codeline>
+<codeline lineno="40" refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref>;</highlight></codeline>
+<codeline lineno="41" refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" kindref="member">exitButton</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" kindref="member">mainButton</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_ui___main_window_1a306e3013ead511f9bc29513aa0219579" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ui___main_window_1a306e3013ead511f9bc29513aa0219579" kindref="member">setupUi</ref>(QWidget<sp/>*<ref refid="class_main_window" kindref="compound">MainWindow</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;objectName().isEmpty())</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;resize(1200,<sp/>800);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;setMinimumSize(QSize(1200,<sp/>800));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;setMaximumSize(QSize(1200,<sp/>800));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" kindref="member">stackedWidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStackedWidget(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" kindref="member">stackedWidget</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;stackedWidget&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" kindref="member">stackedWidget</ref>-&gt;setGeometry(QRect(0,<sp/>80,<sp/>1201,<sp/>721));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;page&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref>-&gt;setGeometry(QRect(-400,<sp/>-50,<sp/>1611,<sp/>831));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref>-&gt;setPixmap(QPixmap(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;:/new/prefix1/Europe.png&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;gridLayoutWidget&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>-&gt;setGeometry(QRect(0,<sp/>0,<sp/>1201,<sp/>721));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;setSpacing(20);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;gridLayout&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;setContentsMargins(0,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a7871ea8c4b6c595d7ccd53960b344719" kindref="member">horizontalSpacer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(300,<sp/>20,<sp/>QSizePolicy::Maximum,<sp/>QSizePolicy::Minimum);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addItem(<ref refid="class_ui___main_window_1a7871ea8c4b6c595d7ccd53960b344719" kindref="member">horizontalSpacer</ref>,<sp/>1,<sp/>0,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;moveToEdit&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>-&gt;setMinimumSize(QSize(150,<sp/>50));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>-&gt;setIconSize(QSize(16,<sp/>16));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>,<sp/>3,<sp/>2,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;moveToView&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref>-&gt;setMinimumSize(QSize(150,<sp/>50));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref>,<sp/>2,<sp/>2,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;moveToLondon&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>-&gt;setMinimumSize(QSize(150,<sp/>50));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>-&gt;setAutoRepeat(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>,<sp/>1,<sp/>2,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;moveToCustom&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref>-&gt;setMinimumSize(QSize(150,<sp/>50));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref>,<sp/>1,<sp/>3,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_ui___main_window_1a08a857edea57a9e53915f22187c06813" kindref="member">gridLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;moveTo11Cities&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref>-&gt;setMinimumSize(QSize(150,<sp/>50));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref>,<sp/>1,<sp/>1,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a8384329c3663ff274e926a12024aab52" kindref="member">verticalSpacer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(20,<sp/>200,<sp/>QSizePolicy::Minimum,<sp/>QSizePolicy::Maximum);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addItem(<ref refid="class_ui___main_window_1a8384329c3663ff274e926a12024aab52" kindref="member">verticalSpacer</ref>,<sp/>0,<sp/>2,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a9a022556cf8ce3fa47e51d79cb222ab0" kindref="member">horizontalSpacer_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(300,<sp/>20,<sp/>QSizePolicy::Maximum,<sp/>QSizePolicy::Minimum);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addItem(<ref refid="class_ui___main_window_1a9a022556cf8ce3fa47e51d79cb222ab0" kindref="member">horizontalSpacer_2</ref>,<sp/>1,<sp/>4,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1adc1f5fdd97fb3729999c56902d0fa591" kindref="member">verticalSpacer_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(20,<sp/>200,<sp/>QSizePolicy::Minimum,<sp/>QSizePolicy::Maximum);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kindref="member">gridLayout</ref>-&gt;addItem(<ref refid="class_ui___main_window_1adc1f5fdd97fb3729999c56902d0fa591" kindref="member">verticalSpacer_2</ref>,<sp/>4,<sp/>2,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a8d440a6df1de0bc57afcdda7476d8f19" kindref="member">stackedWidget</ref>-&gt;addWidget(<ref refid="class_ui___main_window_1ad7d164376bef8649ee1f94697b859417" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;titleText&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref>-&gt;setGeometry(QRect(470,<sp/>10,<sp/>211,<sp/>41));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref>-&gt;setAlignment(Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" kindref="member">exitButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" kindref="member">exitButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;exitButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" kindref="member">exitButton</ref>-&gt;setGeometry(QRect(1120,<sp/>10,<sp/>75,<sp/>51));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" kindref="member">mainButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" kindref="member">mainButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;mainButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" kindref="member">mainButton</ref>-&gt;setGeometry(QRect(10,<sp/>10,<sp/>80,<sp/>51));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae4964a56cb4d6d76b7a398fd76b200e2" kindref="member">retranslateUi</ref>(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMetaObject::connectSlotsByName(<ref refid="class_main_window" kindref="compound">MainWindow</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>setupUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_ui___main_window_1ae4964a56cb4d6d76b7a398fd76b200e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ui___main_window_1ae4964a56cb4d6d76b7a398fd76b200e2" kindref="member">retranslateUi</ref>(QWidget<sp/>*<ref refid="class_main_window" kindref="compound">MainWindow</ref>)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>-&gt;setWindowTitle(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9c89133780f28e6efa2ec17ceb9cff5" kindref="member">label</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a4a943d530aef96076993420fbe8008aa" kindref="member">moveToEdit</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Edit<sp/>Database&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ad9801547cfce7c5d19b427123105f0b2" kindref="member">moveToView</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;View<sp/>Cities<sp/>and<sp/>Food&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ae68791a82316a972b14e8a8f16eb377c" kindref="member">moveToLondon</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Shortest<sp/>Trip\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Starting<sp/>From<sp/>London&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a3e9ac52f326b4e72f38cf05903b00cd7" kindref="member">moveToCustom</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Custom<sp/>Trip&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1ab038373e7752969160cec00fd5cc24da" kindref="member">moveTo11Cities</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;11<sp/>Cities\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Starting<sp/>From<sp/>Paris&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a892390c810f5c91a93dc843de90cf433" kindref="member">titleText</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;European<sp/>Vacation<sp/>Program&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a0a94b420ba46214964527b8bbdf424ad" kindref="member">exitButton</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Exit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ui___main_window_1a5c315d3186a5bca7e7d71fb3c41057b3" kindref="member">mainButton</ref>-&gt;setText(QCoreApplication::translate(</highlight><highlight class="stringliteral">&quot;MainWindow&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Main\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Menu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>retranslateUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ui" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
+<codeline lineno="152" refid="class_ui_1_1_main_window" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ui_1_1_main_window" kindref="compound">MainWindow</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_ui___main_window" kindref="compound">Ui_MainWindow</ref><sp/>{};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>UI_MAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_mainwindow.h"/>
+  </compounddef>
+</doxygen>

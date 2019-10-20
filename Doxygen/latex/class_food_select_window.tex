@@ -1,0 +1,165 @@
+\hypertarget{class_food_select_window}{}\section{Food\+Select\+Window Class Reference}
+\label{class_food_select_window}\index{FoodSelectWindow@{FoodSelectWindow}}
+
+
+{\ttfamily \#include $<$foodselectwindow.\+h$>$}
+
+Inheritance diagram for Food\+Select\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_food_select_window}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_food_select_window_a0d2bb2f7e07f62e62c2920d989415d8c}{move\+To\+City\+Select\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_select_window_a0d2bb2f7e07f62e62c2920d989415d8c}{move\+To\+City\+Select\+Clicked()}} Proceeds to the city select window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_select_window_a76b0dfec8f72dfa4c336732a922287fc}{move\+To\+Results\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_select_window_a76b0dfec8f72dfa4c336732a922287fc}{move\+To\+Results\+Clicked()}} Proceeds to the city results window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_select_window_a406c941abcadeffb28129c9c54f683c7}{Food\+Select\+Window}} (Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_food_select_window_ad9a2c1de2179eb3ce5e1e02a8d4515ba}{$\sim$\+Food\+Select\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_food_select_window_a6df884d5b39d16a2708f8bcae205ecd5}{set\+Food\+Selection}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&loaded\+Cities)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_select_window_a6df884d5b39d16a2708f8bcae205ecd5}{set\+Food\+Selection(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the food selection of the \mbox{\hyperlink{class_city_select_window}{City\+Select\+Window}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_select_window_a608403f9ed5796c1a1d0ac034296bc05}{load\+Food\+Quantities}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_select_window_a608403f9ed5796c1a1d0ac034296bc05}{load\+Food\+Quantities()}} Loads the quantities of food on the \mbox{\hyperlink{class_city_select_window}{City\+Select\+Window}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \& \mbox{\hyperlink{class_food_select_window_a2a32ba559351db37a46af24cad9cba5d}{get\+Loaded\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_food_select_window_a2a32ba559351db37a46af24cad9cba5d}{get\+Loaded\+Cities()}} Returns a vector containing the currently loaded cities \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file foodselectwindow.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_food_select_window_a406c941abcadeffb28129c9c54f683c7}\label{class_food_select_window_a406c941abcadeffb28129c9c54f683c7}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!FoodSelectWindow@{FoodSelectWindow}}
+\index{FoodSelectWindow@{FoodSelectWindow}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{FoodSelectWindow()}{FoodSelectWindow()}}
+{\footnotesize\ttfamily Food\+Select\+Window\+::\+Food\+Select\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 4 of file foodselectwindow.\+cpp.
+
+\mbox{\Hypertarget{class_food_select_window_ad9a2c1de2179eb3ce5e1e02a8d4515ba}\label{class_food_select_window_ad9a2c1de2179eb3ce5e1e02a8d4515ba}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!````~FoodSelectWindow@{$\sim$FoodSelectWindow}}
+\index{````~FoodSelectWindow@{$\sim$FoodSelectWindow}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{$\sim$FoodSelectWindow()}{~FoodSelectWindow()}}
+{\footnotesize\ttfamily Food\+Select\+Window\+::$\sim$\+Food\+Select\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file foodselectwindow.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_food_select_window_a2a32ba559351db37a46af24cad9cba5d}\label{class_food_select_window_a2a32ba559351db37a46af24cad9cba5d}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!getLoadedCities@{getLoadedCities}}
+\index{getLoadedCities@{getLoadedCities}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{getLoadedCities()}{getLoadedCities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \& Food\+Select\+Window\+::get\+Loaded\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_select_window_a2a32ba559351db37a46af24cad9cba5d}{get\+Loaded\+Cities()}} Returns a vector containing the currently loaded cities 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+vector$<$\+City$>$ 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file foodselectwindow.\+cpp.
+
+\mbox{\Hypertarget{class_food_select_window_a608403f9ed5796c1a1d0ac034296bc05}\label{class_food_select_window_a608403f9ed5796c1a1d0ac034296bc05}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!loadFoodQuantities@{loadFoodQuantities}}
+\index{loadFoodQuantities@{loadFoodQuantities}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{loadFoodQuantities()}{loadFoodQuantities()}}
+{\footnotesize\ttfamily void Food\+Select\+Window\+::load\+Food\+Quantities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_select_window_a608403f9ed5796c1a1d0ac034296bc05}{load\+Food\+Quantities()}} Loads the quantities of food on the \mbox{\hyperlink{class_city_select_window}{City\+Select\+Window}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 69 of file foodselectwindow.\+cpp.
+
+\mbox{\Hypertarget{class_food_select_window_a0d2bb2f7e07f62e62c2920d989415d8c}\label{class_food_select_window_a0d2bb2f7e07f62e62c2920d989415d8c}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!moveToCitySelectClicked@{moveToCitySelectClicked}}
+\index{moveToCitySelectClicked@{moveToCitySelectClicked}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{moveToCitySelectClicked}{moveToCitySelectClicked}}
+{\footnotesize\ttfamily void Food\+Select\+Window\+::move\+To\+City\+Select\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\mbox{\hyperlink{class_food_select_window_a0d2bb2f7e07f62e62c2920d989415d8c}{move\+To\+City\+Select\+Clicked()}} Proceeds to the city select window 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 154 of file moc\+\_\+foodselectwindow.\+cpp.
+
+\mbox{\Hypertarget{class_food_select_window_a76b0dfec8f72dfa4c336732a922287fc}\label{class_food_select_window_a76b0dfec8f72dfa4c336732a922287fc}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!moveToResultsClicked@{moveToResultsClicked}}
+\index{moveToResultsClicked@{moveToResultsClicked}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{moveToResultsClicked}{moveToResultsClicked}}
+{\footnotesize\ttfamily void Food\+Select\+Window\+::move\+To\+Results\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\mbox{\hyperlink{class_food_select_window_a76b0dfec8f72dfa4c336732a922287fc}{move\+To\+Results\+Clicked()}} Proceeds to the city results window 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 160 of file moc\+\_\+foodselectwindow.\+cpp.
+
+\mbox{\Hypertarget{class_food_select_window_a6df884d5b39d16a2708f8bcae205ecd5}\label{class_food_select_window_a6df884d5b39d16a2708f8bcae205ecd5}} 
+\index{FoodSelectWindow@{FoodSelectWindow}!setFoodSelection@{setFoodSelection}}
+\index{setFoodSelection@{setFoodSelection}!FoodSelectWindow@{FoodSelectWindow}}
+\subsubsection{\texorpdfstring{setFoodSelection()}{setFoodSelection()}}
+{\footnotesize\ttfamily void Food\+Select\+Window\+::set\+Food\+Selection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&}]{loaded\+Cities }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_food_select_window_a6df884d5b39d16a2708f8bcae205ecd5}{set\+Food\+Selection(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the food selection of the \mbox{\hyperlink{class_city_select_window}{City\+Select\+Window}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$city$>$\&} & loaded\+Cities \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file foodselectwindow.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{foodselectwindow_8h}{foodselectwindow.\+h}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/debug/\mbox{\hyperlink{moc__foodselectwindow_8cpp}{moc\+\_\+foodselectwindow.\+cpp}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{foodselectwindow_8cpp}{foodselectwindow.\+cpp}}\end{DoxyCompactItemize}

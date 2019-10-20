@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_login_window" kind="class" language="C++" prot="public">
+    <compoundname>LoginWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="loginwindow_8h" local="no">loginwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_login_window_1a583f5c7dda98acd3e65791101f9ff2a0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_login_window" kindref="compound">Ui::LoginWindow</ref> *</type>
+        <definition>Ui::LoginWindow* LoginWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="48" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_login_window_1aa4c04d26b299de00156bbf3c32b2a082" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LoginWindow::LoginWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>LoginWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="27" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_window_1a0c49fe788dcce29aa50e7d974e1ad158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LoginWindow::~LoginWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~LoginWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="28" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_login_window_1a0ed797ae07a4afea038499d6929047a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginWindow::moveToEditClicked</definition>
+        <argsstring>()</argsstring>
+        <name>moveToEditClicked</name>
+        <briefdescription>
+<para>on_pushButton_BackButton_clicked() Redirects the window to the edit window of the program </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="35" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/debug/moc_loginwindow.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_login_window_1ab8d51547e0865fd32ae88eba18e5623f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginWindow::on_loginButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_loginButton_clicked</name>
+        <briefdescription>
+<para>on_loginButton_clicked() This method verifies if the user&apos;s login info is correct. If the login is valid, it opens the Edit Window If the login is invalid, the user is given an &quot;Invalid Username or Password&quot; message </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Garrett Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="45" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.cpp" bodystart="16" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_login_window" kindref="compound">LoginWindow</ref> This class allows the user to input a username and password, and verifies if their login information is valid If the login is valid, it opens the Edit Window If the login is invalid, the user is given an &quot;Invalid Username or Password&quot; message. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>LoginWindow</label>
+        <link refid="class_login_window"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>LoginWindow</label>
+        <link refid="class_login_window"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" line="23" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/loginwindow.h" bodystart="22" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_login_window_1aa4c04d26b299de00156bbf3c32b2a082" prot="public" virt="non-virtual"><scope>LoginWindow</scope><name>LoginWindow</name></member>
+      <member refid="class_login_window_1a0ed797ae07a4afea038499d6929047a1" prot="public" virt="non-virtual"><scope>LoginWindow</scope><name>moveToEditClicked</name></member>
+      <member refid="class_login_window_1ab8d51547e0865fd32ae88eba18e5623f" prot="private" virt="non-virtual"><scope>LoginWindow</scope><name>on_loginButton_clicked</name></member>
+      <member refid="class_login_window_1a583f5c7dda98acd3e65791101f9ff2a0" prot="private" virt="non-virtual"><scope>LoginWindow</scope><name>ui</name></member>
+      <member refid="class_login_window_1a0c49fe788dcce29aa50e7d974e1ad158" prot="public" virt="non-virtual"><scope>LoginWindow</scope><name>~LoginWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

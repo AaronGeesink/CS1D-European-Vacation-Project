@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_ui_1_1_city_select_window" kind="class" language="C++" prot="public">
+    <compoundname>Ui::CitySelectWindow</compoundname>
+    <basecompoundref refid="class_ui___city_select_window" prot="public" virt="non-virtual">Ui_CitySelectWindow</basecompoundref>
+    <includes refid="ui__cityselectwindow_8h" local="no">ui_cityselectwindow.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>Ui_CitySelectWindow</label>
+        <link refid="class_ui___city_select_window"/>
+      </node>
+      <node id="8">
+        <label>Ui::CitySelectWindow</label>
+        <link refid="class_ui_1_1_city_select_window"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Ui_CitySelectWindow</label>
+        <link refid="class_ui___city_select_window"/>
+      </node>
+      <node id="10">
+        <label>Ui::CitySelectWindow</label>
+        <link refid="class_ui_1_1_city_select_window"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_cityselectwindow.h" line="59" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/ui_cityselectwindow.h" bodystart="59" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_ui___city_select_window_1af78028903db7e6b82f9d2fb50d3182d7" prot="public" virt="non-virtual"><scope>Ui::CitySelectWindow</scope><name>cityLabel</name></member>
+      <member refid="class_ui___city_select_window_1a1973807be1feaaff2a82baafd22fbc14" prot="public" virt="non-virtual"><scope>Ui::CitySelectWindow</scope><name>cityTable</name></member>
+      <member refid="class_ui___city_select_window_1a4ea2d95b45c0265a1f00dd4f3c85dd9c" prot="public" virt="non-virtual"><scope>Ui::CitySelectWindow</scope><name>moveToFoodSelect</name></member>
+      <member refid="class_ui___city_select_window_1ae7ea20821b449c19c09ae9ca73f03daf" prot="public" virt="non-virtual"><scope>Ui::CitySelectWindow</scope><name>retranslateUi</name></member>
+      <member refid="class_ui___city_select_window_1a0984abfece713da5e3ef219fd6b4b640" prot="public" virt="non-virtual"><scope>Ui::CitySelectWindow</scope><name>setupUi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

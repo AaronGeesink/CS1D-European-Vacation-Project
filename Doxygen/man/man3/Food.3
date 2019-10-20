@@ -1,0 +1,259 @@
+.TH "Food" 3 "Sun Oct 20 2019" "Version 1.0" "European Vacation Planner" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Food \- \fBFood\fP class A food class for instantiating food\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <food\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "\fBFood()\fP Default constructor\&. "
+.ti -1c
+.RI "\fBFood\fP (QString name, double price, int quantity=0)"
+.br
+.RI "\fBFood\fP(QString name, double price, int quantity = 0) Overloaded constructor\&. "
+.ti -1c
+.RI "\fB~Food\fP ()"
+.br
+.RI "\fB~Food()\fP Destructor "
+.ti -1c
+.RI "void \fBsetQuantity\fP (int quantity)"
+.br
+.RI "\fBsetQuantity(int quantity)\fP Sets the quantity of food the user purchases "
+.ti -1c
+.RI "double \fBgetPrice\fP ()"
+.br
+.RI "\fBgetPrice()\fP Returns the price of a food item "
+.ti -1c
+.RI "QString \fBgetName\fP ()"
+.br
+.RI "\fBgetName()\fP Returns the name of a food item "
+.ti -1c
+.RI "double \fBcalculateTotal\fP ()"
+.br
+.RI "\fBcalculateTotal()\fP Returns the total price of all purchased food items "
+.ti -1c
+.RI "\fBFood\fP & \fBoperator=\fP (\fBFood\fP other)"
+.br
+.RI "\fBoperator=(Food other)\fP An copy assignment for food items "
+.ti -1c
+.RI "\fBFood\fP & \fBoperator=\fP (\fBFood\fP &&other)"
+.br
+.RI "\fBoperator=(Food&& other)\fP A move assignment for food items "
+.ti -1c
+.RI "\fBFood\fP (const \fBFood\fP &other)"
+.br
+.RI "\fBFood(const Food& other)\fP; A copy constructor for food items\&. "
+.ti -1c
+.RI "\fBFood\fP (\fBFood\fP &&other)"
+.br
+.RI "\fBFood(const Food& other)\fP; A copy assignment for food items\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBFood\fP class A food class for instantiating food\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+October 2019 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file food\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Food::Food ()"
+
+.PP
+\fBFood()\fP Default constructor\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 3 of file food\&.cpp\&.
+.SS "Food::Food (QString name, double price, int quantity = \fC0\fP)"
+
+.PP
+\fBFood\fP(QString name, double price, int quantity = 0) Overloaded constructor\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 6 of file food\&.cpp\&.
+.SS "Food::~Food ()"
+
+.PP
+\fB~Food()\fP Destructor 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file food\&.cpp\&.
+.SS "Food::Food (const \fBFood\fP & other)"
+
+.PP
+\fBFood(const Food& other)\fP; A copy constructor for food items\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file food\&.cpp\&.
+.SS "Food::Food (\fBFood\fP && other)"
+
+.PP
+\fBFood(const Food& other)\fP; A copy assignment for food items\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file food\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double Food::calculateTotal ()"
+
+.PP
+\fBcalculateTotal()\fP Returns the total price of all purchased food items 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+double 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file food\&.cpp\&.
+.SS "QString Food::getName ()"
+
+.PP
+\fBgetName()\fP Returns the name of a food item 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Qstring 
+.RE
+.PP
+
+.PP
+Definition at line 23 of file food\&.cpp\&.
+.SS "double Food::getPrice ()"
+
+.PP
+\fBgetPrice()\fP Returns the price of a food item 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+double 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file food\&.cpp\&.
+.SS "\fBFood\fP & Food::operator= (\fBFood\fP other)"
+
+.PP
+\fBoperator=(Food other)\fP An copy assignment for food items 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBFood\fP & 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file food\&.cpp\&.
+.SS "\fBFood\fP & Food::operator= (\fBFood\fP && other)"
+
+.PP
+\fBoperator=(Food&& other)\fP A move assignment for food items 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBFood\fP& 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file food\&.cpp\&.
+.SS "void Food::setQuantity (int quantity)"
+
+.PP
+\fBsetQuantity(int quantity)\fP Sets the quantity of food the user purchases 
+.PP
+\fBAuthor:\fP
+.RS 4
+Aaron Geesink 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIint\fP quantity 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file food\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for European Vacation Planner from the source code\&.

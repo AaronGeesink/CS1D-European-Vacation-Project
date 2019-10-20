@@ -1,0 +1,172 @@
+\hypertarget{class_results_window}{}\section{Results\+Window Class Reference}
+\label{class_results_window}\index{ResultsWindow@{ResultsWindow}}
+
+
+{\ttfamily \#include $<$resultswindow.\+h$>$}
+
+Inheritance diagram for Results\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_results_window}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}{move\+To\+Main\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}{move\+To\+Main\+Clicked()}} Proceeds to the \mbox{\hyperlink{class_main_window}{Main\+Window}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_results_window_a7a545927d8dd85526646a5d05d758052}{move\+To\+Food\+Select\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_a7a545927d8dd85526646a5d05d758052}{move\+To\+Food\+Select\+Clicked()}} Proceeds to the \mbox{\hyperlink{class_food_select_window}{Food\+Select\+Window}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}{Results\+Window}} (Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_results_window_a2b320802242dbf6ac6b779480a30b86c}{$\sim$\+Results\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&loaded\+Cities)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the results screen to the currently loaded cities \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_city}{City}} \mbox{\hyperlink{class_results_window_ad58645a2626daa51d8e824d56df7145f}{get\+Closest\+City}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ loaded\+Cities, Q\+String name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ad58645a2626daa51d8e824d56df7145f}{get\+Closest\+City(std\+::vector$<$\+City$>$ loaded\+Cities, Q\+String name)}} Returns the closest city to the current city \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_city}{City}} \mbox{\hyperlink{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}{get\+Starting\+City}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ loaded\+Cities)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}{get\+Starting\+City(std\+::vector$<$\+City$>$ loaded\+Cities)}} Returns the starting city of a trip \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file resultswindow.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}\label{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}} 
+\index{ResultsWindow@{ResultsWindow}!ResultsWindow@{ResultsWindow}}
+\index{ResultsWindow@{ResultsWindow}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{ResultsWindow()}{ResultsWindow()}}
+{\footnotesize\ttfamily Results\+Window\+::\+Results\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 4 of file resultswindow.\+cpp.
+
+\mbox{\Hypertarget{class_results_window_a2b320802242dbf6ac6b779480a30b86c}\label{class_results_window_a2b320802242dbf6ac6b779480a30b86c}} 
+\index{ResultsWindow@{ResultsWindow}!````~ResultsWindow@{$\sim$ResultsWindow}}
+\index{````~ResultsWindow@{$\sim$ResultsWindow}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{$\sim$ResultsWindow()}{~ResultsWindow()}}
+{\footnotesize\ttfamily Results\+Window\+::$\sim$\+Results\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file resultswindow.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_results_window_ad58645a2626daa51d8e824d56df7145f}\label{class_results_window_ad58645a2626daa51d8e824d56df7145f}} 
+\index{ResultsWindow@{ResultsWindow}!getClosestCity@{getClosestCity}}
+\index{getClosestCity@{getClosestCity}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{getClosestCity()}{getClosestCity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_city}{City}} Results\+Window\+::get\+Closest\+City (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$}]{loaded\+Cities,  }\item[{Q\+String}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_results_window_ad58645a2626daa51d8e824d56df7145f}{get\+Closest\+City(std\+::vector$<$\+City$>$ loaded\+Cities, Q\+String name)}} Returns the closest city to the current city 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$city$>$\&} & loaded\+Cities, Q\+String name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file resultswindow.\+cpp.
+
+\mbox{\Hypertarget{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}\label{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}} 
+\index{ResultsWindow@{ResultsWindow}!getStartingCity@{getStartingCity}}
+\index{getStartingCity@{getStartingCity}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{getStartingCity()}{getStartingCity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_city}{City}} Results\+Window\+::get\+Starting\+City (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$}]{loaded\+Cities }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}{get\+Starting\+City(std\+::vector$<$\+City$>$ loaded\+Cities)}} Returns the starting city of a trip 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$city$>$\&} & loaded\+Cities \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file resultswindow.\+cpp.
+
+\mbox{\Hypertarget{class_results_window_a7a545927d8dd85526646a5d05d758052}\label{class_results_window_a7a545927d8dd85526646a5d05d758052}} 
+\index{ResultsWindow@{ResultsWindow}!moveToFoodSelectClicked@{moveToFoodSelectClicked}}
+\index{moveToFoodSelectClicked@{moveToFoodSelectClicked}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{moveToFoodSelectClicked}{moveToFoodSelectClicked}}
+{\footnotesize\ttfamily void Results\+Window\+::move\+To\+Food\+Select\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\mbox{\hyperlink{class_results_window_a7a545927d8dd85526646a5d05d758052}{move\+To\+Food\+Select\+Clicked()}} Proceeds to the \mbox{\hyperlink{class_food_select_window}{Food\+Select\+Window}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 160 of file moc\+\_\+resultswindow.\+cpp.
+
+\mbox{\Hypertarget{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}\label{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}} 
+\index{ResultsWindow@{ResultsWindow}!moveToMainClicked@{moveToMainClicked}}
+\index{moveToMainClicked@{moveToMainClicked}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{moveToMainClicked}{moveToMainClicked}}
+{\footnotesize\ttfamily void Results\+Window\+::move\+To\+Main\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\mbox{\hyperlink{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}{move\+To\+Main\+Clicked()}} Proceeds to the \mbox{\hyperlink{class_main_window}{Main\+Window}} 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+
+Definition at line 154 of file moc\+\_\+resultswindow.\+cpp.
+
+\mbox{\Hypertarget{class_results_window_ada6aa2afee19356d33b6b59646366cc2}\label{class_results_window_ada6aa2afee19356d33b6b59646366cc2}} 
+\index{ResultsWindow@{ResultsWindow}!setResults@{setResults}}
+\index{setResults@{setResults}!ResultsWindow@{ResultsWindow}}
+\subsubsection{\texorpdfstring{setResults()}{setResults()}}
+{\footnotesize\ttfamily void Results\+Window\+::set\+Results (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&}]{loaded\+Cities }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the results screen to the currently loaded cities 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$city$>$\&} & loaded\+Cities \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file resultswindow.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{resultswindow_8h}{resultswindow.\+h}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/debug/\mbox{\hyperlink{moc__resultswindow_8cpp}{moc\+\_\+resultswindow.\+cpp}}\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{resultswindow_8cpp}{resultswindow.\+cpp}}\end{DoxyCompactItemize}

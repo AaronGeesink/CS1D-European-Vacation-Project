@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_city" kind="class" language="C++" prot="public">
+    <compoundname>City</compoundname>
+    <includes refid="city_8h" local="no">city.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_city_1a4a5b42d915083867ea9a57a8bd1fd472" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString City::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="147" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_1a69f3a0fdb5a90b9704c57bcb840484c0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_city_distance" kindref="compound">CityDistance</ref> &gt;</type>
+        <definition>std::vector&lt;CityDistance&gt; City::otherCities</definition>
+        <argsstring></argsstring>
+        <name>otherCities</name>
+        <briefdescription>
+<para>Name of the city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="148" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_1a0061575c004eabbd1945c67d5bed93e6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_food" kindref="compound">Food</ref> &gt;</type>
+        <definition>std::vector&lt;Food&gt; City::foods</definition>
+        <argsstring></argsstring>
+        <name>foods</name>
+        <briefdescription>
+<para><ref refid="class_city" kindref="compound">City</ref> vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="149" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_city_1aae97c79234acb0078d53a6385b4ab594" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool City::isStart</definition>
+        <argsstring></argsstring>
+        <name>isStart</name>
+        <briefdescription>
+<para><ref refid="class_food" kindref="compound">Food</ref> vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="150" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_city_1a1b1f549430f0a7ecd0ec7b1605415193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>City::City</definition>
+        <argsstring>()</argsstring>
+        <name>City</name>
+        <briefdescription>
+<para><ref refid="class_city_1a1b1f549430f0a7ecd0ec7b1605415193" kindref="member">City()</ref> Default Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="66" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1a45f0a3c80b0e4ff9dc33256d2ff5eb0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>City::City</definition>
+        <argsstring>(QString name, std::vector&lt; CityDistance &gt; otherCities, std::vector&lt; Food &gt; foods, bool isStart=false)</argsstring>
+        <name>City</name>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_city_distance" kindref="compound">CityDistance</ref> &gt;</type>
+          <declname>otherCities</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_food" kindref="compound">Food</ref> &gt;</type>
+          <declname>foods</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isStart</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="class_city" kindref="compound">City</ref>(QString name, std::vector&lt;CityDistance&gt; otherCities, std::vector&lt;Food&gt; foods, bool isStart = false) Overloaded Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="72" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1afe733410d61155d8a4013293b0b72408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString City::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para><ref refid="class_city_1afe733410d61155d8a4013293b0b72408" kindref="member">getName()</ref> This method returns a QString containing the name of the <ref refid="class_city" kindref="compound">City</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>QString </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="80" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1ad73598d937870a165cb530958106ff07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString City::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para><ref refid="class_city_1ad73598d937870a165cb530958106ff07" kindref="member">getName() const</ref> Const method which returns a QString containing the name of the <ref refid="class_city" kindref="compound">City</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>QString </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="88" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1a1462a90a0d40e0d946903b1db214da0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int City::getNumFoods</definition>
+        <argsstring>()</argsstring>
+        <name>getNumFoods</name>
+        <briefdescription>
+<para><ref refid="class_city_1a1462a90a0d40e0d946903b1db214da0e" kindref="member">getNumFoods()</ref> This method returns the number of foods in a <ref refid="class_city" kindref="compound">City</ref>&apos;s food vector </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="96" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool City::getIsStart</definition>
+        <argsstring>() const</argsstring>
+        <name>getIsStart</name>
+        <briefdescription>
+<para><ref refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" kindref="member">getIsStart()</ref> Returns the value of the &quot;isStart&quot; data member If the city is the starting city, return true. Else, return false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="105" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1a9fcdb0c59ac7760dd3996803ddb6bf86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool City::setIsStart</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>setIsStart</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_city_1a9fcdb0c59ac7760dd3996803ddb6bf86" kindref="member">setIsStart()</ref> Sets a the value of a <ref refid="class_city" kindref="compound">City</ref>&apos;s isStart data member </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="114" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1abbfdb9d3dba484ee8f9daee6ef03cd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_food" kindref="compound">Food</ref> &gt;</type>
+        <definition>std::vector&lt; Food &gt; City::getFoods</definition>
+        <argsstring>()</argsstring>
+        <name>getFoods</name>
+        <briefdescription>
+<para><ref refid="class_city_1abbfdb9d3dba484ee8f9daee6ef03cd97" kindref="member">getFoods()</ref> Returns the <ref refid="class_city" kindref="compound">City</ref>&apos;s food vector to the client </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para>vector&lt;food&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="122" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1ac4829f9fc09b4c0f4cf2f7453c974264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::removeCityDistance</definition>
+        <argsstring>(QString name)</argsstring>
+        <name>removeCityDistance</name>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_city_1ac4829f9fc09b4c0f4cf2f7453c974264" kindref="member">removeCityDistance()</ref> Removes all distances related to the argument city from the <ref refid="class_city" kindref="compound">City</ref>&apos;s distance vector </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="129" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1a9e3da459f9dcf61ae1a4551d79abafb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void City::sortDistances</definition>
+        <argsstring>()</argsstring>
+        <name>sortDistances</name>
+        <briefdescription>
+<para><ref refid="class_city_1a9e3da459f9dcf61ae1a4551d79abafb8" kindref="member">sortDistances()</ref> Sorts the <ref refid="class_city" kindref="compound">City</ref>&apos;s distance vector in order of shortest to longest distance </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="136" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_city_distance" kindref="compound">CityDistance</ref></type>
+        <definition>CityDistance City::getShortestDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>getShortestDistance</name>
+        <briefdescription>
+<para><ref refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" kindref="member">getShortestDistance()</ref> Returns the distance to the closest city in the city vector </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="return"><para><ref refid="struct_city_distance" kindref="compound">CityDistance</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="144" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.cpp" bodystart="38" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_city" kindref="compound">City</ref> class This is the <ref refid="class_city" kindref="compound">City</ref> class used to instantiate, store, and perform calculations on cities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Aaron Geesink </para>
+</simplesect>
+<simplesect kind="date"><para>October 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" line="60" column="1" bodyfile="C:/Users/chatm/Desktop/CS1D-European-Vacation-Project/European-Vacation-Program/city.h" bodystart="59" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_city_1a1b1f549430f0a7ecd0ec7b1605415193" prot="public" virt="non-virtual"><scope>City</scope><name>City</name></member>
+      <member refid="class_city_1a45f0a3c80b0e4ff9dc33256d2ff5eb0d" prot="public" virt="non-virtual"><scope>City</scope><name>City</name></member>
+      <member refid="class_city_1a0061575c004eabbd1945c67d5bed93e6" prot="private" virt="non-virtual"><scope>City</scope><name>foods</name></member>
+      <member refid="class_city_1abbfdb9d3dba484ee8f9daee6ef03cd97" prot="public" virt="non-virtual"><scope>City</scope><name>getFoods</name></member>
+      <member refid="class_city_1ae817fa08cc2191da09c91c3d6b4069d5" prot="public" virt="non-virtual"><scope>City</scope><name>getIsStart</name></member>
+      <member refid="class_city_1afe733410d61155d8a4013293b0b72408" prot="public" virt="non-virtual"><scope>City</scope><name>getName</name></member>
+      <member refid="class_city_1ad73598d937870a165cb530958106ff07" prot="public" virt="non-virtual"><scope>City</scope><name>getName</name></member>
+      <member refid="class_city_1a1462a90a0d40e0d946903b1db214da0e" prot="public" virt="non-virtual"><scope>City</scope><name>getNumFoods</name></member>
+      <member refid="class_city_1ad577ecd4be83b37ef2f9c5ff547f5259" prot="public" virt="non-virtual"><scope>City</scope><name>getShortestDistance</name></member>
+      <member refid="class_city_1aae97c79234acb0078d53a6385b4ab594" prot="private" virt="non-virtual"><scope>City</scope><name>isStart</name></member>
+      <member refid="class_city_1a4a5b42d915083867ea9a57a8bd1fd472" prot="private" virt="non-virtual"><scope>City</scope><name>name</name></member>
+      <member refid="class_city_1a69f3a0fdb5a90b9704c57bcb840484c0" prot="private" virt="non-virtual"><scope>City</scope><name>otherCities</name></member>
+      <member refid="class_city_1ac4829f9fc09b4c0f4cf2f7453c974264" prot="public" virt="non-virtual"><scope>City</scope><name>removeCityDistance</name></member>
+      <member refid="class_city_1a9fcdb0c59ac7760dd3996803ddb6bf86" prot="public" virt="non-virtual"><scope>City</scope><name>setIsStart</name></member>
+      <member refid="class_city_1a9e3da459f9dcf61ae1a4551d79abafb8" prot="public" virt="non-virtual"><scope>City</scope><name>sortDistances</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

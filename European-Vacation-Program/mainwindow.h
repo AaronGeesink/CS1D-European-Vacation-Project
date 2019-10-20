@@ -10,6 +10,11 @@
 #include <resultswindow.h>
 #include "city.h"
 
+/**
+ *@author Aaron Geesink
+ *@brief Header file for the MainWindow
+ *@date October 2019
+ */
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,38 +28,100 @@ public:
 	~MainWindow();
 
 private slots:
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_exitButton_clicked()
+	 * Closes the program
+	 */
 	void on_exitButton_clicked();
 
-	//move functions ordered by their StackedWidget index numbers
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_mainButton_clicked()
+	 * Sends a signal to move to the mainWindow
+	 */
 	void on_mainButton_clicked();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief moveToMain()
+	 * Proceeds to the mainWindow
+	 */
 	void moveToMain();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_moveToView_clicked()
+	 * Sends a signal to move to the viewWindow
+	 */
 	void on_moveToView_clicked();
 
-	// TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
-	// can do this either by using an tripID integer in one function of my using 3 seperate functions
+	/**
+	 * @author Aaron Geesink
+	 * @brief moveToCitySelect()
+	 * Proceeds to the CitySelectWindow
+	 */
 	void moveToCitySelect();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_moveTo11Cities_clicked()
+	 * Sends a signal to move to the 11 cities trip plan
+	 */
 	void on_moveTo11Cities_clicked();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_moveToLondon_clicked()
+	 * Sends a signal to move to the london trip plan
+	 */
 	void on_moveToLondon_clicked();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_moveToCustom_clicked()
+	 * Sends a signal to move to the custom trip plan
+	 */
 	void on_moveToCustom_clicked();
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief moveToFoodSelect()
+	 * Proceeds to the FoodSelectWindow
+	 */
 	void moveToFoodSelect();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief moveToResults()
+	 * Proceeds to the ResultsWindow
+	 */
 	void moveToResults();
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief on_moveToEdit_clicked()
+	 * Sends a signal to move to the EditWindow
+	 */
 	void on_moveToEdit_clicked();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief moveToEdit()
+	 * Proceeds to the EditWindow
+	 */
 	void moveToEdit();
 
 
 private:
 	Ui::MainWindow *ui;
 
-	ViewWindow viewWind;
-
-	LoginWindow loginWind;
-	EditWindow editWind;
-
-	CitySelectWindow citySelectWind;
-	FoodSelectWindow foodSelectWind;
-	ResultsWindow resultsWind;
+	ViewWindow viewWind;	/// ViewWindow object
+	LoginWindow loginWind;	/// LoginWindow object
+	EditWindow editWind;	/// EditWindow Object
+	CitySelectWindow citySelectWind;	///CitySelectWindow object
+	FoodSelectWindow foodSelectWind;	///FoodSelectWindow object
+	ResultsWindow resultsWind;			/// ResultsWindow object
 
 	//std::vector<City> loadedCities;
 };
