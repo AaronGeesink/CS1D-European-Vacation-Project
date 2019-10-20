@@ -40,8 +40,6 @@ void ViewWindow::on_loadFood_clicked()
 void ViewWindow::on_loadDistances_clicked()
 {
 	model = new QSqlQueryModel;
-
-	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 
 	query.exec("select * from distance");

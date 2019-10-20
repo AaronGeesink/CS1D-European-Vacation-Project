@@ -28,11 +28,15 @@ private slots:
 
 	void on_revertButton_clicked();
 
-	void on_addButton_clicked();
+	void on_deleteFoodItem_clicked();
 
-	void on_deleteButton_clicked();
+	void on_addFoodButton_clicked();
 
 private:
+	Qt::ItemFlags flags(const QModelIndex & index) const;
+	QVariant data(const QModelIndex &index, int role) const;
+	bool setData(const QModelIndex & index, const QVariant & value, int role);
+
 	Ui::EditWindow *ui;
 	QSqlTableModel * model;
 	QSqlQueryModel * queryModel;

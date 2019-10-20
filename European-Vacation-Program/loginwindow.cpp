@@ -20,7 +20,7 @@ void LoginWindow::on_loginButton_clicked()
 	username = ui->usernameLineEdit->text();
 	password = ui->passwordLineEdit->text();
 
-	checkConnection();
+	//checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 	query.prepare("select * from login where username='"+username+"' and password='"+password+"'");
 	if(query.exec())
@@ -33,6 +33,8 @@ void LoginWindow::on_loginButton_clicked()
 		// Move to editwindow on successful login
 		if(count >= 1)
 		{
+			ui->usernameLineEdit->setText("");
+			ui->passwordLineEdit->setText("");
 			emit moveToEditClicked();
 		}
 		if(count < 1)
