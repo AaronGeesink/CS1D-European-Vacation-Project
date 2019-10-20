@@ -7,6 +7,7 @@
 #include <QString>
 #include <QRadioButton>
 #include <QCheckBox>
+#include <QLineEdit>
 #include <QDebug>
 #include "city.h"
 
@@ -25,6 +26,9 @@ public:
 	void setCitySelection();
 	std::vector<City>& getLoadedCities();
 
+	int getPlanNumber();
+	void setPlanNumber(int number);
+
 signals:
 	void moveToFoodSelectClicked();
 
@@ -35,8 +39,16 @@ private:
 	Ui::CitySelectWindow *ui;
 	std::vector<QString> cityNames;
 	std::vector<City> loadedCities;
+	int planNumber;
+
+	void setParisPlan();
+	void setLondonPlan();
+	void setCustomPlan();
 
 	void loadSelectedCities();
+	void loadParisPlan();
+	void loadLondonPlan();
+	void loadCustomPlan();
 };
 
 #endif // CITYSELECTWINDOW_H

@@ -56,7 +56,7 @@ void MainWindow::on_moveToView_clicked()
 }
 
 // TODO: Replace or modify moveToCitySelect to go back to the desired trip plan
-// can do this either by using an tripID integer in one function of my using 3 seperate functions
+// can do this either by using an tripID integer in one function or using 3 seperate functions
 void MainWindow::moveToCitySelect()
 {
 	citySelectWind.setCitySelection();
@@ -67,6 +67,8 @@ void MainWindow::moveToCitySelect()
 
 void MainWindow::on_moveTo11Cities_clicked()
 {
+	//Plan number 0 = Paris Plan
+	citySelectWind.setPlanNumber(0);
 	citySelectWind.setCitySelection();
 
 	//Stacked Widget index 3: City Select Menu
@@ -75,6 +77,8 @@ void MainWindow::on_moveTo11Cities_clicked()
 
 void MainWindow::on_moveToLondon_clicked()
 {
+	//Plan number 1 = London Plan
+	citySelectWind.setPlanNumber(1);
 	citySelectWind.setCitySelection();
 
 	//Stacked Widget index 3: City Select Menu
@@ -83,6 +87,8 @@ void MainWindow::on_moveToLondon_clicked()
 
 void MainWindow::on_moveToCustom_clicked()
 {
+	//Plan number 1 = Custom Plan
+	citySelectWind.setPlanNumber(2);
 	citySelectWind.setCitySelection();
 
 	//Stacked Widget index 3: City Select Menu
