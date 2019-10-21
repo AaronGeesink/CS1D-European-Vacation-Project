@@ -39,7 +39,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 			foodCities.push_back(loadedCities[i].getName());
 	}
 
-	ui->foodTable->setRowCount(numFoods + foodCities.size() + 1);
+	ui->foodTable->setRowCount(numFoods + foodCities.size() + 2);
 	ui->foodTable->setColumnCount(5);
 
 	ui->foodTable->setHorizontalHeaderItem(0, new QTableWidgetItem("City"));
@@ -141,11 +141,17 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 		}
 	}
 
+	label = new QLabel();
+	label->setText("Price per City:");
+	ui->foodTable->setCellWidget(foodsLoaded, 3, label);
+	foodsLoaded++;
+
 	for (int i = 0; i < foodCities.size(); i++)
 	{
 		label = new QLabel();
 		label->setText(foodCities[i]  + ":");
 		ui->foodTable->setCellWidget(foodsLoaded + i, 3, label);
+
 		label = new QLabel();
 		label->setText("$" + QString::number(cityTotals[i]));
 		ui->foodTable->setCellWidget(foodsLoaded + i, 4, label);
