@@ -41,6 +41,7 @@ void ViewWindow::on_loadCities_clicked()
 {
 	model = new QSqlQueryModel;
 
+
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 
