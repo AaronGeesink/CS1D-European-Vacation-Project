@@ -51,31 +51,23 @@ void ViewWindow::on_loadCities_clicked()
 
 void ViewWindow::on_loadFood_clicked()
 {
+	QString city;
+	city = ui->cityComboBox->currentText();
+
 	model = new QSqlQueryModel;
 
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 
-	query.exec("select * from food");
+	query.exec("select * from food WHERE cityName='"+city+"'");
 	model->setQuery(query);
 	ui->databaseView->setModel(model);
 }
 
 void ViewWindow::on_loadDistances_clicked()
 {
-	model = new QSqlQueryModel;
-	QSqlQuery query(QSqlDatabase::database());
-
-	query.exec("select * from distance");
-	model->setQuery(query);
-	ui->databaseView->setModel(model);
-}
-
-void ViewWindow::on_loadCity_clicked()
-{
 	QString city;
 	city = ui->cityComboBox->currentText();
-
 	model = new QSqlQueryModel;
 	QSqlQuery query(QSqlDatabase::database());
 

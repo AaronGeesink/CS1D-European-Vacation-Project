@@ -30,8 +30,6 @@ private slots:
 
 	void on_loadDistances_clicked();
 
-	void on_loadCity_clicked();
-
 private:
 	Ui::ViewWindow *ui;
 	QSqlQueryModel * model;
