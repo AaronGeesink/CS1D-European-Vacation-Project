@@ -66,6 +66,8 @@ public:
 	 */
 	double calculateTotal();
 
+	int getQuantity();
+
 	/**
 	 *@author Aaron Geesink
 	 *@brief operator=(Food other)

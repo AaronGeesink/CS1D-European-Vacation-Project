@@ -20,7 +20,6 @@ void LoginWindow::on_loginButton_clicked()
 	username = ui->usernameLineEdit->text();
 	password = ui->passwordLineEdit->text();
 
-	//checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 	query.prepare("select * from login where username='"+username+"' and password='"+password+"'");
 	if(query.exec())
@@ -38,6 +37,6 @@ void LoginWindow::on_loginButton_clicked()
 			emit moveToEditClicked();
 		}
 		if(count < 1)
-			ui->statusLabel->setText("Invalid Username or Password");
+			QMessageBox::information(this, tr("Invalid Credentials"), tr("Username or password is invalid"));
 	}
 }

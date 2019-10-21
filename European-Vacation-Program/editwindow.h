@@ -2,6 +2,7 @@
 #define EDITWINDOW_H
 
 #include <QWidget>
+#include <QMessageBox>
 #include "database.h"
 
 /**
@@ -20,6 +21,8 @@ class EditWindow : public QWidget
 public:
 	explicit EditWindow(QWidget *parent = nullptr);
 	~EditWindow();
+
+	void loadCities();
 
 private slots:
 

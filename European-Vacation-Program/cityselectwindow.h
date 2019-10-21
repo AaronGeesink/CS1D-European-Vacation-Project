@@ -9,6 +9,7 @@
 #include <QCheckBox>
 #include <QLineEdit>
 #include <QDebug>
+#include <QMessageBox>
 #include "city.h"
 
 /**
@@ -58,6 +59,9 @@ public:
 	 * @param int number
 	 */
 	void setPlanNumber(int number);
+	int getNumCities();
+	bool getError();
+	void setError(bool value);
 
 signals:
 	/**
@@ -77,9 +81,12 @@ private slots:
 
 private:
 	Ui::CitySelectWindow *ui;
+
 	std::vector<QString> cityNames;		/// A vector containing the names of cities
 	std::vector<City> loadedCities;		/// A vector containing the currently loaded cities
 	int planNumber;						/// The plan number for the current trip
+	int numCities;
+	bool error;
 
 	/**
 	 * @author Aaron Geesink
@@ -104,10 +111,10 @@ private:
 
 	/**
 	 * @author Aaron Geesink
-	 * @brief loadSelectedCities()
+	 * @brief loadSelectedCities(QString startingCity)
 	 * loads the cities selected by the user for their trip
 	 */
-	void loadSelectedCities();
+	void loadSelectedCities(QString startingCity);
 
 	/**
 	 * @author Aaron Geesink
@@ -115,6 +122,8 @@ private:
 	 * loads the Paris plan to the city select window
 	 */
 	void loadParisPlan();
+
+	void sortLondonCities();
 
 	/**
 	 * @author Aaron Geesink
@@ -129,6 +138,8 @@ private:
 	 * loads the Paris plan to the city select window
 	 */
 	void loadCustomPlan();
+
+	bool isValidStart(QString startingCity);
 };
 
 #endif // CITYSELECTWINDOW_H

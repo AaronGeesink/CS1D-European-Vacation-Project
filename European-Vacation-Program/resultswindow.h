@@ -26,11 +26,12 @@ public:
 
 	/**
 	 * @author Aaron Geesink
-	 * @brief setResults(std::vector<City>& loadedCities)
+	 * @brief setResults(std::vector<City>& loadedCities, int numCities)
 	 * Sets the results screen to the currently loaded cities
 	 * @param vector<city>& loadedCities
 	 */
-	void setResults(std::vector<City>& loadedCities);
+	void setResults(std::vector<City>& loadedCities, int numCities);
+
 
 	/**
 	 * @author Aaron Geesink

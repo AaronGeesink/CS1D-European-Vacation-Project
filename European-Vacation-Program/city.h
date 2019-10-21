@@ -95,6 +95,8 @@ public:
 	 */
 	int getNumFoods();
 
+	int getNumNonZeroFoods();
+
 	/**
 	 * @author Aaron Geesink
 	 * @brief getIsStart()
@@ -117,9 +119,9 @@ public:
 	 * @author Aaron Geesink
 	 * @brief getFoods()
 	 * Returns the City's food vector to the client
-	 * @return vector<food>
+	 * @return vector<food>&
 	 */
-	std::vector<Food> getFoods();
+	std::vector<Food>& getFoods();
 
 	/**
 	 * @author Aaron Geesink
@@ -127,6 +129,8 @@ public:
 	 * Removes all distances related to the argument city from the City's distance vector
 	 */
 	void removeCityDistance(QString name);
+
+	std::vector<Food> getNonZeroFoods();
 
 	/**
 	 * @author Aaron Geesink

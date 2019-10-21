@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>London Eye Twilight April 2006.png</file>
+    </qresource>
+</RCC>

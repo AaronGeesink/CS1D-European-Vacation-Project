@@ -58,4 +58,8 @@ DISTFILES += \
 	resources/database.db
 
 RESOURCES += \
-    resources/europe.qrc
+    resources/budapest.qrc \
+    resources/europe.qrc \
+    resources/food.qrc \
+    resources/london_eye.qrc \
+    resources/train.qrc

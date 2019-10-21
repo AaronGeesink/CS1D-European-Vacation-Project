@@ -53,6 +53,19 @@ int City::getNumFoods()
 	return foods.size();
 }
 
+int City::getNumNonZeroFoods()
+{
+	int numFoods = 0;
+	for (auto it = foods.begin(); it < foods.end(); ++it)
+	{
+		if (it->getQuantity() > 0)
+		{
+			++numFoods;
+		}
+	}
+	return numFoods;
+}
+
 bool City::getIsStart() const
 {
 	return isStart;
@@ -63,7 +76,20 @@ bool City::setIsStart(bool value)
 	isStart = value;
 }
 
-std::vector<Food> City::getFoods()
+std::vector<Food>& City::getFoods()
 {
 	return foods;
+}
+
+std::vector<Food> City::getNonZeroFoods()
+{
+	std::vector<Food> nonZeroFoods;
+	for (auto it = foods.begin(); it < foods.end(); ++it)
+	{
+		if (it->getQuantity() > 0)
+		{
+			nonZeroFoods.push_back(*it);
+		}
+	}
+	return nonZeroFoods;
 }
