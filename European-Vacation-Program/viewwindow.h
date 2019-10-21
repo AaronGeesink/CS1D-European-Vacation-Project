@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
+#include <QStringList>
 #include "database.h"
 
 namespace Ui {
@@ -19,6 +20,8 @@ public:
 	explicit ViewWindow(QWidget *parent = nullptr);
 	~ViewWindow();
 
+	void populateCombo();
+
 private slots:
 
 	void on_loadCities_clicked();
@@ -26,6 +29,8 @@ private slots:
 	void on_loadFood_clicked();
 
 	void on_loadDistances_clicked();
+
+	void on_loadCity_clicked();
 
 private:
 	Ui::ViewWindow *ui;

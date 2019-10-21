@@ -63,7 +63,7 @@
          </size>
         </property>
         <property name="text">
-         <string>View Cities</string>
+         <string>View All Cities</string>
         </property>
        </widget>
       </item>
@@ -90,6 +90,16 @@
         </property>
         <property name="text">
          <string>View Distances</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cityComboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loadCity">
+        <property name="text">
+         <string>View City</string>
         </property>
        </widget>
       </item>

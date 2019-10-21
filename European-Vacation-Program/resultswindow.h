@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 #include <QLabel>
-#include "City.h"
+#include "city.h"
 
 namespace Ui {
 class ResultsWindow;
