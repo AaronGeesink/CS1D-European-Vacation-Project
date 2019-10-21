@@ -16,6 +16,7 @@ ResultsWindow::~ResultsWindow()
 void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 {
 	// setup for the distance table
+	ui->distanceTable->clear();
 	ui->distanceTable->setRowCount(numCities);
 	ui->distanceTable->setColumnCount(3);
 
@@ -25,6 +26,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 	ui->distanceTable->setSelectionMode(QAbstractItemView::NoSelection);
 
 	// setup for the food table
+	ui->foodTable->clear();
 	int numFoods = 0;
 	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{

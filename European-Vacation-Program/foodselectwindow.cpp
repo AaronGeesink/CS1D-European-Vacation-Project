@@ -15,6 +15,8 @@ FoodSelectWindow::~FoodSelectWindow()
 
 void FoodSelectWindow::setFoodSelection(std::vector<City> &loadedCities)
 {
+	ui->foodTable->clear();
+
 	this->loadedCities = &loadedCities;
 
 	// Table Setup

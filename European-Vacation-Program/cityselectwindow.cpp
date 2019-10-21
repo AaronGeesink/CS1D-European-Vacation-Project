@@ -55,6 +55,16 @@ int CitySelectWindow::getNumCities()
 	return numCities;
 }
 
+bool CitySelectWindow::getError()
+{
+	return error;
+}
+
+void CitySelectWindow::setError(bool value)
+{
+	error = value;
+}
+
 void CitySelectWindow::on_moveToFoodSelect_clicked()
 {
 	if (planNumber == 0)
@@ -174,6 +184,8 @@ void CitySelectWindow::loadParisPlan()
 		cityNames.erase(cityNames.end() - 1);
 	}
 
+	setError(false);
+
 	loadSelectedCities(startingCity);
 	numCities = loadedCities.size();
 }
@@ -186,31 +198,70 @@ void CitySelectWindow::loadLondonPlan()
 	if (lineEdit)
 	{
 		numCities = lineEdit->text().toInt();
+		qDebug() << numCities;
 	}
 
-	loadSelectedCities(startingCity);
+	if (numCities < 1 || numCities > cityNames.size())
+	{
+		error = true;
+		QMessageBox::information(this, tr("Input Error"), tr("Please select a number\nfrom 1 to the total number of cities"));
+	}
+	else
+	{
+		error = false;
+		loadSelectedCities(startingCity);
+	}
 }
 
 void CitySelectWindow::loadCustomPlan()
 {
-	QString startingCity;
+	QString startingCity("");
+	cityNames = queryCityNames();
 
 	for (int i = cityNames.size(); i > 0; i--)
 	{
-		QCheckBox *checkbox = qobject_cast<QCheckBox *>(ui->cityTable->cellWidget(i-1, 1));
-		if (checkbox && !checkbox->isChecked())
-		{
-			//qDebug() << cityNames[i-1] << " erased";
-			cityNames.erase(cityNames.begin() + i - 1);
-		}
-
 		QRadioButton *radio = qobject_cast<QRadioButton *>(ui->cityTable->cellWidget(i-1, 2));
 		if (radio && radio->isChecked())
 		{
 			startingCity = cityNames[i - 1];
 		}
+
+		QCheckBox *checkbox = qobject_cast<QCheckBox *>(ui->cityTable->cellWidget(i-1, 1));
+		if (checkbox && !checkbox->isChecked())
+		{
+			cityNames.erase(cityNames.begin() + i - 1);
+		}
+
 	}
 
-	loadSelectedCities(startingCity);
-	numCities = loadedCities.size();
+	// check if the starting city is selected and valid
+	if (startingCity == "" || !isValidStart(startingCity))
+	{
+		qDebug() << startingCity;
+		error = true;
+		setCitySelection();
+		QMessageBox::information(this, tr("Input Error"), tr("Please Select\na valid starting city"));
+	}
+	else if (cityNames.size() < 2)
+	{
+		error = true;
+		setCitySelection();
+		QMessageBox::information(this, tr("Input Error"), tr("Please Select\n2 or more cities"));
+	}
+	else
+	{
+		error = false;
+		loadSelectedCities(startingCity);
+		numCities = loadedCities.size();
+	}
+}
+
+bool CitySelectWindow::isValidStart(QString startingCity)
+{
+	for (int i = 0; i < cityNames.size(); i++)
+	{
+		if (cityNames[i] == startingCity)
+			return true;
+	}
+	return false;
 }

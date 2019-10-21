@@ -9,6 +9,7 @@
 #include <QCheckBox>
 #include <QLineEdit>
 #include <QDebug>
+#include <QMessageBox>
 #include "city.h"
 
 namespace Ui {
@@ -29,6 +30,8 @@ public:
 	int getPlanNumber();
 	void setPlanNumber(int number);
 	int getNumCities();
+	bool getError();
+	void setError(bool value);
 
 signals:
 	void moveToFoodSelectClicked();
@@ -42,6 +45,7 @@ private:
 	std::vector<City> loadedCities;
 	int planNumber;
 	int numCities;
+	bool error;
 
 	void setParisPlan();
 	void setLondonPlan();
@@ -51,6 +55,8 @@ private:
 	void loadParisPlan();
 	void loadLondonPlan();
 	void loadCustomPlan();
+
+	bool isValidStart(QString startingCity);
 };
 
 #endif // CITYSELECTWINDOW_H
