@@ -6,6 +6,7 @@ ViewWindow::ViewWindow(QWidget *parent) :
 	ui(new Ui::ViewWindow)
 {
 	ui->setupUi(this);
+    ui->databaseView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 ViewWindow::~ViewWindow()

@@ -5,7 +5,8 @@ FoodSelectWindow::FoodSelectWindow(QWidget *parent) :
 	QWidget(parent),
 	ui(new Ui::FoodSelectWindow)
 {
-	ui->setupUi(this);
+    ui->setupUi(this);
+    ui->foodTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 FoodSelectWindow::~FoodSelectWindow()
@@ -15,7 +16,7 @@ FoodSelectWindow::~FoodSelectWindow()
 
 void FoodSelectWindow::setFoodSelection(std::vector<City> &loadedCities)
 {
-	ui->foodTable->clear();
+    ui->foodTable->clear();
 
 	this->loadedCities = &loadedCities;
 
@@ -63,7 +64,7 @@ void FoodSelectWindow::setFoodSelection(std::vector<City> &loadedCities)
 
 			foodsLoaded++;
 		}
-	}
+    }
 }
 
 void FoodSelectWindow::loadFoodQuantities()

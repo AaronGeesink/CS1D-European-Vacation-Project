@@ -5,11 +5,12 @@ EditWindow::EditWindow(QWidget *parent) :
 	QWidget(parent), ui(new Ui::EditWindow)
 {
 	ui->setupUi(this);
+    ui->databaseView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 EditWindow::~EditWindow()
 {
-	delete ui;
+    delete ui;
 }
 
 void EditWindow::loadCities()
