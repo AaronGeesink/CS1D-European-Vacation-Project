@@ -73,6 +73,7 @@ void EditWindow::on_submitButton_clicked()
 	else
 	{
 		model->database().rollback();
+		QMessageBox::information(this, tr("Update Error"), tr("A cell contains an invalid parameter"));
 		qDebug("Failed to update SQL Database");
 	}
 }
