@@ -1,0 +1,4 @@
+<map id="ResultsWindow::getClosestCity" name="ResultsWindow::getClosestCity">
+<area shape="rect" id="node1" title="getClosestCity(std::vector&lt;City&gt; loadedCities, QString name) Returns the closest city to the current ..." alt="" coords="236,5,441,32"/>
+<area shape="rect" id="node2" href="$class_results_window.html#ab8b52e8d3719ffe9dc789ab9a4507906" title="setResults(std::vector&lt;City&gt;&amp; loadedCities, int numCities) Sets the results screen to the currently l..." alt="" coords="5,5,188,32"/>
+</map>

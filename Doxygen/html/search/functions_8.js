@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['removecitydistance',['removeCityDistance',['../class_city.html#ac4829f9fc09b4c0f4cf2f7453c974264',1,'City']]],
-  ['resultswindow',['ResultsWindow',['../class_results_window.html#ab5eed3b399c8a305f588d4a98fb3a9ed',1,'ResultsWindow']]],
-  ['retranslateui',['retranslateUi',['../class_ui___city_select_window.html#ae7ea20821b449c19c09ae9ca73f03daf',1,'Ui_CitySelectWindow::retranslateUi()'],['../class_ui___edit_window.html#a49415a0f0f9abdd22402b5adb5970a0f',1,'Ui_EditWindow::retranslateUi()'],['../class_ui___food_select_window.html#aa0b4201d4db08190cb97fa76fbf3f39c',1,'Ui_FoodSelectWindow::retranslateUi()'],['../class_ui___login_window.html#a5f6832fbf9554aef841da1efc1b0fa84',1,'Ui_LoginWindow::retranslateUi()'],['../class_ui___main_window.html#ae4964a56cb4d6d76b7a398fd76b200e2',1,'Ui_MainWindow::retranslateUi()'],['../class_ui___results_window.html#a373444cf96474236c90128a548afffae',1,'Ui_ResultsWindow::retranslateUi()'],['../class_ui___trip_window.html#a9695983139e7fd78cee61c7a8b920bf8',1,'Ui_TripWindow::retranslateUi()'],['../class_ui___view_window.html#a6f1b9fe6e15e336d2a9821ffbbcc561e',1,'Ui_ViewWindow::retranslateUi()']]]
+  ['setcityselection',['setCitySelection',['../class_city_select_window.html#a771b0feebb7c7fdb1714917b337a37f3',1,'CitySelectWindow']]],
+  ['seterror',['setError',['../class_city_select_window.html#a0c8d03d414fbb798fff86af385902748',1,'CitySelectWindow']]],
+  ['setfoodselection',['setFoodSelection',['../class_food_select_window.html#a6df884d5b39d16a2708f8bcae205ecd5',1,'FoodSelectWindow']]],
+  ['setisstart',['setIsStart',['../class_city.html#a9fcdb0c59ac7760dd3996803ddb6bf86',1,'City']]],
+  ['setplannumber',['setPlanNumber',['../class_city_select_window.html#a6afffce8400f9541a3c31e0e359c0d9b',1,'CitySelectWindow']]],
+  ['setquantity',['setQuantity',['../class_food.html#aa29cc2869e2607983876962343c12809',1,'Food']]],
+  ['setresults',['setResults',['../class_results_window.html#ab8b52e8d3719ffe9dc789ab9a4507906',1,'ResultsWindow']]],
+  ['sortdistances',['sortDistances',['../class_city.html#a9e3da459f9dcf61ae1a4551d79abafb8',1,'City']]]
 ];

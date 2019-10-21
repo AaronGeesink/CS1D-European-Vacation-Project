@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow']]],
-  ['movetocityselectclicked',['moveToCitySelectClicked',['../class_food_select_window.html#a0d2bb2f7e07f62e62c2920d989415d8c',1,'FoodSelectWindow']]],
-  ['movetoeditclicked',['moveToEditClicked',['../class_login_window.html#a0ed797ae07a4afea038499d6929047a1',1,'LoginWindow']]],
-  ['movetofoodselectclicked',['moveToFoodSelectClicked',['../class_city_select_window.html#a6181200e04334e668f39df57af243fff',1,'CitySelectWindow::moveToFoodSelectClicked()'],['../class_results_window.html#a7a545927d8dd85526646a5d05d758052',1,'ResultsWindow::moveToFoodSelectClicked()']]],
-  ['movetomainclicked',['moveToMainClicked',['../class_results_window.html#a55bcbc29f4f178f52fc610a09ec21cb3',1,'ResultsWindow']]],
-  ['movetoresultsclicked',['moveToResultsClicked',['../class_food_select_window.html#a76b0dfec8f72dfa4c336732a922287fc',1,'FoodSelectWindow']]]
+  ['operator_21_3d',['operator!=',['../struct_city_distance.html#ae56feb19d11926e9d3bc03b5abfc9b48',1,'CityDistance']]],
+  ['operator_28_29',['operator()',['../struct_compare_city.html#a08fbbcc6710ad653fdee21de31576d10',1,'CompareCity']]],
+  ['operator_3c',['operator&lt;',['../struct_city_distance.html#a6195d187d1f0309e67ee62b3a5b56b86',1,'CityDistance']]],
+  ['operator_3d',['operator=',['../class_food.html#abe2267ba02f1b812c71028f427d92d81',1,'Food::operator=(Food other)'],['../class_food.html#a0ba9d6f416f396bc8e4a1c2ad519d3eb',1,'Food::operator=(Food &amp;&amp;other)']]]
 ];

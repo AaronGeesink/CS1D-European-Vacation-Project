@@ -16,6 +16,10 @@ namespace Ui {
 class ResultsWindow;
 }
 
+/**
+ * @brief LoginWindow
+ * This class generates the window which shows the user results fro their trip
+ */
 class ResultsWindow : public QWidget
 {
 	Q_OBJECT

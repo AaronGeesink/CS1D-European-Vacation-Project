@@ -14,6 +14,10 @@ namespace Ui {
 class EditWindow;
 }
 
+/**
+ * @brief LoginWindow
+ * This class generates the window which allows admins to edit the SQL database
+ */
 class EditWindow : public QWidget
 {
 	Q_OBJECT

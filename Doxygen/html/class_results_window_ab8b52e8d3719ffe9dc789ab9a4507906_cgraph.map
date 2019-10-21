@@ -1,0 +1,8 @@
+<map id="ResultsWindow::setResults" name="ResultsWindow::setResults">
+<area shape="rect" id="node1" title="setResults(std::vector&lt;City&gt;&amp; loadedCities, int numCities) Sets the results screen to the currently l..." alt="" coords="5,107,188,133"/>
+<area shape="rect" id="node2" href="$class_results_window.html#ae9d02be8b007fcbc61f6d6536ba1520f" title="getStartingCity(std::vector&lt;City&gt; loadedCities) Returns the starting city of a trip" alt="" coords="236,5,443,32"/>
+<area shape="rect" id="node3" href="$class_city.html#ac4829f9fc09b4c0f4cf2f7453c974264" title="removeCityDistance() Removes all distances related to the argument city from the City&#39;s distance vect..." alt="" coords="255,56,423,83"/>
+<area shape="rect" id="node4" href="$class_city.html#afe733410d61155d8a4013293b0b72408" title="getName() This method returns a QString containing the name of the City" alt="" coords="287,107,392,133"/>
+<area shape="rect" id="node5" href="$class_city.html#ad577ecd4be83b37ef2f9c5ff547f5259" title="getShortestDistance() Returns the distance to the closest city in the city vector" alt="" coords="254,157,425,184"/>
+<area shape="rect" id="node6" href="$class_results_window.html#ad58645a2626daa51d8e824d56df7145f" title="getClosestCity(std::vector&lt;City&gt; loadedCities, QString name) Returns the closest city to the current ..." alt="" coords="237,208,442,235"/>
+</map>

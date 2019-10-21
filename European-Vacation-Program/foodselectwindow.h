@@ -17,6 +17,10 @@ namespace Ui {
 class FoodSelectWindow;
 }
 
+/**
+ * @brief LoginWindow
+ * This class generates the window which allows the user to select food to purchase
+ */
 class FoodSelectWindow : public QWidget
 {
 	Q_OBJECT

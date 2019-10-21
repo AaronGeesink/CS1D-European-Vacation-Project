@@ -1,0 +1,4 @@
+<map id="City::getIsStart" name="City::getIsStart">
+<area shape="rect" id="node1" title="getIsStart() Returns the value of the &quot;isStart&quot; data member If the city is the starting city,..." alt="" coords="213,5,323,32"/>
+<area shape="rect" id="node2" href="$struct_compare_city.html#a08fbbcc6710ad653fdee21de31576d10" title="operator a comparator for cities" alt="" coords="5,5,165,32"/>
+</map>

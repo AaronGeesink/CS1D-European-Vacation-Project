@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['qt_5fmoc_5fliteral',['QT_MOC_LITERAL',['../moc__cityselectwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_cityselectwindow.cpp'],['../moc__editwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_editwindow.cpp'],['../moc__foodselectwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_foodselectwindow.cpp'],['../moc__loginwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_loginwindow.cpp'],['../moc__mainwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_mainwindow.cpp'],['../moc__resultswindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_resultswindow.cpp'],['../moc__tripwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_tripwindow.cpp'],['../moc__viewwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe',1,'QT_MOC_LITERAL():&#160;moc_viewwindow.cpp']]],
-  ['qt_5frcc_5fmangle_5fnamespace',['QT_RCC_MANGLE_NAMESPACE',['../qrc__europe_8cpp.html#a590f80ddb226779f6f432d80438ea190',1,'qrc_europe.cpp']]],
-  ['qt_5frcc_5fprepend_5fnamespace',['QT_RCC_PREPEND_NAMESPACE',['../qrc__europe_8cpp.html#afbfc3bb3cd2fa03dd0a3fc36563480d6',1,'qrc_europe.cpp']]]
-];

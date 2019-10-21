@@ -1,0 +1,4 @@
+<map id="ResultsWindow::getStartingCity" name="ResultsWindow::getStartingCity">
+<area shape="rect" id="node1" title="getStartingCity(std::vector&lt;City&gt; loadedCities) Returns the starting city of a trip" alt="" coords="236,5,443,32"/>
+<area shape="rect" id="node2" href="$class_results_window.html#ab8b52e8d3719ffe9dc789ab9a4507906" title="setResults(std::vector&lt;City&gt;&amp; loadedCities, int numCities) Sets the results screen to the currently l..." alt="" coords="5,5,188,32"/>
+</map>

@@ -2,12 +2,31 @@
 \label{class_results_window}\index{ResultsWindow@{ResultsWindow}}
 
 
+\mbox{\hyperlink{class_login_window}{Login\+Window}} This class generates the window which shows the user results fro their trip.  
+
+
+
+
 {\ttfamily \#include $<$resultswindow.\+h$>$}
 
-Inheritance diagram for Results\+Window\+:\begin{figure}[H]
+
+
+Inheritance diagram for Results\+Window\+:
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_results_window}
+\includegraphics[width=164pt]{class_results_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Results\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_results_window__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Signals}
@@ -20,12 +39,11 @@ void \mbox{\hyperlink{class_results_window_a7a545927d8dd85526646a5d05d758052}{mo
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}{Results\+Window}} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\Hypertarget{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}\label{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}} 
+{\bfseries Results\+Window} (Q\+Widget $\ast$parent=nullptr)
 \item 
-\mbox{\hyperlink{class_results_window_a2b320802242dbf6ac6b779480a30b86c}{$\sim$\+Results\+Window}} ()
-\item 
-void \mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&loaded\+Cities)
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the results screen to the currently loaded cities \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906}{set\+Results}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&loaded\+Cities, int num\+Cities)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities, int num\+Cities)}} Sets the results screen to the currently loaded cities \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_city}{City}} \mbox{\hyperlink{class_results_window_ad58645a2626daa51d8e824d56df7145f}{get\+Closest\+City}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ loaded\+Cities, Q\+String name)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_results_window_ad58645a2626daa51d8e824d56df7145f}{get\+Closest\+City(std\+::vector$<$\+City$>$ loaded\+Cities, Q\+String name)}} Returns the closest city to the current city \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_city}{City}} \mbox{\hyperlink{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}{get\+Starting\+City}} (std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ loaded\+Cities)
@@ -33,34 +51,7 @@ void \mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{se
 
 
 \subsection{Detailed Description}
-
-
-Definition at line 19 of file resultswindow.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}\label{class_results_window_ab5eed3b399c8a305f588d4a98fb3a9ed}} 
-\index{ResultsWindow@{ResultsWindow}!ResultsWindow@{ResultsWindow}}
-\index{ResultsWindow@{ResultsWindow}!ResultsWindow@{ResultsWindow}}
-\subsubsection{\texorpdfstring{ResultsWindow()}{ResultsWindow()}}
-{\footnotesize\ttfamily Results\+Window\+::\+Results\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-
-
-Definition at line 4 of file resultswindow.\+cpp.
-
-\mbox{\Hypertarget{class_results_window_a2b320802242dbf6ac6b779480a30b86c}\label{class_results_window_a2b320802242dbf6ac6b779480a30b86c}} 
-\index{ResultsWindow@{ResultsWindow}!````~ResultsWindow@{$\sim$ResultsWindow}}
-\index{````~ResultsWindow@{$\sim$ResultsWindow}!ResultsWindow@{ResultsWindow}}
-\subsubsection{\texorpdfstring{$\sim$ResultsWindow()}{~ResultsWindow()}}
-{\footnotesize\ttfamily Results\+Window\+::$\sim$\+Results\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line 11 of file resultswindow.\+cpp.
-
-
+\mbox{\hyperlink{class_login_window}{Login\+Window}} This class generates the window which shows the user results fro their trip. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_results_window_ad58645a2626daa51d8e824d56df7145f}\label{class_results_window_ad58645a2626daa51d8e824d56df7145f}} 
@@ -81,10 +72,14 @@ Aaron Geesink
 {\em vector$<$city$>$\&} & loaded\+Cities, Q\+String name \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 71 of file resultswindow.\+cpp.
-
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_results_window_ad58645a2626daa51d8e824d56df7145f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}\label{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f}} 
 \index{ResultsWindow@{ResultsWindow}!getStartingCity@{getStartingCity}}
 \index{getStartingCity@{getStartingCity}!ResultsWindow@{ResultsWindow}}
@@ -103,10 +98,14 @@ Aaron Geesink
 {\em vector$<$city$>$\&} & loaded\+Cities \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 84 of file resultswindow.\+cpp.
-
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_results_window_ae9d02be8b007fcbc61f6d6536ba1520f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_results_window_a7a545927d8dd85526646a5d05d758052}\label{class_results_window_a7a545927d8dd85526646a5d05d758052}} 
 \index{ResultsWindow@{ResultsWindow}!moveToFoodSelectClicked@{moveToFoodSelectClicked}}
 \index{moveToFoodSelectClicked@{moveToFoodSelectClicked}!ResultsWindow@{ResultsWindow}}
@@ -120,10 +119,6 @@ Definition at line 84 of file resultswindow.\+cpp.
 \begin{DoxyAuthor}{Author}
 Aaron Geesink 
 \end{DoxyAuthor}
-
-
-Definition at line 160 of file moc\+\_\+resultswindow.\+cpp.
-
 \mbox{\Hypertarget{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}\label{class_results_window_a55bcbc29f4f178f52fc610a09ec21cb3}} 
 \index{ResultsWindow@{ResultsWindow}!moveToMainClicked@{moveToMainClicked}}
 \index{moveToMainClicked@{moveToMainClicked}!ResultsWindow@{ResultsWindow}}
@@ -137,19 +132,15 @@ Definition at line 160 of file moc\+\_\+resultswindow.\+cpp.
 \begin{DoxyAuthor}{Author}
 Aaron Geesink 
 \end{DoxyAuthor}
-
-
-Definition at line 154 of file moc\+\_\+resultswindow.\+cpp.
-
-\mbox{\Hypertarget{class_results_window_ada6aa2afee19356d33b6b59646366cc2}\label{class_results_window_ada6aa2afee19356d33b6b59646366cc2}} 
+\mbox{\Hypertarget{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906}\label{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906}} 
 \index{ResultsWindow@{ResultsWindow}!setResults@{setResults}}
 \index{setResults@{setResults}!ResultsWindow@{ResultsWindow}}
 \subsubsection{\texorpdfstring{setResults()}{setResults()}}
-{\footnotesize\ttfamily void Results\+Window\+::set\+Results (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&}]{loaded\+Cities }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Results\+Window\+::set\+Results (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \&}]{loaded\+Cities,  }\item[{int}]{num\+Cities }\end{DoxyParamCaption})}
 
 
 
-\mbox{\hyperlink{class_results_window_ada6aa2afee19356d33b6b59646366cc2}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities)}} Sets the results screen to the currently loaded cities 
+\mbox{\hyperlink{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906}{set\+Results(std\+::vector$<$\+City$>$\& loaded\+Cities, int num\+Cities)}} Sets the results screen to the currently loaded cities 
 
 \begin{DoxyAuthor}{Author}
 Aaron Geesink 
@@ -159,14 +150,17 @@ Aaron Geesink
 {\em vector$<$city$>$\&} & loaded\+Cities \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 16 of file resultswindow.\+cpp.
-
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_results_window_ab8b52e8d3719ffe9dc789ab9a4507906_cgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{resultswindow_8h}{resultswindow.\+h}}\item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/debug/\mbox{\hyperlink{moc__resultswindow_8cpp}{moc\+\_\+resultswindow.\+cpp}}\item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{resultswindow_8cpp}{resultswindow.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/resultswindow.\+h\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/resultswindow.\+cpp\end{DoxyCompactItemize}

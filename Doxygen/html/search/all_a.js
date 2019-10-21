@@ -1,32 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mainbutton',['mainButton',['../class_ui___main_window.html#a5c315d3186a5bca7e7d71fb3c41057b3',1,'Ui_MainWindow']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_ui_1_1_main_window.html',1,'Ui::MainWindow'],['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]],
-  ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
-  ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
-  ['moc_5fcityselectwindow_2ecpp',['moc_cityselectwindow.cpp',['../moc__cityselectwindow_8cpp.html',1,'']]],
-  ['moc_5feditwindow_2ecpp',['moc_editwindow.cpp',['../moc__editwindow_8cpp.html',1,'']]],
-  ['moc_5ffoodselectwindow_2ecpp',['moc_foodselectwindow.cpp',['../moc__foodselectwindow_8cpp.html',1,'']]],
-  ['moc_5floginwindow_2ecpp',['moc_loginwindow.cpp',['../moc__loginwindow_8cpp.html',1,'']]],
-  ['moc_5fmainwindow_2ecpp',['moc_mainwindow.cpp',['../moc__mainwindow_8cpp.html',1,'']]],
-  ['moc_5fpredefs_2eh',['moc_predefs.h',['../moc__predefs_8h.html',1,'']]],
-  ['moc_5fresultswindow_2ecpp',['moc_resultswindow.cpp',['../moc__resultswindow_8cpp.html',1,'']]],
-  ['moc_5ftripwindow_2ecpp',['moc_tripwindow.cpp',['../moc__tripwindow_8cpp.html',1,'']]],
-  ['moc_5fviewwindow_2ecpp',['moc_viewwindow.cpp',['../moc__viewwindow_8cpp.html',1,'']]],
-  ['moveto11cities',['moveTo11Cities',['../class_ui___main_window.html#ab038373e7752969160cec00fd5cc24da',1,'Ui_MainWindow::moveTo11Cities()'],['../class_ui___trip_window.html#a19829ebaaefb4342ccde12cf00d2da70',1,'Ui_TripWindow::moveTo11Cities()']]],
-  ['movetocityselect',['moveToCitySelect',['../class_ui___food_select_window.html#a6d7e3e7bf1bc994438582bf3a7462952',1,'Ui_FoodSelectWindow']]],
-  ['movetocityselectclicked',['moveToCitySelectClicked',['../class_food_select_window.html#a0d2bb2f7e07f62e62c2920d989415d8c',1,'FoodSelectWindow']]],
-  ['movetocustom',['moveToCustom',['../class_ui___main_window.html#a3e9ac52f326b4e72f38cf05903b00cd7',1,'Ui_MainWindow::moveToCustom()'],['../class_ui___trip_window.html#a405a6edc979b22f8745c2fa67e0f28ea',1,'Ui_TripWindow::moveToCustom()']]],
-  ['movetoedit',['moveToEdit',['../class_ui___main_window.html#a4a943d530aef96076993420fbe8008aa',1,'Ui_MainWindow']]],
-  ['movetoeditclicked',['moveToEditClicked',['../class_login_window.html#a0ed797ae07a4afea038499d6929047a1',1,'LoginWindow']]],
-  ['movetofoodselect',['moveToFoodSelect',['../class_ui___city_select_window.html#a4ea2d95b45c0265a1f00dd4f3c85dd9c',1,'Ui_CitySelectWindow::moveToFoodSelect()'],['../class_ui___results_window.html#abc87686c6019cd99b8c639c62213fc8a',1,'Ui_ResultsWindow::moveToFoodSelect()']]],
-  ['movetofoodselectclicked',['moveToFoodSelectClicked',['../class_city_select_window.html#a6181200e04334e668f39df57af243fff',1,'CitySelectWindow::moveToFoodSelectClicked()'],['../class_results_window.html#a7a545927d8dd85526646a5d05d758052',1,'ResultsWindow::moveToFoodSelectClicked()']]],
-  ['movetolondon',['moveToLondon',['../class_ui___main_window.html#ae68791a82316a972b14e8a8f16eb377c',1,'Ui_MainWindow::moveToLondon()'],['../class_ui___trip_window.html#aad7407aaada3011e791c80d36847bd71',1,'Ui_TripWindow::moveToLondon()']]],
-  ['movetomain',['moveToMain',['../class_ui___results_window.html#add81048cb44e1272a8db13bba6526026',1,'Ui_ResultsWindow::moveToMain()'],['../class_ui___trip_window.html#af9ed0863c361828932fa02423a503929',1,'Ui_TripWindow::moveToMain()']]],
-  ['movetomainclicked',['moveToMainClicked',['../class_results_window.html#a55bcbc29f4f178f52fc610a09ec21cb3',1,'ResultsWindow']]],
-  ['movetoresults',['moveToResults',['../class_ui___food_select_window.html#aabf2f0f4d6761c9507f88e0033e87f95',1,'Ui_FoodSelectWindow']]],
-  ['movetoresultsclicked',['moveToResultsClicked',['../class_food_select_window.html#a76b0dfec8f72dfa4c336732a922287fc',1,'FoodSelectWindow']]],
-  ['movetoview',['moveToView',['../class_ui___main_window.html#ad9801547cfce7c5d19b427123105f0b2',1,'Ui_MainWindow']]]
+  ['tripwindow',['TripWindow',['../class_ui_1_1_trip_window.html',1,'Ui']]]
 ];

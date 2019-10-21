@@ -1,0 +1,5 @@
+<map id="CompareCity::operator()" name="CompareCity::operator()">
+<area shape="rect" id="node1" title="operator a comparator for cities" alt="" coords="5,31,165,57"/>
+<area shape="rect" id="node2" href="$class_city.html#ae817fa08cc2191da09c91c3d6b4069d5" title="getIsStart() Returns the value of the &quot;isStart&quot; data member If the city is the starting city,..." alt="" coords="244,5,353,32"/>
+<area shape="rect" id="node3" href="$class_city.html#ad577ecd4be83b37ef2f9c5ff547f5259" title="getShortestDistance() Returns the distance to the closest city in the city vector" alt="" coords="213,56,384,83"/>
+</map>

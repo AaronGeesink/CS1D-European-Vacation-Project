@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['i386',['i386',['../moc__predefs_8h.html#a00a5e02c63c63bc130ffd8ebc769ac87',1,'moc_predefs.h']]]
+  ['removecitydistance',['removeCityDistance',['../class_city.html#ac4829f9fc09b4c0f4cf2f7453c974264',1,'City']]],
+  ['resultswindow',['ResultsWindow',['../class_results_window.html',1,'ResultsWindow'],['../class_ui_1_1_results_window.html',1,'Ui::ResultsWindow']]]
 ];

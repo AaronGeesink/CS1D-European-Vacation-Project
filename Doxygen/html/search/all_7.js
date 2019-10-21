@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['horizontalspacer',['horizontalSpacer',['../class_ui___main_window.html#a7871ea8c4b6c595d7ccd53960b344719',1,'Ui_MainWindow']]],
-  ['horizontalspacer_5f2',['horizontalSpacer_2',['../class_ui___main_window.html#a9a022556cf8ce3fa47e51d79cb222ab0',1,'Ui_MainWindow']]]
+  ['populatecombo',['populateCombo',['../class_view_window.html#ae95bf3c78fb5374f9d4e62405db6d94c',1,'ViewWindow']]]
 ];

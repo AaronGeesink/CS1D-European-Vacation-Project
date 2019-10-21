@@ -1,0 +1,5 @@
+<map id="City::getShortestDistance" name="City::getShortestDistance">
+<area shape="rect" id="node1" title="getShortestDistance() Returns the distance to the closest city in the city vector" alt="" coords="236,31,407,57"/>
+<area shape="rect" id="node2" href="$struct_compare_city.html#a08fbbcc6710ad653fdee21de31576d10" title="operator a comparator for cities" alt="" coords="17,5,177,32"/>
+<area shape="rect" id="node3" href="$class_results_window.html#ab8b52e8d3719ffe9dc789ab9a4507906" title="setResults(std::vector&lt;City&gt;&amp; loadedCities, int numCities) Sets the results screen to the currently l..." alt="" coords="5,56,188,83"/>
+</map>

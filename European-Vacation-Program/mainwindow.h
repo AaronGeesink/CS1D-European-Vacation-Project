@@ -19,6 +19,10 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+/**
+ * @brief LoginWindow
+ * This class generates the main menu, and includes functions which control all other windows
+ */
 class MainWindow : public QWidget
 {
 	Q_OBJECT

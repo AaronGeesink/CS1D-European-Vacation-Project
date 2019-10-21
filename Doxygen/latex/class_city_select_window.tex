@@ -2,12 +2,31 @@
 \label{class_city_select_window}\index{CitySelectWindow@{CitySelectWindow}}
 
 
+\mbox{\hyperlink{class_login_window}{Login\+Window}} This class generates the window which allows the user to select cities for their trip.  
+
+
+
+
 {\ttfamily \#include $<$cityselectwindow.\+h$>$}
 
-Inheritance diagram for City\+Select\+Window\+:\begin{figure}[H]
+
+
+Inheritance diagram for City\+Select\+Window\+:
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_city_select_window}
+\includegraphics[width=176pt]{class_city_select_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for City\+Select\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_city_select_window__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Signals}
@@ -18,9 +37,8 @@ void \mbox{\hyperlink{class_city_select_window_a6181200e04334e668f39df57af243fff
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_city_select_window_a7a259de30cddf3e5dc8835546ea2de65}{City\+Select\+Window}} (Q\+Widget $\ast$parent=nullptr)
-\item 
-\mbox{\hyperlink{class_city_select_window_a90e12e1a1f6f246a00ddabd0c41ad589}{$\sim$\+City\+Select\+Window}} ()
+\mbox{\Hypertarget{class_city_select_window_a7a259de30cddf3e5dc8835546ea2de65}\label{class_city_select_window_a7a259de30cddf3e5dc8835546ea2de65}} 
+{\bfseries City\+Select\+Window} (Q\+Widget $\ast$parent=nullptr)
 \item 
 void \mbox{\hyperlink{class_city_select_window_a771b0feebb7c7fdb1714917b337a37f3}{set\+City\+Selection}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a771b0feebb7c7fdb1714917b337a37f3}{set\+City\+Selection()}} Sets the city selection of the \mbox{\hyperlink{class_city_select_window}{City\+Select\+Window}} \end{DoxyCompactList}\item 
@@ -29,40 +47,35 @@ std\+::vector$<$ \mbox{\hyperlink{class_city}{City}} $>$ \& \mbox{\hyperlink{cla
 int \mbox{\hyperlink{class_city_select_window_a63048482e621b1653250c7acbd28c3aa}{get\+Plan\+Number}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a63048482e621b1653250c7acbd28c3aa}{get\+Plan\+Number()}} Returns the value of the selected trip plan \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_city_select_window_a6afffce8400f9541a3c31e0e359c0d9b}{set\+Plan\+Number}} (int number)
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a6afffce8400f9541a3c31e0e359c0d9b}{set\+Plan\+Number()}} Sets the value of the selected trip plan \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a6afffce8400f9541a3c31e0e359c0d9b}{set\+Plan\+Number()}} Sets the value of the selected trip plan \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_city_select_window_a2bee3e628f1249dd6fa5cabc08d63f43}{get\+Num\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a2bee3e628f1249dd6fa5cabc08d63f43}{get\+Num\+Cities()}} Returns the number of cities loaded \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_city_select_window_a44f594818e36ca35519eaf67c9e9a360}{get\+Error}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a44f594818e36ca35519eaf67c9e9a360}{get\+Error()}} Returns at error message for contingency handling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_select_window_a0c8d03d414fbb798fff86af385902748}{set\+Error}} (bool value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_city_select_window_a0c8d03d414fbb798fff86af385902748}{set\+Error(bool value)}} Sets the error message to display \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-
-
-Definition at line 23 of file cityselectwindow.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_city_select_window_a7a259de30cddf3e5dc8835546ea2de65}\label{class_city_select_window_a7a259de30cddf3e5dc8835546ea2de65}} 
-\index{CitySelectWindow@{CitySelectWindow}!CitySelectWindow@{CitySelectWindow}}
-\index{CitySelectWindow@{CitySelectWindow}!CitySelectWindow@{CitySelectWindow}}
-\subsubsection{\texorpdfstring{CitySelectWindow()}{CitySelectWindow()}}
-{\footnotesize\ttfamily City\+Select\+Window\+::\+City\+Select\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-
-
-Definition at line 4 of file cityselectwindow.\+cpp.
-
-\mbox{\Hypertarget{class_city_select_window_a90e12e1a1f6f246a00ddabd0c41ad589}\label{class_city_select_window_a90e12e1a1f6f246a00ddabd0c41ad589}} 
-\index{CitySelectWindow@{CitySelectWindow}!````~CitySelectWindow@{$\sim$CitySelectWindow}}
-\index{````~CitySelectWindow@{$\sim$CitySelectWindow}!CitySelectWindow@{CitySelectWindow}}
-\subsubsection{\texorpdfstring{$\sim$CitySelectWindow()}{~CitySelectWindow()}}
-{\footnotesize\ttfamily City\+Select\+Window\+::$\sim$\+City\+Select\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line 11 of file cityselectwindow.\+cpp.
-
-
+\mbox{\hyperlink{class_login_window}{Login\+Window}} This class generates the window which allows the user to select cities for their trip. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_city_select_window_a44f594818e36ca35519eaf67c9e9a360}\label{class_city_select_window_a44f594818e36ca35519eaf67c9e9a360}} 
+\index{CitySelectWindow@{CitySelectWindow}!getError@{getError}}
+\index{getError@{getError}!CitySelectWindow@{CitySelectWindow}}
+\subsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily bool City\+Select\+Window\+::get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_city_select_window_a44f594818e36ca35519eaf67c9e9a360}{get\+Error()}} Returns at error message for contingency handling 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_city_select_window_a7a0aacdfc7b496f7b21cba7ab6311468}\label{class_city_select_window_a7a0aacdfc7b496f7b21cba7ab6311468}} 
 \index{CitySelectWindow@{CitySelectWindow}!getLoadedCities@{getLoadedCities}}
 \index{getLoadedCities@{getLoadedCities}!CitySelectWindow@{CitySelectWindow}}
@@ -79,10 +92,22 @@ Aaron Geesink
 \begin{DoxyReturn}{Returns}
 vector$<$\+City$>$ 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_city_select_window_a2bee3e628f1249dd6fa5cabc08d63f43}\label{class_city_select_window_a2bee3e628f1249dd6fa5cabc08d63f43}} 
+\index{CitySelectWindow@{CitySelectWindow}!getNumCities@{getNumCities}}
+\index{getNumCities@{getNumCities}!CitySelectWindow@{CitySelectWindow}}
+\subsubsection{\texorpdfstring{getNumCities()}{getNumCities()}}
+{\footnotesize\ttfamily int City\+Select\+Window\+::get\+Num\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Definition at line 31 of file cityselectwindow.\+cpp.
 
+\mbox{\hyperlink{class_city_select_window_a2bee3e628f1249dd6fa5cabc08d63f43}{get\+Num\+Cities()}} Returns the number of cities loaded 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_city_select_window_a63048482e621b1653250c7acbd28c3aa}\label{class_city_select_window_a63048482e621b1653250c7acbd28c3aa}} 
 \index{CitySelectWindow@{CitySelectWindow}!getPlanNumber@{getPlanNumber}}
 \index{getPlanNumber@{getPlanNumber}!CitySelectWindow@{CitySelectWindow}}
@@ -99,10 +124,6 @@ Aaron Geesink
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-
-
-Definition at line 36 of file cityselectwindow.\+cpp.
-
 \mbox{\Hypertarget{class_city_select_window_a6181200e04334e668f39df57af243fff}\label{class_city_select_window_a6181200e04334e668f39df57af243fff}} 
 \index{CitySelectWindow@{CitySelectWindow}!moveToFoodSelectClicked@{moveToFoodSelectClicked}}
 \index{moveToFoodSelectClicked@{moveToFoodSelectClicked}!CitySelectWindow@{CitySelectWindow}}
@@ -116,10 +137,6 @@ move\+To\+Food\+Select\+Clicked Proceeds to the \mbox{\hyperlink{class_food}{Foo
 \begin{DoxyAuthor}{Author}
 Aaron Geesink 
 \end{DoxyAuthor}
-
-
-Definition at line 138 of file moc\+\_\+cityselectwindow.\+cpp.
-
 \mbox{\Hypertarget{class_city_select_window_a771b0feebb7c7fdb1714917b337a37f3}\label{class_city_select_window_a771b0feebb7c7fdb1714917b337a37f3}} 
 \index{CitySelectWindow@{CitySelectWindow}!setCitySelection@{setCitySelection}}
 \index{setCitySelection@{setCitySelection}!CitySelectWindow@{CitySelectWindow}}
@@ -133,10 +150,24 @@ Definition at line 138 of file moc\+\_\+cityselectwindow.\+cpp.
 \begin{DoxyAuthor}{Author}
 Aaron Geesink 
 \end{DoxyAuthor}
+\mbox{\Hypertarget{class_city_select_window_a0c8d03d414fbb798fff86af385902748}\label{class_city_select_window_a0c8d03d414fbb798fff86af385902748}} 
+\index{CitySelectWindow@{CitySelectWindow}!setError@{setError}}
+\index{setError@{setError}!CitySelectWindow@{CitySelectWindow}}
+\subsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily void City\+Select\+Window\+::set\+Error (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
 
 
-Definition at line 16 of file cityselectwindow.\+cpp.
 
+\mbox{\hyperlink{class_city_select_window_a0c8d03d414fbb798fff86af385902748}{set\+Error(bool value)}} Sets the error message to display 
+
+\begin{DoxyAuthor}{Author}
+Aaron Geesink 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & value \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_city_select_window_a6afffce8400f9541a3c31e0e359c0d9b}\label{class_city_select_window_a6afffce8400f9541a3c31e0e359c0d9b}} 
 \index{CitySelectWindow@{CitySelectWindow}!setPlanNumber@{setPlanNumber}}
 \index{setPlanNumber@{setPlanNumber}!CitySelectWindow@{CitySelectWindow}}
@@ -157,12 +188,7 @@ Aaron Geesink
 \end{DoxyParams}
 
 
-Definition at line 41 of file cityselectwindow.\+cpp.
-
-
-
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{cityselectwindow_8h}{cityselectwindow.\+h}}\item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/\mbox{\hyperlink{cityselectwindow_8cpp}{cityselectwindow.\+cpp}}\item 
-C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/debug/\mbox{\hyperlink{moc__cityselectwindow_8cpp}{moc\+\_\+cityselectwindow.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/cityselectwindow.\+h\item 
+C\+:/\+Users/chatm/\+Desktop/\+C\+S1\+D-\/\+European-\/\+Vacation-\/\+Project/\+European-\/\+Vacation-\/\+Program/cityselectwindow.\+cpp\end{DoxyCompactItemize}

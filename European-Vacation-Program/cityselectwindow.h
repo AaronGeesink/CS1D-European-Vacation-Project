@@ -20,7 +20,10 @@
 namespace Ui {
 class CitySelectWindow;
 }
-
+/**
+ * @brief LoginWindow
+ * This class generates the window which allows the user to select cities for their trip
+ */
 class CitySelectWindow : public QWidget
 {
 	Q_OBJECT

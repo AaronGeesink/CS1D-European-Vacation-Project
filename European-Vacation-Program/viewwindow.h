@@ -16,7 +16,10 @@
 namespace Ui {
 class ViewWindow;
 }
-
+/**
+ * @brief LoginWindow
+ * This class generates the window which allows the user to view city, food, and distance data
+ */
 class ViewWindow : public QWidget
 {
 	Q_OBJECT

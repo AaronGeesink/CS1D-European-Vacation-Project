@@ -1,0 +1,4 @@
+<map id="City::getName" name="City::getName">
+<area shape="rect" id="node1" title="getName() This method returns a QString containing the name of the City" alt="" coords="236,5,341,32"/>
+<area shape="rect" id="node2" href="$class_results_window.html#ab8b52e8d3719ffe9dc789ab9a4507906" title="setResults(std::vector&lt;City&gt;&amp; loadedCities, int numCities) Sets the results screen to the currently l..." alt="" coords="5,5,188,32"/>
+</map>
