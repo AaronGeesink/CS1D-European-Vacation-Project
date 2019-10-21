@@ -41,7 +41,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 	ui->foodTable->setHorizontalHeaderItem(0, new QTableWidgetItem("City"));
 	ui->foodTable->setHorizontalHeaderItem(1, new QTableWidgetItem("Food"));
 	ui->foodTable->setHorizontalHeaderItem(2, new QTableWidgetItem("Price"));
-	ui->foodTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Quantity Purchased"));
+	ui->foodTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Quantity"));
 	ui->foodTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Total"));
 
 	ui->foodTable->setSelectionMode(QAbstractItemView::NoSelection);
