@@ -62,19 +62,6 @@
     <string>Password:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="statusLabel">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>450</y>
-     <width>341</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>[+]Status</string>
-   </property>
-  </widget>
   <widget class="QGroupBox" name="loginGroupBox">
    <property name="geometry">
     <rect>
@@ -106,7 +93,6 @@
   <zorder>passwordLineEdit</zorder>
   <zorder>usernameLabel</zorder>
   <zorder>passwordLabel</zorder>
-  <zorder>statusLabel</zorder>
  </widget>
  <resources/>
  <connections/>

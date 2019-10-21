@@ -37,6 +37,6 @@ void LoginWindow::on_loginButton_clicked()
 			emit moveToEditClicked();
 		}
 		if(count < 1)
-			ui->statusLabel->setText("Invalid Username or Password");
+			QMessageBox::information(this, tr("Invalid Credentials"), tr("Username or password is invalid"));
 	}
 }
