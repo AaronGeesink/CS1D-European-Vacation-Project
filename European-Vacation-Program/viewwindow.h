@@ -25,6 +25,11 @@ public:
 	explicit ViewWindow(QWidget *parent = nullptr);
 	~ViewWindow();
 
+	/**
+	 * @author Garrett Geesink
+	 * @brief populateCombo()
+	 * Populates a comboBox with all currently active cities
+	 */
 	void populateCombo();
 
 private slots:

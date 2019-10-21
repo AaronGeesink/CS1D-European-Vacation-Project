@@ -66,6 +66,12 @@ public:
 	 */
 	double calculateTotal();
 
+	/**
+	 *@author Aaron Geesink
+	 *@brief getQuantity()
+	 * Returns the quantity of food purchased of a given food item
+	 * @return int
+	 */
 	int getQuantity();
 
 	/**

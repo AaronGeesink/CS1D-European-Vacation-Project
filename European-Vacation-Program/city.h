@@ -95,6 +95,12 @@ public:
 	 */
 	int getNumFoods();
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief getNumNonZeroFoods()
+	 * This method returns the quantity food in a City's food vector
+	 * @return int
+	 */
 	int getNumNonZeroFoods();
 
 	/**
@@ -130,6 +136,12 @@ public:
 	 */
 	void removeCityDistance(QString name);
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief getNumNonZeroFoods()
+	 * This method returns a vector of food items purchased
+	 * @return vector<Food>
+	 */
 	std::vector<Food> getNonZeroFoods();
 
 	/**

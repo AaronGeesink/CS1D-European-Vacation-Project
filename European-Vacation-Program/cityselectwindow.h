@@ -59,8 +59,29 @@ public:
 	 * @param int number
 	 */
 	void setPlanNumber(int number);
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief getNumCities()
+	 * Returns the number of cities loaded
+	 * @return int
+	 */
 	int getNumCities();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief getError()
+	 * Returns at error message for contingency handling
+	 * @return bool
+	 */
 	bool getError();
+
+	/**
+	 * @author Aaron Geesink
+	 * @brief setError(bool value)
+	 * Sets the error message to display
+	 * @param bool value
+	 */
 	void setError(bool value);
 
 signals:
@@ -85,8 +106,8 @@ private:
 	std::vector<QString> cityNames;		/// A vector containing the names of cities
 	std::vector<City> loadedCities;		/// A vector containing the currently loaded cities
 	int planNumber;						/// The plan number for the current trip
-	int numCities;
-	bool error;
+	int numCities;						/// The number of currently loaded cities
+	bool error;							/// A bool for handling errors
 
 	/**
 	 * @author Aaron Geesink
@@ -123,6 +144,11 @@ private:
 	 */
 	void loadParisPlan();
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief sortLondonCities()
+	 * Sorts the cities in the london trip plan
+	 */
 	void sortLondonCities();
 
 	/**
@@ -139,6 +165,13 @@ private:
 	 */
 	void loadCustomPlan();
 
+	/**
+	 * @author Aaron Geesink
+	 * @brief isValidStart(QString startingCity)
+	 * Checks whether or not a city is a valid starting city
+	 * @param QString startingCity
+	 * @return bool
+	 */
 	bool isValidStart(QString startingCity);
 };
 
