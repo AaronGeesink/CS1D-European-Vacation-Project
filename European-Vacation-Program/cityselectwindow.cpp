@@ -6,6 +6,7 @@ CitySelectWindow::CitySelectWindow(QWidget *parent) :
 	ui(new Ui::CitySelectWindow)
 {
 	ui->setupUi(this);
+    ui->cityTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 CitySelectWindow::~CitySelectWindow()
@@ -17,7 +18,7 @@ void CitySelectWindow::setCitySelection()
 {
 	loadedCities.clear();
 	cityNames.clear();
-	ui->cityTable->clear();
+    ui->cityTable->clear();
 
 	if (planNumber == 0)
 	{

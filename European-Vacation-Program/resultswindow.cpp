@@ -6,6 +6,8 @@ ResultsWindow::ResultsWindow(QWidget *parent) :
 	ui(new Ui::ResultsWindow)
 {
 	ui->setupUi(this);
+    ui->distanceTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->foodTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 ResultsWindow::~ResultsWindow()
@@ -18,7 +20,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 	// setup for the distance table
 	ui->distanceTable->clear();
 	ui->distanceTable->setRowCount(numCities);
-	ui->distanceTable->setColumnCount(3);
+    ui->distanceTable->setColumnCount(3);
 
 	ui->distanceTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Start"));
 	ui->distanceTable->setHorizontalHeaderItem(1, new QTableWidgetItem("End"));
@@ -138,7 +140,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 
 	label = new QLabel();
 	label->setText("$" + QString::number(grandTotal));
-	ui->foodTable->setCellWidget(foodsLoaded, 4, label);
+    ui->foodTable->setCellWidget(foodsLoaded, 4, label);
 }
 
 City ResultsWindow::getClosestCity(std::vector<City> loadedCities, QString name)
