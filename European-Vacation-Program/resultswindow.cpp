@@ -28,12 +28,16 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 	// setup for the food table
 	ui->foodTable->clear();
 	int numFoods = 0;
+	std::vector<QString> foodCities;
+
 	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{
 		numFoods = numFoods + loadedCities[i].getNumNonZeroFoods();
+		if (loadedCities[i].getNumNonZeroFoods() > 0)
+			foodCities.push_back(loadedCities[i].getName());
 	}
 
-	ui->foodTable->setRowCount(numFoods + 1);
+	ui->foodTable->setRowCount(numFoods + foodCities.size() + 1);
 	ui->foodTable->setColumnCount(5);
 
 	ui->foodTable->setHorizontalHeaderItem(0, new QTableWidgetItem("City"));
@@ -92,6 +96,7 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 	QLabel *label;
 	int foodsLoaded = 0;
 	double grandTotal = 0;
+	std::vector<double> cityTotals;
 
 	for (unsigned int i = 0; i < loadedCities.size(); i++)
 	{
@@ -101,6 +106,8 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 			label = new QLabel();
 			label->setText(loadedCities[i].getName());
 			ui->foodTable->setCellWidget(foodsLoaded, 0, label);
+
+			double cityTotal = 0;
 
 			for (unsigned int j = 0; j < loadedCities[i].getNonZeroFoods().size(); j++)
 			{
@@ -125,18 +132,30 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 				ui->foodTable->setCellWidget(foodsLoaded, 4, label);
 
 				grandTotal = grandTotal + loadedCities[i].getNonZeroFoods()[j].calculateTotal();
+				cityTotal = cityTotal + loadedCities[i].getNonZeroFoods()[j].calculateTotal();
 				foodsLoaded++;
 			}
+			cityTotals.push_back(cityTotal);
 		}
+	}
+
+	for (int i = 0; i < foodCities.size(); i++)
+	{
+		label = new QLabel();
+		label->setText(foodCities[i]  + ":");
+		ui->foodTable->setCellWidget(foodsLoaded + i, 3, label);
+		label = new QLabel();
+		label->setText("$" + QString::number(cityTotals[i]));
+		ui->foodTable->setCellWidget(foodsLoaded + i, 4, label);
 	}
 
 	label = new QLabel();
 	label->setText("Grand Total: ");
-	ui->foodTable->setCellWidget(foodsLoaded, 3, label);
+	ui->foodTable->setCellWidget(foodsLoaded + foodCities.size(), 3, label);
 
 	label = new QLabel();
 	label->setText("$" + QString::number(grandTotal));
-	ui->foodTable->setCellWidget(foodsLoaded, 4, label);
+	ui->foodTable->setCellWidget(foodsLoaded + foodCities.size(), 4, label);
 }
 
 City ResultsWindow::getClosestCity(std::vector<City> loadedCities, QString name)
