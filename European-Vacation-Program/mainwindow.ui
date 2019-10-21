@@ -156,8 +156,7 @@ Starting From London</string>
          </size>
         </property>
         <property name="text">
-         <string>11 Cities
-Starting From Paris</string>
+         <string>Curated Paris Trip</string>
         </property>
        </widget>
       </item>

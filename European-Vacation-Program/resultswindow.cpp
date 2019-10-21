@@ -55,8 +55,6 @@ void ResultsWindow::setResults(std::vector<City>& loadedCities, int numCities)
 
 	for (int i = 0; i < numCities - 1; i++)
 	{
-		qDebug() << city.getName();
-
 		for (int j = 0; j < visited.size(); j++)
 		{
 			city.removeCityDistance(visited[j]);

@@ -78,6 +78,8 @@ void CitySelectWindow::on_moveToFoodSelect_clicked()
 
 void CitySelectWindow::loadSelectedCities(QString startingCity)
 {
+	loadedCities.clear();
+
 	for (int start = 0; start < cityNames.size(); start++)
 	{
 		std::vector<CityDistance> cityDistances;
@@ -133,6 +135,17 @@ void CitySelectWindow::setParisPlan()
 
 void CitySelectWindow::setLondonPlan()
 {
+	// if London isn't on the list of active cities, add it by force
+	bool london = false;
+	for (int i = 0; i < cityNames.size(); i++)
+	{
+		if (cityNames[i] == "London")
+			london = true;
+	}
+	if (!london)
+		cityNames.push_back(QString("London"));
+
+	// set up the city select ui elements
 	ui->cityTable->setRowCount(cityNames.size());
 	ui->cityTable->setColumnCount(2);
 	ui->cityTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Cities"));
@@ -201,16 +214,56 @@ void CitySelectWindow::loadLondonPlan()
 		qDebug() << numCities;
 	}
 
-	if (numCities < 1 || numCities > cityNames.size())
+	if (numCities < 2 || numCities > cityNames.size())
 	{
 		error = true;
-		QMessageBox::information(this, tr("Input Error"), tr("Please select a number\nfrom 1 to the total number of cities"));
+		QMessageBox::information(this, tr("Input Error"), tr("Please select a number\nfrom 2 to the total number of cities"));
 	}
 	else
 	{
 		error = false;
 		loadSelectedCities(startingCity);
+		sortLondonCities();
+		loadSelectedCities(startingCity);
 	}
+}
+
+void CitySelectWindow::sortLondonCities()
+{
+	std::vector<City> londonCities = loadedCities;
+	std::vector<QString> visited;
+	QString current;
+	City city;
+	for (int i = 0; i < londonCities.size(); i++)
+	{
+		if (loadedCities[i].getIsStart() == true)
+		{
+			city = loadedCities[i];
+		}
+	}
+
+	for (int i = 0; i < numCities - 1; i++)
+	{
+
+		for (int j = 0; j < visited.size(); j++)
+		{
+			city.removeCityDistance(visited[j]);
+		}
+
+		visited.push_back(city.getShortestDistance().endCity);
+		if (i == 0)
+			visited.push_back(city.getName());
+
+		city = londonCities[0];
+		for (int i = 0; i < londonCities.size(); i++)
+		{
+			if (londonCities[i].getName() == city.getShortestDistance().endCity)
+			{
+				city = loadedCities[i];
+			}
+		}
+	}
+	cityNames = visited;
 }
 
 void CitySelectWindow::loadCustomPlan()

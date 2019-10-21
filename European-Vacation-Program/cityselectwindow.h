@@ -52,6 +52,7 @@ private:
 	void setCustomPlan();
 
 	void loadSelectedCities(QString startingCity);
+	void sortLondonCities();
 	void loadParisPlan();
 	void loadLondonPlan();
 	void loadCustomPlan();
