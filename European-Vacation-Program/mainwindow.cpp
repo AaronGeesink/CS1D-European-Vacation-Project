@@ -51,6 +51,7 @@ void MainWindow::moveToMain()
 
 void MainWindow::on_moveToView_clicked()
 {
+	viewWind.populateCombo();
 	//Stacked Widget index 1: View City Info Menu
 	ui->stackedWidget->setCurrentIndex(1);
 }

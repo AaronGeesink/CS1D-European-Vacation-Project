@@ -55,6 +55,9 @@
        <number>0</number>
       </property>
       <item>
+       <widget class="QComboBox" name="cityComboBox"/>
+      </item>
+      <item>
        <widget class="QPushButton" name="loadCities">
         <property name="minimumSize">
          <size>
@@ -63,7 +66,7 @@
          </size>
         </property>
         <property name="text">
-         <string>View Cities</string>
+         <string>View All Cities</string>
         </property>
        </widget>
       </item>

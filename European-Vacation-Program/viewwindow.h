@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
+#include <QStringList>
 #include "database.h"
 
 namespace Ui {
@@ -18,6 +19,8 @@ class ViewWindow : public QWidget
 public:
 	explicit ViewWindow(QWidget *parent = nullptr);
 	~ViewWindow();
+
+	void populateCombo();
 
 private slots:
 
