@@ -44,7 +44,7 @@ void ViewWindow::on_loadCities_clicked()
 	checkConnection();
 	QSqlQuery query(QSqlDatabase::database());
 
-	query.exec("select * from city");
+	query.exec("select * from city WHERE active=1");
 	model->setQuery(query);
 	ui->databaseView->setModel(model);
 }
@@ -73,5 +73,13 @@ void ViewWindow::on_loadDistances_clicked()
 
 void ViewWindow::on_loadCity_clicked()
 {
+	QString city;
+	city = ui->cityComboBox->currentText();
 
+	model = new QSqlQueryModel;
+	QSqlQuery query(QSqlDatabase::database());
+
+	query.exec("select * from distance WHERE start='"+city+"'");
+	model->setQuery(query);
+	ui->databaseView->setModel(model);
 }
