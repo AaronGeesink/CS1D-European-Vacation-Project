@@ -243,7 +243,7 @@ void CitySelectWindow::sortLondonCities()
 		}
 	}
 
-	for (int i = 0; i < numCities - 1; i++)
+	for (int i = 0; i < numCities; i++)
 	{
 
 		for (int j = 0; j < visited.size(); j++)
